@@ -29,11 +29,15 @@ jobs:
         with:
           channel: stable
 
-      # ONLY clean cache
-      - name: Clean Flutter
-        run: flutter clean
+      # Clean old android project
+      - name: Remove Broken Android Folder
+        run: rm -rf android
 
-      # Dependencies
+      # Recreate proper android project
+      - name: Generate Android Project
+        run: flutter create --platforms=android .
+
+      # Install dependencies
       - name: Install Dependencies
         run: flutter pub get
 
@@ -44,6 +48,7 @@ jobs:
           --release \
           -t ../karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
 
+      # Upload artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
