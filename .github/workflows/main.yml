@@ -11,15 +11,15 @@ jobs:
         with:
           channel: 'stable'
           
-      # Sirf zaroori package add karenge, faltu upgrade NAHI karenge
-      - name: Fix Dependencies
+      # 🔥 THE MASTER FIX: Zabardasti naye packages install karna
+      - name: Force Fix Dependencies
         run: |
           flutter pub add audioplayers
+          flutter pub add record_linux
           flutter pub get
         working-directory: karigai_mobile
         
-      # Sirf Android ki files repair karenge, Linux ki nahi
-      - name: Repair Android Setup Only
+      - name: Repair Android Setup
         run: flutter create --platforms=android .
         working-directory: karigai_mobile
         
