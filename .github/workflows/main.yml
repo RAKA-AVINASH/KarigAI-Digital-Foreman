@@ -11,11 +11,14 @@ jobs:
         with:
           channel: 'stable'
           
-      - name: Install Dependencies
-        run: flutter pub get
+      # 🔥 YAHAN CHANGE HAI: Missing package add karna aur sabko upgrade karna
+      - name: Fix and Install Dependencies
+        run: |
+          flutter pub add audioplayers
+          flutter pub upgrade
+          flutter pub get
         working-directory: karigai_mobile
         
-      # 🔥 YEH NAYA STEP HAI: Purane Gradle/Android files ko repair karne ke liye
       - name: Repair Android Files
         run: flutter create .
         working-directory: karigai_mobile
