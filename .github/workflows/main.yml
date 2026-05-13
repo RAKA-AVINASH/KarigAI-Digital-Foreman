@@ -6,18 +6,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
           
       - name: Install Dependencies
         run: flutter pub get
+        working-directory: karigai_mobile
         
       - name: Build APK
-        run: flutter build apk --release -t karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+        run: flutter build apk --release
+        working-directory: karigai_mobile
         
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: KarigAI-App-Release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: karigai_mobile/build/app/outputs/flutter-apk/app-release.apk
