@@ -15,7 +15,7 @@ jobs:
         working-directory: karigai_mobile
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Java
@@ -27,37 +27,13 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.22.2"
           channel: stable
-          cache: true
 
-      # Disable desktop platforms
-      - name: Disable Desktop Platforms
-        run: |
-          flutter config --no-enable-linux-desktop
-          flutter config --no-enable-windows-desktop
-          flutter config --no-enable-macos-desktop
+      # ONLY clean cache
+      - name: Clean Flutter
+        run: flutter clean
 
-      # Remove generated desktop folders
-      - name: Remove Desktop Platform Folders
-        run: |
-          rm -rf linux
-          rm -rf windows
-          rm -rf macos
-
-      # Remove broken lock file
-      - name: Clean Dependency State
-        run: |
-          rm -f pubspec.lock
-          flutter clean
-
-      # IMPORTANT:
-      # remove broken record_linux package
-      - name: Remove Broken Plugin
-        run: |
-          flutter pub remove record_linux || true
-
-      # Install dependencies fresh
+      # Dependencies
       - name: Install Dependencies
         run: flutter pub get
 
@@ -65,8 +41,8 @@ jobs:
       - name: Build APK
         run: |
           flutter build apk \
-            --release \
-            -t ../karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+          --release \
+          -t ../karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
