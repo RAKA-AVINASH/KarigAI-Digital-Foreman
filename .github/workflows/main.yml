@@ -10,29 +10,19 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          flutter-version: '3.19.0'   # lock to a stable version
-
-      - name: Install dependencies
+          
+      # 🔥 Yahan hum missing packages daal rahe hain aur purane crash wale package ko force-fix kar rahe hain
+      - name: Force Fix Dependencies
         working-directory: karigai_mobile
-        run: flutter pub get
-
-      - name: Clean build cache
-        working-directory: karigai_mobile
-        run: flutter clean
-
-      # 🚫 Do NOT add record_linux
-      # Instead, disable Linux desktop so it never compiles
-      - name: Disable desktop targets
         run: |
-          flutter config --no-enable-linux-desktop
-          flutter config --no-enable-macos-desktop
-          flutter config --no-enable-windows-desktop
-
+          flutter pub add audioplayers
+          flutter pub add "record_linux:^1.3.0"
+          flutter pub get
+        
       - name: Build APK
         working-directory: karigai_mobile
-        run: flutter build apk --release \
-          --target=${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
-
+        run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+        
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
