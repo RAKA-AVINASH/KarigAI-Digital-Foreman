@@ -15,6 +15,11 @@ jobs:
         run: flutter pub get
         working-directory: karigai_mobile
         
+      # 🔥 YEH NAYA STEP HAI: Purane Gradle/Android files ko repair karne ke liye
+      - name: Repair Android Files
+        run: flutter create .
+        working-directory: karigai_mobile
+        
       - name: Build APK
         run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
         working-directory: karigai_mobile
