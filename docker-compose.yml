@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: karigai_postgres
+    environment:
+      POSTGRES_DB: karigai
+      POSTGRES_USER: karigai_user
+      POSTGRES_PASSWORD: karigai_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - karigai_network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: karigai_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - karigai_network
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: ./karigai_backend
+      dockerfile: Dockerfile
+    container_name: karigai_backend
+    environment:
+      - DATABASE_URL=postgresql://karigai_user:karigai_password@postgres:5432/karigai
+      - REDIS_URL=redis://redis:6379
+      - ENVIRONMENT=development
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./karigai_backend:/app
+      - ./uploads:/app/uploads
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - karigai_network
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: karigai_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./uploads:/var/www/uploads
+    depends_on:
+      - backend
+    networks:
+      - karigai_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  karigai_network:
+    driver: bridge

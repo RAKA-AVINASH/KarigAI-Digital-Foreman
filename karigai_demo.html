@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarigAI - The Vernacular Digital Foreman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            background: #000;
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .status-bar {
+            height: 44px;
+            background: #6366f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .app-header {
+            background: #6366f1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .app-header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .app-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 20px;
+            height: calc(100% - 164px);
+            overflow-y: auto;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e5e7eb;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+        
+        .feature-card p {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        .bottom-nav {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: #9ca3af;
+            font-size: 12px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .nav-item.active {
+            color: #6366f1;
+        }
+        
+        .nav-icon {
+            font-size: 24px;
+        }
+        
+        .voice-button {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .voice-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        
+        .info-box {
+            background: #f3f4f6;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .info-box h4 {
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        .info-box p {
+            color: #6b7280;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="phone-screen">
+            <div class="status-bar">
+                <span>9:41</span>
+                <span>📶 🔋</span>
+            </div>
+            
+            <div class="app-header">
+                <h1>KarigAI</h1>
+                <p>आपका डिजिटल फोरमैन</p>
+            </div>
+            
+            <div class="content">
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Voice to Invoice</h3>
+                    <p>Speak in Hindi to create professional invoices instantly</p>
+                    <span class="badge">हिंदी में बोलें</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Visual Troubleshooting</h3>
+                    <p>Point camera at equipment for instant repair guidance</p>
+                    <span class="badge">तुरंत मदद</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Micro-Learning</h3>
+                    <p>30-second skill modules in your local language</p>
+                    <span class="badge">सीखें</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Document Generation</h3>
+                    <p>Create invoices, contracts, and certificates</p>
+                    <span class="badge">दस्तावेज़</span>
+                </div>
+                
+                <div class="info-box">
+                    <h4>🚀 KarigAI Demo</h4>
+                    <p>This is a visual demonstration of the KarigAI mobile app interface. The actual app includes voice recognition, camera integration, and AI-powered features for India's informal workforce.</p>
+                </div>
+            </div>
+            
+            <div class="bottom-nav">
+                <div class="nav-item active">
+                    <div class="nav-icon">🏠</div>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">📸</div>
+                    <span>Camera</span>
+                </div>
+                <div class="voice-button">🎤</div>
+                <div class="nav-item">
+                    <div class="nav-icon">📚</div>
+                    <span>Learn</span>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">👤</div>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

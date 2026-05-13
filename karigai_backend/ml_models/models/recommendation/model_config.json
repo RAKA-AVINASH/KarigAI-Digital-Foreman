@@ -1,0 +1,12 @@
+{
+  "n_components": 50,
+  "max_features": 1000,
+  "alpha": 0.7,
+  "beta": 0.3,
+  "metrics": {
+    "ndcg_10": 0.02061704357708086,
+    "precision_10": 0.019600000000000003,
+    "recall_10": 0.019509347270376683,
+    "num_evaluated_users": 1000
+  }
+}

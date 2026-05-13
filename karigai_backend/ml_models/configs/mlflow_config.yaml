@@ -1,0 +1,45 @@
+# MLflow Configuration for Model Versioning and Experiment Tracking
+
+mlflow:
+  tracking_uri: "file:./mlruns"  # Local tracking, change to remote server for production
+  experiment_name: "karigai_models"
+  artifact_location: "./mlartifacts"
+  
+  # Registry configuration
+  registry:
+    model_registry_uri: "file:./mlruns"
+    
+  # Autologging settings
+  autolog:
+    log_models: true
+    log_input_examples: true
+    log_model_signatures: true
+    disable: false
+    exclusive: false
+    
+  # Tracking settings
+  tracking:
+    log_system_metrics: true
+    log_every_n_steps: 100
+    
+# Model naming conventions
+model_names:
+  speech_recognition: "karigai_stt"
+  text_to_speech: "karigai_tts"
+  equipment_vision: "karigai_equipment_detector"
+  ocr: "karigai_ocr"
+  pattern_analysis: "karigai_pattern_analyzer"
+  quality_assessment: "karigai_quality_grader"
+  disease_detection: "karigai_crop_disease"
+  circuit_analysis: "karigai_circuit_analyzer"
+  intent_recognition: "karigai_intent_classifier"
+  translation: "karigai_translator"
+  knowledge_retrieval: "karigai_qa"
+  scheme_matching: "karigai_scheme_matcher"
+  recommendation: "karigai_recommender"
+  
+# Experiment tags
+default_tags:
+  project: "karigai"
+  framework: "pytorch"
+  deployment: "production"

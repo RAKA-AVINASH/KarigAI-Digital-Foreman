@@ -1,0 +1,103 @@
+{
+  "generation_date": "2026-02-13T18:57:54.337182",
+  "privacy_preserving": true,
+  "anonymization_method": "SHA256 hashing with salt",
+  "datasets": {
+    "users.json": {
+      "record_count": 1000,
+      "sample_fields": [
+        "user_id",
+        "anonymized_id",
+        "trade",
+        "skill_level",
+        "age",
+        "location_type",
+        "primary_language",
+        "secondary_languages",
+        "registration_date",
+        "active_days",
+        "total_courses_completed",
+        "avg_session_duration_minutes",
+        "preferred_learning_time",
+        "device_type",
+        "network_quality",
+        "privacy_consent",
+        "data_sharing_consent"
+      ]
+    },
+    "courses.json": {
+      "record_count": 500,
+      "sample_fields": [
+        "course_id",
+        "title",
+        "category",
+        "trade",
+        "difficulty",
+        "duration_seconds",
+        "language",
+        "has_video",
+        "has_quiz",
+        "has_practical",
+        "prerequisites",
+        "topics",
+        "avg_rating",
+        "num_ratings",
+        "completion_rate",
+        "created_date",
+        "content_hash"
+      ]
+    },
+    "interactions.json": {
+      "record_count": 50000,
+      "sample_fields": [
+        "interaction_id",
+        "anonymized_user_id",
+        "course_id",
+        "interaction_type",
+        "timestamp",
+        "duration_seconds",
+        "completion_percentage",
+        "rating",
+        "quiz_score",
+        "device_type",
+        "session_id",
+        "location_hash"
+      ]
+    },
+    "learning_progress.json": {
+      "record_count": 47515,
+      "sample_fields": [
+        "progress_id",
+        "anonymized_user_id",
+        "course_id",
+        "start_date",
+        "last_accessed",
+        "completion_percentage",
+        "time_spent_seconds",
+        "quiz_attempts",
+        "best_quiz_score",
+        "is_completed",
+        "completion_date",
+        "skill_points_earned",
+        "knowledge_gaps"
+      ]
+    },
+    "user_preferences.json": {
+      "record_count": 1000,
+      "sample_fields": [
+        "anonymized_user_id",
+        "trade",
+        "skill_level",
+        "primary_language",
+        "preferred_hour",
+        "prefers_video",
+        "prefers_quizzes",
+        "avg_session_length",
+        "engagement_score",
+        "completion_rate",
+        "device_preference",
+        "network_quality"
+      ]
+    }
+  }
+}

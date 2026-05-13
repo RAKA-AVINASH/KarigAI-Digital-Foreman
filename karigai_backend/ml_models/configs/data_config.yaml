@@ -1,0 +1,73 @@
+# Data Storage and Processing Configuration
+
+# Base paths
+data:
+  base_path: "./ml_models/data"
+  raw_data_path: "./ml_models/data/raw"
+  processed_data_path: "./ml_models/data/processed"
+  cache_path: "./ml_models/data/cache"
+  
+# Dataset splits
+splits:
+  train: 0.8
+  validation: 0.1
+  test: 0.1
+  random_seed: 42
+  
+# Speech datasets
+speech:
+  languages:
+    - hindi
+    - malayalam
+    - punjabi
+    - bengali
+    - tamil
+    - telugu
+    - english
+  sample_rate: 16000
+  max_duration_seconds: 30
+  min_duration_seconds: 1
+  
+  # Data augmentation
+  augmentation:
+    noise_injection: true
+    speed_perturbation: [0.9, 1.0, 1.1]
+    pitch_shift: [-2, 0, 2]
+    time_stretch: [0.9, 1.0, 1.1]
+    
+# Vision datasets
+vision:
+  image_size: [224, 224]
+  channels: 3
+  
+  # Data augmentation
+  augmentation:
+    rotation: 15
+    brightness: 0.2
+    contrast: 0.2
+    saturation: 0.2
+    horizontal_flip: true
+    vertical_flip: false
+    
+# Text datasets
+text:
+  max_sequence_length: 512
+  vocab_size: 50000
+  
+# Storage limits
+storage:
+  max_cache_size_gb: 50
+  cleanup_threshold_gb: 45
+  
+# Download sources (placeholder URLs)
+sources:
+  speech:
+    common_voice: "https://commonvoice.mozilla.org/"
+    openslr: "https://www.openslr.org/"
+    indic_tts: "https://www.iitm.ac.in/donlab/tts/"
+  vision:
+    imagenet: "https://www.image-net.org/"
+    coco: "https://cocodataset.org/"
+  text:
+    oscar: "https://oscar-corpus.com/"
+    indicnlp: "https://indicnlp.ai4bharat.org/"

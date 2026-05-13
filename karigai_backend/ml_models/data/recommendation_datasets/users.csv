@@ -1,0 +1,1001 @@
+user_id,anonymized_id,trade,skill_level,age,location_type,primary_language,secondary_languages,registration_date,active_days,total_courses_completed,avg_session_duration_minutes,preferred_learning_time,device_type,network_quality,privacy_consent,data_sharing_consent
+USER_00000,c3f362a24525e29c,farmer,intermediate,39,urban,ta,[],2025-12-19T18:57:17.022399,60,46,32,evening,android,poor,True,True
+USER_00001,c8ed1f0a043bbc4c,electrician,advanced,29,semi-urban,gu,[np.str_('en')],2025-05-05T18:57:17.022686,80,45,52,evening,ios,poor,True,True
+USER_00002,dbf493dccd4636dd,mason,intermediate,23,semi-urban,bn,[],2025-11-26T18:57:17.022911,77,48,8,afternoon,web,poor,True,False
+USER_00003,3516f1f3a7e42108,artisan,advanced,31,semi-urban,mr,[],2025-02-21T18:57:17.023135,4,23,20,afternoon,android,moderate,True,True
+USER_00004,2a986691bc8783cb,artisan,intermediate,48,rural,hi,[],2025-10-11T18:57:17.023628,57,32,17,night,android,moderate,True,True
+USER_00005,2566d21fafc1d3e5,carpenter,intermediate,41,urban,kn,"[np.str_('te'), np.str_('gu')]",2025-11-15T18:57:17.024440,14,37,41,afternoon,android,poor,True,True
+USER_00006,cb618692e46d1db7,homestay_owner,advanced,56,urban,kn,[np.str_('pa')],2025-05-04T18:57:17.024948,66,32,23,evening,ios,poor,True,False
+USER_00007,93ce0bb109dfa40c,welder,advanced,58,rural,te,"[np.str_('hi'), np.str_('en')]",2025-09-10T18:57:17.025824,5,8,52,evening,android,good,True,False
+USER_00008,fb6a53a64a3f18b2,farmer,expert,31,rural,ml,"[np.str_('bn'), np.str_('kn')]",2025-03-26T18:57:17.026594,50,33,9,night,web,moderate,True,True
+USER_00009,5cf27518333e04b7,electrician,expert,60,urban,hi,"[np.str_('ml'), np.str_('ta')]",2025-12-09T18:57:17.027137,14,48,15,evening,ios,good,True,False
+USER_00010,ad6a2c6bd93883c0,homestay_owner,expert,30,rural,bn,[],2025-10-09T18:57:17.027552,14,43,28,night,web,good,True,True
+USER_00011,46bac0e5340a5519,welder,beginner,40,urban,hi,[np.str_('en')],2025-07-18T18:57:17.028056,40,9,57,afternoon,web,moderate,True,True
+USER_00012,e531dae7dafda82a,mason,expert,41,semi-urban,en,"[np.str_('ta'), np.str_('ta')]",2025-07-22T18:57:17.028581,29,23,36,night,android,moderate,True,False
+USER_00013,b06a7f73501171a6,mason,expert,29,semi-urban,te,[],2025-08-26T18:57:17.029033,85,18,32,afternoon,web,moderate,True,True
+USER_00014,242fcd29395d92a6,welder,beginner,26,rural,ta,[],2025-03-05T18:57:17.029484,28,7,13,evening,android,poor,True,False
+USER_00015,c5467706f47f6004,electrician,intermediate,43,urban,ml,[np.str_('gu')],2025-03-02T18:57:17.029966,24,15,9,afternoon,ios,good,True,False
+USER_00016,11aa319eb8c9a6b1,appliance_repair,advanced,48,urban,gu,"[np.str_('gu'), np.str_('te')]",2026-01-14T18:57:17.030487,70,15,8,afternoon,web,good,True,True
+USER_00017,dbd31c947206a96c,electrician,advanced,37,urban,ta,[np.str_('hi')],2026-02-11T18:57:17.030968,28,32,21,afternoon,ios,poor,True,False
+USER_00018,aa4349a6e14ea6e2,homestay_owner,expert,61,rural,mr,[np.str_('kn')],2025-04-03T18:57:17.031442,63,44,34,night,web,moderate,True,True
+USER_00019,850fc91bc05a98e1,farmer,advanced,18,semi-urban,bn,[],2025-12-05T18:57:17.031910,5,33,5,evening,android,good,True,False
+USER_00020,44039f6c60690e09,mason,intermediate,40,urban,pa,[np.str_('en')],2025-05-31T18:57:17.032400,8,2,50,morning,ios,moderate,True,False
+USER_00021,ba06afb217b2b2f5,artisan,intermediate,58,rural,mr,[np.str_('kn')],2025-06-24T18:57:17.032917,94,45,43,afternoon,android,good,True,False
+USER_00022,2d0d0836cf59e693,electrician,expert,18,rural,mr,[],2025-12-19T18:57:17.033352,67,5,22,afternoon,web,poor,True,False
+USER_00023,ddea96cb25130721,mason,expert,24,semi-urban,gu,[np.str_('ml')],2025-05-06T18:57:17.034356,98,10,58,evening,ios,poor,True,False
+USER_00024,f0ecd0a4b0728c8e,mobile_repair,advanced,24,rural,mr,"[np.str_('te'), np.str_('ta')]",2025-09-28T18:57:17.035449,51,21,14,afternoon,web,moderate,True,True
+USER_00025,a64f957d12924679,farmer,expert,60,rural,gu,"[np.str_('hi'), np.str_('te')]",2025-04-25T18:57:17.035975,37,35,11,evening,web,poor,True,False
+USER_00026,a8e58a3be80432da,carpenter,intermediate,18,urban,bn,[np.str_('bn')],2025-10-12T18:57:17.036559,24,49,39,night,android,good,True,True
+USER_00027,f4c448a6c47e4fbf,electrician,beginner,46,rural,kn,"[np.str_('en'), np.str_('te')]",2025-03-28T18:57:17.037233,16,31,29,afternoon,android,moderate,True,True
+USER_00028,66f8c0b54b2d8afe,appliance_repair,beginner,25,rural,te,[np.str_('ta')],2025-10-02T18:57:17.037591,54,47,58,night,ios,moderate,True,True
+USER_00029,804b0c58021deada,welder,intermediate,60,semi-urban,bn,[np.str_('mr')],2025-09-13T18:57:17.038104,89,43,29,night,ios,good,True,True
+USER_00030,0f282e03d1138db2,homestay_owner,beginner,32,rural,gu,"[np.str_('gu'), np.str_('ml')]",2026-02-06T18:57:17.038486,58,32,23,night,android,moderate,True,False
+USER_00031,33b4e286a426c2cf,mobile_repair,intermediate,61,semi-urban,hi,[],2025-07-27T18:57:17.038924,10,14,53,night,ios,poor,True,True
+USER_00032,1ea2b90cecd26eba,plumber,advanced,22,rural,ml,[np.str_('kn')],2025-03-06T18:57:17.039396,25,9,27,afternoon,web,good,True,False
+USER_00033,0e2b4181a4d6dea4,plumber,advanced,55,semi-urban,ml,"[np.str_('mr'), np.str_('te')]",2025-05-14T18:57:17.039974,9,33,32,morning,android,poor,True,True
+USER_00034,5cf09e4bdfab1e54,mobile_repair,beginner,63,rural,en,[np.str_('mr')],2025-04-22T18:57:17.040340,13,49,36,morning,web,good,True,False
+USER_00035,2bc0fe983d6fb94d,homestay_owner,intermediate,41,urban,gu,[],2025-08-28T18:57:17.040863,26,23,39,evening,ios,poor,True,False
+USER_00036,547dd51521ac3798,artisan,beginner,19,urban,ta,"[np.str_('ta'), np.str_('en')]",2025-10-22T18:57:17.041471,50,12,35,morning,android,good,True,False
+USER_00037,f099a0c03869169b,mason,beginner,57,urban,gu,[],2025-04-04T18:57:17.041864,51,6,24,night,web,poor,True,True
+USER_00038,ad864d5778dcf9a0,homestay_owner,beginner,25,semi-urban,te,[],2025-03-25T18:57:17.042315,82,13,22,morning,ios,moderate,True,False
+USER_00039,dffd2e734e405fb9,welder,advanced,46,urban,kn,[np.str_('te')],2025-03-07T18:57:17.042761,20,30,28,afternoon,web,moderate,True,False
+USER_00040,21f302905ce886d0,homestay_owner,expert,52,semi-urban,ml,[],2025-05-28T18:57:17.043191,74,37,41,night,web,moderate,True,True
+USER_00041,867fac1dcd804caf,mobile_repair,beginner,50,rural,pa,"[np.str_('pa'), np.str_('gu')]",2025-11-20T18:57:17.043497,24,20,5,evening,ios,poor,True,True
+USER_00042,5bcf7b954ee67499,homestay_owner,beginner,51,urban,pa,[],2026-01-09T18:57:17.043737,17,0,41,morning,web,moderate,True,True
+USER_00043,317d84b792f3e38f,carpenter,intermediate,61,rural,te,[np.str_('te')],2025-02-20T18:57:17.043958,62,9,51,night,ios,poor,True,False
+USER_00044,e5a8c522ab032c9f,mobile_repair,beginner,40,urban,mr,"[np.str_('te'), np.str_('ml')]",2025-07-03T18:57:17.044321,59,44,5,morning,ios,moderate,True,False
+USER_00045,7052c1d8cf35dd4a,plumber,intermediate,42,rural,kn,"[np.str_('bn'), np.str_('en')]",2025-04-20T18:57:17.044592,3,2,36,afternoon,android,good,True,False
+USER_00046,d5d38d1f5c1e3a75,homestay_owner,beginner,28,rural,en,[np.str_('ta')],2025-09-21T18:57:17.045470,13,1,11,morning,android,moderate,True,True
+USER_00047,3b23a386b24a03b3,farmer,expert,52,semi-urban,pa,[],2025-08-04T18:57:17.046251,74,12,24,afternoon,ios,poor,True,False
+USER_00048,d286021aa025bb47,farmer,intermediate,47,urban,te,"[np.str_('mr'), np.str_('hi')]",2025-03-07T18:57:17.047800,28,38,8,afternoon,ios,moderate,True,False
+USER_00049,fd0dd0848d68a79f,mobile_repair,intermediate,39,semi-urban,ml,[np.str_('ml')],2025-12-16T18:57:17.048076,53,3,51,afternoon,web,poor,True,False
+USER_00050,5f030387f41cf497,mobile_repair,advanced,18,rural,kn,"[np.str_('kn'), np.str_('en')]",2025-07-19T18:57:17.048317,78,30,46,afternoon,ios,moderate,True,True
+USER_00051,8f20ee697ea8e118,electrician,expert,20,rural,hi,"[np.str_('en'), np.str_('en')]",2026-01-11T18:57:17.048564,58,36,49,afternoon,web,moderate,True,False
+USER_00052,809eba3ec37ee15a,welder,intermediate,30,rural,mr,[],2025-06-02T18:57:17.048767,77,29,50,morning,android,moderate,True,False
+USER_00053,3e8867d726cfe808,farmer,expert,28,semi-urban,pa,[np.str_('ml')],2025-09-18T18:57:17.049249,62,19,5,night,web,moderate,True,False
+USER_00054,160f3beb96f60b3e,welder,intermediate,62,rural,mr,[np.str_('gu')],2025-05-09T18:57:17.049473,49,22,57,evening,web,good,True,False
+USER_00055,987379fe47f2603a,carpenter,expert,49,urban,kn,[],2025-10-17T18:57:17.049671,37,5,17,night,web,moderate,True,False
+USER_00056,de2cf32553d71a45,homestay_owner,intermediate,19,urban,pa,[np.str_('ml')],2025-07-29T18:57:17.049884,77,47,6,night,web,poor,True,False
+USER_00057,652e4e7ab2df403b,mason,advanced,31,urban,en,"[np.str_('bn'), np.str_('ml')]",2025-04-18T18:57:17.051888,49,19,58,morning,ios,moderate,True,False
+USER_00058,cf90b900d0a1b367,homestay_owner,beginner,61,semi-urban,kn,[],2025-08-17T18:57:17.052447,39,46,57,afternoon,ios,poor,True,True
+USER_00059,f516d52c9f51cdd0,electrician,intermediate,48,rural,ml,[],2025-07-01T18:57:17.052992,71,28,23,night,android,good,True,False
+USER_00060,eec00b89a12437dd,plumber,advanced,32,urban,bn,[],2025-07-02T18:57:17.057305,85,39,31,night,android,moderate,True,False
+USER_00061,cb44e72972b136d3,homestay_owner,beginner,30,urban,kn,[np.str_('bn')],2025-02-23T18:57:17.057818,63,18,31,afternoon,web,poor,True,False
+USER_00062,af0af7c51f46eaeb,plumber,beginner,49,rural,pa,[],2025-08-31T18:57:17.058300,74,41,20,evening,web,good,True,True
+USER_00063,5d253ae6b33f44cd,mason,expert,23,rural,kn,[np.str_('pa')],2025-08-27T18:57:17.058684,33,9,6,night,android,poor,True,True
+USER_00064,857896237c872cb0,artisan,intermediate,54,semi-urban,mr,[np.str_('mr')],2025-08-23T18:57:17.059534,80,20,48,night,android,moderate,True,True
+USER_00065,c6def6e4a63f9a5d,farmer,advanced,38,urban,bn,[],2025-02-24T18:57:17.060091,7,15,46,morning,web,poor,True,False
+USER_00066,ec55cb549b497d15,artisan,expert,27,rural,hi,[],2025-02-16T18:57:17.060599,68,25,45,afternoon,web,good,True,True
+USER_00067,627920c47c2075b6,artisan,expert,45,semi-urban,ta,[],2026-01-24T18:57:17.061398,68,3,37,night,web,good,True,False
+USER_00068,1d7197bedfecc7f1,welder,advanced,24,urban,kn,[np.str_('te')],2025-06-14T18:57:17.061836,4,9,36,afternoon,android,good,True,False
+USER_00069,615a7cfb96ce1f9e,artisan,expert,25,urban,gu,"[np.str_('ta'), np.str_('ml')]",2025-12-26T18:57:17.062291,3,5,55,morning,ios,moderate,True,True
+USER_00070,0a1fc7233099ccfc,farmer,intermediate,23,urban,hi,[np.str_('en')],2025-06-20T18:57:17.062691,77,20,18,afternoon,web,moderate,True,True
+USER_00071,860cbc75d2e1bd11,carpenter,expert,38,rural,pa,"[np.str_('gu'), np.str_('ta')]",2025-03-04T18:57:17.063130,44,10,10,night,ios,poor,True,False
+USER_00072,7c3fded08f5a713c,farmer,beginner,62,rural,mr,"[np.str_('en'), np.str_('pa')]",2026-01-18T18:57:17.063571,3,4,33,night,web,moderate,True,True
+USER_00073,e308570ec8c74cbd,mobile_repair,beginner,44,urban,pa,[np.str_('en')],2026-02-05T18:57:17.063968,25,39,16,afternoon,web,poor,True,True
+USER_00074,fe24c8ab7638f7d8,artisan,advanced,46,semi-urban,gu,"[np.str_('gu'), np.str_('kn')]",2025-11-14T18:57:17.064394,89,13,20,night,ios,poor,True,True
+USER_00075,de48cbe849d4d8f3,appliance_repair,beginner,58,urban,te,[],2025-09-26T18:57:17.064752,44,46,23,night,android,moderate,True,True
+USER_00076,679d65bbbc877d0d,artisan,expert,47,semi-urban,ta,[np.str_('ml')],2025-12-10T18:57:17.065154,61,11,23,night,web,moderate,True,True
+USER_00077,c2822e5da3d44d4e,welder,advanced,25,semi-urban,bn,[np.str_('pa')],2025-12-12T18:57:17.065551,26,27,32,morning,android,poor,True,False
+USER_00078,28955d0bd180667e,artisan,beginner,52,semi-urban,hi,[np.str_('bn')],2025-04-24T18:57:17.065945,68,34,47,morning,web,moderate,True,True
+USER_00079,2bc1e69f33e20c88,artisan,intermediate,18,urban,ml,[np.str_('hi')],2025-12-28T18:57:17.066342,84,17,59,morning,ios,good,True,True
+USER_00080,2f5debae53c22cc8,farmer,advanced,48,semi-urban,gu,"[np.str_('te'), np.str_('hi')]",2025-12-30T18:57:17.066792,13,27,33,morning,ios,good,True,False
+USER_00081,ce5a5521a91fc040,plumber,beginner,21,semi-urban,pa,"[np.str_('ta'), np.str_('te')]",2025-03-24T18:57:17.067728,83,38,10,night,android,moderate,True,False
+USER_00082,2335a306a50041b7,artisan,intermediate,28,rural,bn,[],2025-07-16T18:57:17.070850,24,9,36,evening,android,poor,True,True
+USER_00083,be6d472d0dc7e0d8,electrician,beginner,47,semi-urban,kn,"[np.str_('ml'), np.str_('gu')]",2025-05-16T18:57:17.072823,13,11,30,night,ios,moderate,True,True
+USER_00084,121a3e3d4d21789d,farmer,advanced,55,rural,ta,[np.str_('ml')],2025-05-13T18:57:17.075522,78,20,20,night,android,moderate,True,True
+USER_00085,1302da6a1d4b5a58,mason,expert,41,rural,te,[],2025-06-15T18:57:17.076199,60,48,36,night,ios,good,True,False
+USER_00086,83cdb84caba8cc59,appliance_repair,beginner,40,rural,ta,"[np.str_('bn'), np.str_('ta')]",2025-08-30T18:57:17.076737,79,33,44,night,android,poor,True,False
+USER_00087,feec4c0e05df637b,welder,beginner,32,urban,mr,[],2025-05-14T18:57:17.077223,58,9,54,night,ios,good,True,True
+USER_00088,6d284c230b642ef1,mason,beginner,26,semi-urban,te,"[np.str_('kn'), np.str_('pa')]",2025-02-19T18:57:17.078018,89,26,52,morning,ios,moderate,True,True
+USER_00089,784378b7a35a199a,plumber,advanced,30,semi-urban,en,[],2025-03-27T18:57:17.078748,67,28,26,night,web,poor,True,True
+USER_00090,265f2ecc3287adad,plumber,intermediate,21,urban,hi,"[np.str_('ml'), np.str_('te')]",2025-03-05T18:57:17.079160,14,42,11,afternoon,web,good,True,True
+USER_00091,180233b28e1ff80b,homestay_owner,beginner,64,urban,bn,[],2025-11-03T18:57:17.079374,46,5,36,morning,android,good,True,False
+USER_00092,b55c6e385670b155,artisan,advanced,62,urban,hi,"[np.str_('bn'), np.str_('mr')]",2026-01-01T18:57:17.079618,1,27,44,morning,web,good,True,True
+USER_00093,4cc8b35d0fddfea3,electrician,beginner,25,urban,pa,"[np.str_('ml'), np.str_('gu')]",2025-07-18T18:57:17.079861,95,20,14,night,ios,good,True,False
+USER_00094,dacc655c0603f009,carpenter,expert,51,rural,ml,"[np.str_('gu'), np.str_('gu')]",2025-02-26T18:57:17.080093,21,36,48,night,web,poor,True,True
+USER_00095,d4053ea2a6f3b152,carpenter,beginner,51,rural,te,[],2025-07-13T18:57:17.080287,96,23,55,evening,android,moderate,True,False
+USER_00096,ede8f9610f12d9b9,carpenter,intermediate,44,semi-urban,ta,"[np.str_('ta'), np.str_('pa')]",2025-09-19T18:57:17.080521,96,43,47,night,android,moderate,True,True
+USER_00097,2ea5d63bca1ddf05,plumber,beginner,39,urban,pa,"[np.str_('ta'), np.str_('en')]",2025-12-12T18:57:17.080752,76,41,26,morning,web,good,True,True
+USER_00098,f2063cbc7523e7d9,electrician,advanced,26,rural,bn,"[np.str_('hi'), np.str_('bn')]",2025-12-31T18:57:17.080989,67,23,36,morning,web,moderate,True,True
+USER_00099,791a1db4e32b2080,carpenter,intermediate,38,rural,hi,[np.str_('pa')],2025-11-07T18:57:17.081205,77,18,56,morning,web,moderate,True,True
+USER_00100,2b1d7dd3c53e9c50,farmer,intermediate,64,urban,kn,[np.str_('gu')],2025-05-07T18:57:17.081423,8,34,36,night,ios,poor,True,False
+USER_00101,55417e576c4d06a4,appliance_repair,advanced,62,rural,hi,"[np.str_('te'), np.str_('hi')]",2025-05-03T18:57:17.081659,20,15,48,evening,ios,good,True,False
+USER_00102,87f04e978e90141c,appliance_repair,advanced,47,urban,mr,"[np.str_('gu'), np.str_('bn')]",2025-11-25T18:57:17.082027,40,5,10,evening,web,moderate,True,True
+USER_00103,01c4926464aff3cf,carpenter,intermediate,55,urban,pa,[np.str_('bn')],2025-05-28T18:57:17.082662,51,16,44,night,web,moderate,True,True
+USER_00104,9d040c8ad2044835,plumber,advanced,19,urban,kn,[],2025-07-30T18:57:17.083276,32,22,36,afternoon,android,moderate,True,False
+USER_00105,12624ff0c651824c,farmer,intermediate,54,rural,ml,[np.str_('bn')],2025-10-28T18:57:17.084432,49,21,43,afternoon,web,moderate,True,False
+USER_00106,49ac5aeb257fa7cb,appliance_repair,intermediate,54,urban,hi,"[np.str_('gu'), np.str_('en')]",2025-11-20T18:57:17.086052,29,29,47,night,ios,moderate,True,True
+USER_00107,9295cc00d9913629,welder,beginner,29,rural,ml,[],2025-07-29T18:57:17.087017,39,19,17,night,android,poor,True,False
+USER_00108,61fb32805cf2acf9,plumber,advanced,37,semi-urban,bn,[],2025-05-20T18:57:17.088520,36,5,33,evening,android,moderate,True,True
+USER_00109,33a4e699ca122c55,farmer,intermediate,28,rural,pa,"[np.str_('ml'), np.str_('en')]",2025-08-19T18:57:17.091121,64,34,42,afternoon,ios,poor,True,True
+USER_00110,fe63890ee8a21f3d,mason,intermediate,53,rural,hi,[np.str_('ml')],2026-01-03T18:57:17.093302,40,44,20,evening,android,good,True,True
+USER_00111,25ebf3cb12f6da1a,electrician,expert,55,rural,hi,[np.str_('hi')],2025-11-13T18:57:17.093732,65,39,59,afternoon,android,good,True,False
+USER_00112,37794f4c6da00fc8,welder,expert,25,urban,bn,[np.str_('te')],2025-08-22T18:57:17.094176,37,19,50,morning,web,poor,True,True
+USER_00113,a70ad7f421691787,artisan,expert,40,rural,hi,"[np.str_('ta'), np.str_('hi')]",2025-02-26T18:57:17.094855,33,3,55,night,ios,moderate,True,False
+USER_00114,44e4929609bbf7fa,homestay_owner,intermediate,39,rural,pa,[],2026-01-20T18:57:17.095351,6,13,51,evening,ios,good,True,False
+USER_00115,23667da291336d2f,mobile_repair,advanced,32,rural,bn,[np.str_('te')],2025-08-28T18:57:17.095616,1,18,24,morning,android,good,True,True
+USER_00116,a05dac983104971e,mobile_repair,expert,18,urban,ta,[],2026-01-27T18:57:17.095825,98,39,27,night,ios,good,True,True
+USER_00117,af03d3fbe965d0f9,plumber,beginner,46,urban,ta,[np.str_('hi')],2025-04-15T18:57:17.096040,21,49,14,evening,android,moderate,True,True
+USER_00118,2cb0c98de50fea2e,electrician,expert,64,semi-urban,bn,"[np.str_('bn'), np.str_('hi')]",2025-10-13T18:57:17.096273,61,23,37,morning,ios,moderate,True,False
+USER_00119,d883e49cb80014e4,plumber,intermediate,20,semi-urban,hi,"[np.str_('kn'), np.str_('pa')]",2025-02-20T18:57:17.096506,81,37,39,evening,android,good,True,True
+USER_00120,1cd590868d362ebf,mobile_repair,beginner,18,urban,bn,[],2026-01-30T18:57:17.096707,12,43,38,night,android,good,True,False
+USER_00121,50e14f2895217dc8,artisan,expert,42,rural,pa,"[np.str_('te'), np.str_('mr')]",2026-01-04T18:57:17.096949,97,16,30,afternoon,web,good,True,True
+USER_00122,f869acb249af6746,artisan,intermediate,18,rural,ml,[],2025-07-11T18:57:17.097149,19,10,15,evening,ios,good,True,True
+USER_00123,b025820bf836ce6f,plumber,beginner,20,urban,ml,"[np.str_('pa'), np.str_('bn')]",2025-06-16T18:57:17.097377,26,6,9,evening,ios,moderate,True,True
+USER_00124,c0bb03a797155b1a,electrician,intermediate,30,semi-urban,mr,[],2025-10-01T18:57:17.097571,77,29,41,afternoon,android,poor,True,False
+USER_00125,871fac61ab23e388,welder,advanced,49,rural,en,"[np.str_('kn'), np.str_('pa')]",2025-06-04T18:57:17.097800,57,22,8,afternoon,web,poor,True,False
+USER_00126,15e5600ad811a400,electrician,advanced,36,urban,hi,"[np.str_('gu'), np.str_('pa')]",2025-04-29T18:57:17.098033,54,11,21,afternoon,android,poor,True,True
+USER_00127,13d567e8f1854ab0,farmer,advanced,26,urban,en,[],2025-08-01T18:57:17.098227,84,17,47,night,web,good,True,False
+USER_00128,3c670aec4f5f5189,carpenter,intermediate,42,rural,kn,[np.str_('gu')],2026-01-24T18:57:17.098435,11,35,47,morning,ios,poor,True,True
+USER_00129,39b97d26136f8e60,plumber,expert,60,urban,ml,"[np.str_('pa'), np.str_('bn')]",2025-11-24T18:57:17.098668,61,17,57,morning,web,poor,True,True
+USER_00130,19cb99f74946e9bf,mobile_repair,advanced,51,semi-urban,en,[],2025-12-25T18:57:17.098859,9,9,19,evening,ios,good,True,False
+USER_00131,55b5697c776501ca,plumber,intermediate,31,urban,pa,[np.str_('en')],2025-04-25T18:57:17.099068,3,36,37,afternoon,web,good,True,False
+USER_00132,4e26e1e3e864f13b,plumber,expert,54,semi-urban,pa,"[np.str_('ml'), np.str_('bn')]",2025-09-29T18:57:17.099316,49,38,22,morning,web,good,True,True
+USER_00133,d24d4c2a1367c7ab,homestay_owner,beginner,25,rural,gu,[],2025-08-06T18:57:17.099510,65,40,18,afternoon,web,good,True,False
+USER_00134,8c5e8f70edc7e42f,appliance_repair,intermediate,58,rural,mr,"[np.str_('kn'), np.str_('mr')]",2025-09-08T18:57:17.099737,65,45,19,night,android,moderate,True,False
+USER_00135,d22b9f04015177f7,mason,intermediate,37,urban,te,"[np.str_('pa'), np.str_('pa')]",2025-04-30T18:57:17.099966,86,40,29,afternoon,web,poor,True,False
+USER_00136,74982abc526d8b8a,plumber,beginner,53,urban,hi,[],2025-07-15T18:57:17.100159,42,37,18,morning,ios,poor,True,False
+USER_00137,06e441a697d93260,electrician,advanced,53,semi-urban,ml,"[np.str_('ml'), np.str_('kn')]",2025-08-16T18:57:17.100815,42,40,48,night,web,good,True,True
+USER_00138,dfa9485807836d75,plumber,beginner,19,urban,te,[np.str_('te')],2025-02-23T18:57:17.103909,47,17,38,night,android,moderate,True,True
+USER_00139,c029330c58e5736d,carpenter,advanced,49,rural,pa,[np.str_('gu')],2025-10-29T18:57:17.104521,67,32,39,evening,web,poor,True,False
+USER_00140,122194945e438375,mobile_repair,beginner,54,semi-urban,mr,[np.str_('gu')],2025-07-17T18:57:17.104980,53,47,21,night,ios,good,True,True
+USER_00141,b5967a3cc9f623bb,electrician,intermediate,22,urban,kn,[],2025-12-03T18:57:17.105402,36,39,55,afternoon,ios,good,True,False
+USER_00142,8d9b5bbb6d09cdab,welder,intermediate,39,urban,hi,"[np.str_('pa'), np.str_('ml')]",2025-09-02T18:57:17.107334,25,39,8,night,android,moderate,True,True
+USER_00143,fcd2723269f6747f,carpenter,expert,53,urban,kn,[],2025-03-19T18:57:17.107657,18,5,15,night,ios,good,True,True
+USER_00144,8712cf7ede69ff6d,mobile_repair,advanced,29,urban,ml,[],2025-11-19T18:57:17.108308,20,42,8,afternoon,web,good,True,True
+USER_00145,663638ad8a025725,mobile_repair,beginner,56,rural,hi,"[np.str_('bn'), np.str_('hi')]",2025-08-02T18:57:17.108928,48,47,9,afternoon,web,good,True,False
+USER_00146,c083c3f8deae8492,farmer,beginner,41,semi-urban,te,"[np.str_('pa'), np.str_('en')]",2025-05-12T18:57:17.109323,40,29,25,morning,web,moderate,True,False
+USER_00147,9d48af92d54b3933,mason,intermediate,32,semi-urban,kn,"[np.str_('en'), np.str_('kn')]",2025-06-08T18:57:17.109765,4,27,20,evening,android,moderate,True,True
+USER_00148,a0cc7cc6da5a7539,mason,advanced,54,semi-urban,hi,[],2025-08-11T18:57:17.110011,74,16,35,morning,web,poor,True,False
+USER_00149,88c379b850998d8a,appliance_repair,expert,35,semi-urban,kn,[],2025-06-20T18:57:17.110216,21,24,21,evening,web,good,True,True
+USER_00150,c52365d8ac812dec,artisan,intermediate,60,semi-urban,bn,[np.str_('en')],2026-01-07T18:57:17.110427,53,45,40,night,android,poor,True,False
+USER_00151,beff4cb80fa1831a,mobile_repair,expert,43,rural,kn,[],2025-12-20T18:57:17.110621,64,5,55,night,web,good,True,False
+USER_00152,c4b28e5595591226,plumber,beginner,58,semi-urban,ta,"[np.str_('ml'), np.str_('bn')]",2025-12-14T18:57:17.110855,69,3,48,afternoon,ios,good,True,False
+USER_00153,ed64b3cc7de67990,plumber,beginner,33,rural,mr,[np.str_('ta')],2025-07-09T18:57:17.111066,77,10,38,evening,ios,good,True,False
+USER_00154,a489739195ef93c0,electrician,beginner,35,rural,te,[np.str_('ml')],2025-07-28T18:57:17.111277,86,23,39,night,ios,poor,True,True
+USER_00155,f87b99ad99d8d34c,carpenter,expert,37,rural,hi,[np.str_('ta')],2025-12-05T18:57:17.111494,38,45,46,night,android,moderate,True,False
+USER_00156,b77e3e2993154c3e,carpenter,advanced,35,urban,hi,[np.str_('gu')],2025-03-11T18:57:17.111704,5,6,20,morning,web,poor,True,True
+USER_00157,03e0f74869af33ec,electrician,expert,36,semi-urban,pa,[np.str_('te')],2025-10-01T18:57:17.111920,99,5,14,evening,android,poor,True,False
+USER_00158,93b8385562d28e56,mason,advanced,62,rural,te,[np.str_('en')],2025-09-13T18:57:17.112130,88,12,57,evening,ios,poor,True,False
+USER_00159,f51a3df479fd16c5,homestay_owner,expert,58,rural,en,[],2025-05-24T18:57:17.112322,75,23,44,night,android,moderate,True,False
+USER_00160,7f9bc0fcfebc7a6e,homestay_owner,intermediate,58,rural,hi,[np.str_('bn')],2025-10-02T18:57:17.112534,35,39,49,afternoon,android,moderate,True,True
+USER_00161,53ea06a7f7866ba7,electrician,advanced,46,semi-urban,hi,[np.str_('hi')],2025-07-10T18:57:17.112745,73,12,43,night,android,good,True,True
+USER_00162,c070ebcf0db2d926,mobile_repair,intermediate,23,urban,hi,[],2025-07-12T18:57:17.112940,89,43,51,night,ios,good,True,False
+USER_00163,5f5c0f4da3ccbba4,farmer,advanced,23,rural,gu,"[np.str_('te'), np.str_('te')]",2025-11-21T18:57:17.113167,50,40,43,afternoon,android,moderate,True,False
+USER_00164,b59ec73f64d57cbf,plumber,intermediate,54,rural,bn,[],2026-02-05T18:57:17.113362,82,47,38,night,web,good,True,True
+USER_00165,000a94da2043b3d2,artisan,advanced,64,urban,gu,"[np.str_('ml'), np.str_('hi')]",2025-11-19T18:57:17.113588,64,31,26,evening,web,good,True,True
+USER_00166,453027b401eb87e9,homestay_owner,expert,22,semi-urban,ta,[],2025-08-27T18:57:17.113785,32,38,39,evening,android,moderate,True,True
+USER_00167,895a86f7c4ca0282,electrician,expert,47,semi-urban,ml,[],2025-09-08T18:57:17.113975,20,13,6,evening,ios,moderate,True,True
+USER_00168,d7702d55e3ceeee3,mason,expert,54,semi-urban,en,"[np.str_('hi'), np.str_('hi')]",2025-04-19T18:57:17.114202,75,13,48,afternoon,android,moderate,True,False
+USER_00169,023efe0598e28858,electrician,beginner,37,rural,gu,[np.str_('te')],2025-10-23T18:57:17.114414,17,4,10,night,android,moderate,True,True
+USER_00170,e5a75c8174cbc406,carpenter,advanced,32,urban,ta,[np.str_('mr')],2025-04-26T18:57:17.114622,70,17,16,morning,web,poor,True,True
+USER_00171,ce331757072f90db,artisan,intermediate,40,rural,ta,[np.str_('en')],2025-03-21T18:57:17.114831,61,10,31,night,ios,moderate,True,False
+USER_00172,b97eb57e0abba3d3,mobile_repair,intermediate,55,semi-urban,en,[],2025-07-06T18:57:17.115030,97,28,26,morning,android,poor,True,False
+USER_00173,eebc2aa7052f6ab2,homestay_owner,advanced,44,rural,bn,[np.str_('bn')],2025-09-06T18:57:17.115239,82,44,57,morning,android,good,True,False
+USER_00174,0b7360d4bf9e4d7f,mason,expert,61,rural,bn,[np.str_('bn')],2025-08-26T18:57:17.115448,15,20,24,afternoon,ios,moderate,True,False
+USER_00175,b31e052ec49ab35d,plumber,beginner,24,semi-urban,ta,[],2025-04-26T18:57:17.115637,23,17,9,afternoon,web,moderate,True,False
+USER_00176,b5199a1fe09ec4a4,appliance_repair,intermediate,18,urban,te,[np.str_('ta')],2025-04-18T18:57:17.115845,4,48,34,night,web,poor,True,False
+USER_00177,e9a651b091ae4afd,homestay_owner,expert,35,rural,ml,"[np.str_('gu'), np.str_('bn')]",2025-12-11T18:57:17.116073,22,35,6,afternoon,ios,moderate,True,True
+USER_00178,0e721f6169269f1f,carpenter,beginner,60,urban,gu,"[np.str_('hi'), np.str_('hi')]",2026-02-05T18:57:17.116303,87,38,44,morning,ios,poor,True,True
+USER_00179,462b937a35b8d287,homestay_owner,expert,41,semi-urban,pa,[np.str_('bn')],2025-11-11T18:57:17.116512,83,48,41,morning,android,poor,True,True
+USER_00180,1ff19f2757125036,mobile_repair,expert,62,urban,pa,"[np.str_('hi'), np.str_('en')]",2025-11-05T18:57:17.116747,94,8,34,afternoon,android,moderate,True,True
+USER_00181,1ce86d527e0a1230,plumber,beginner,39,semi-urban,gu,"[np.str_('gu'), np.str_('ml')]",2025-07-09T18:57:17.117217,99,23,35,morning,ios,good,True,True
+USER_00182,26e720856e1bc30b,welder,expert,56,rural,ml,[],2025-12-17T18:57:17.117659,3,45,7,morning,android,poor,True,True
+USER_00183,f3f65d32fe2d4d5e,mobile_repair,expert,48,urban,te,[],2025-05-09T18:57:17.117960,47,21,47,night,ios,poor,True,True
+USER_00184,7c4e7712a3863628,electrician,expert,25,urban,pa,"[np.str_('en'), np.str_('mr')]",2025-04-24T18:57:17.118830,83,19,52,afternoon,ios,moderate,True,True
+USER_00185,aec0355aeab47686,mason,intermediate,46,rural,en,[],2025-11-07T18:57:17.119596,83,30,41,night,web,poor,True,False
+USER_00186,31a2f5597a88485d,artisan,advanced,46,semi-urban,te,[],2025-04-28T18:57:17.120053,69,10,47,evening,android,poor,True,False
+USER_00187,162f9ea69f4ca9f4,carpenter,expert,23,semi-urban,gu,"[np.str_('hi'), np.str_('en')]",2025-10-25T18:57:17.120497,24,48,37,morning,android,good,True,False
+USER_00188,64ababb6ec4297d0,homestay_owner,expert,52,rural,pa,[],2025-06-21T18:57:17.121181,60,17,29,night,android,good,True,True
+USER_00189,cea4ffb09b46825b,carpenter,advanced,30,urban,bn,[np.str_('en')],2025-09-11T18:57:17.121991,73,25,9,morning,web,poor,True,False
+USER_00190,bfa85a9fc1dbabd2,mason,intermediate,38,urban,gu,[],2025-07-26T18:57:17.122479,31,43,8,morning,ios,moderate,True,True
+USER_00191,1f6337ce3d6e3c7b,appliance_repair,intermediate,43,rural,te,[],2025-06-14T18:57:17.123468,44,3,39,afternoon,web,moderate,True,True
+USER_00192,e435620de090f894,appliance_repair,expert,55,rural,gu,[],2025-03-02T18:57:17.123986,27,24,47,afternoon,android,good,True,True
+USER_00193,a41074f2f34a9322,artisan,expert,22,rural,pa,[np.str_('ta')],2025-05-23T18:57:17.124615,71,8,26,night,android,moderate,True,False
+USER_00194,43c6f6e6dcab5923,farmer,advanced,39,semi-urban,ml,[],2025-05-20T18:57:17.125010,7,44,54,morning,ios,good,True,False
+USER_00195,c9c11d77c85880d7,artisan,expert,29,rural,kn,[],2025-03-20T18:57:17.125420,92,10,30,evening,ios,poor,True,True
+USER_00196,80ed69cf0a7d6b00,electrician,beginner,44,semi-urban,te,"[np.str_('ml'), np.str_('kn')]",2025-11-22T18:57:17.125955,5,28,18,afternoon,web,good,True,False
+USER_00197,1260eeb4049a05e3,appliance_repair,expert,24,urban,hi,[],2025-12-25T18:57:17.126360,51,11,40,evening,android,moderate,True,True
+USER_00198,bebc55ca2927e1bf,plumber,intermediate,28,rural,ta,[np.str_('bn')],2025-05-19T18:57:17.126634,45,25,26,afternoon,ios,moderate,True,True
+USER_00199,7b17a91305e5013e,plumber,intermediate,55,rural,en,"[np.str_('mr'), np.str_('mr')]",2025-11-19T18:57:17.126916,5,18,56,morning,web,poor,True,True
+USER_00200,dfaed019a1a7cbfa,carpenter,beginner,56,semi-urban,pa,"[np.str_('pa'), np.str_('mr')]",2025-10-25T18:57:17.127195,73,28,15,afternoon,web,moderate,True,True
+USER_00201,1b1ad1568e9d1967,electrician,beginner,38,urban,gu,"[np.str_('te'), np.str_('en')]",2026-02-09T18:57:17.127442,3,37,56,morning,android,moderate,True,True
+USER_00202,e7e53b3bb7836c11,carpenter,intermediate,31,semi-urban,en,[np.str_('pa')],2025-09-07T18:57:17.127661,31,25,30,evening,web,good,True,True
+USER_00203,14df6a3b6f52764d,homestay_owner,advanced,49,rural,hi,[],2025-03-27T18:57:17.127854,92,33,46,night,android,moderate,True,True
+USER_00204,ec834906db5335d4,appliance_repair,beginner,34,rural,te,[],2025-07-28T18:57:17.128046,90,24,19,afternoon,web,poor,True,False
+USER_00205,3fa070af209c335f,welder,advanced,51,urban,kn,[],2025-05-27T18:57:17.128238,15,9,8,evening,ios,moderate,True,True
+USER_00206,5f7553a07cef7fa6,homestay_owner,intermediate,22,rural,en,[np.str_('te')],2025-06-21T18:57:17.128465,8,32,5,evening,ios,moderate,True,True
+USER_00207,6b03c22b6e559f6e,mason,advanced,22,rural,gu,[],2025-08-19T18:57:17.128657,5,37,8,night,web,moderate,True,True
+USER_00208,872a236f2e746f7e,mobile_repair,intermediate,63,urban,pa,"[np.str_('ml'), np.str_('bn')]",2025-11-30T18:57:17.128887,5,39,29,night,ios,moderate,True,False
+USER_00209,d8b0825e965f47f2,electrician,expert,19,urban,bn,"[np.str_('bn'), np.str_('bn')]",2025-11-26T18:57:17.129116,92,11,18,night,web,poor,True,True
+USER_00210,b9a2cad84454650d,electrician,beginner,39,urban,kn,[np.str_('kn')],2025-02-21T18:57:17.129326,57,11,55,afternoon,web,moderate,True,False
+USER_00211,2f9ad9b6c456f1de,mobile_repair,beginner,24,semi-urban,pa,"[np.str_('mr'), np.str_('mr')]",2025-11-15T18:57:17.129554,74,9,24,afternoon,ios,moderate,True,False
+USER_00212,c51ef22bf27fd28c,farmer,expert,26,semi-urban,gu,"[np.str_('bn'), np.str_('hi')]",2025-05-14T18:57:17.129803,1,11,23,morning,ios,poor,True,True
+USER_00213,8f2186b5d329f34f,mason,expert,44,urban,kn,[],2025-03-26T18:57:17.129996,87,24,18,night,web,poor,True,True
+USER_00214,48f0035a2929749e,carpenter,intermediate,37,rural,ta,[np.str_('gu')],2026-01-04T18:57:17.130205,51,42,29,afternoon,ios,moderate,True,True
+USER_00215,65290eeff849d506,homestay_owner,beginner,20,urban,hi,[],2025-05-19T18:57:17.130397,75,16,41,evening,ios,moderate,True,True
+USER_00216,fc44dc864d3cbd95,plumber,intermediate,43,urban,ta,"[np.str_('bn'), np.str_('mr')]",2025-03-29T18:57:17.130623,83,8,22,afternoon,ios,poor,True,False
+USER_00217,a19959e1de05e604,farmer,expert,54,rural,en,"[np.str_('ml'), np.str_('ta')]",2025-12-02T18:57:17.130855,20,47,13,night,android,poor,True,True
+USER_00218,081fb603e1fb39a0,carpenter,beginner,19,rural,en,[np.str_('te')],2025-08-12T18:57:17.131071,65,38,38,morning,ios,poor,True,False
+USER_00219,bccc1af8885752e7,welder,expert,64,semi-urban,gu,"[np.str_('ml'), np.str_('ml')]",2025-10-09T18:57:17.131299,48,48,21,night,web,good,True,False
+USER_00220,31d65b96ef102d14,appliance_repair,intermediate,19,urban,pa,[np.str_('bn')],2025-07-19T18:57:17.131510,33,31,40,morning,web,poor,True,False
+USER_00221,928bcc2c7c0f7b7a,mason,expert,26,semi-urban,ta,[],2025-11-21T18:57:17.131701,10,2,18,morning,ios,good,True,True
+USER_00222,626ced5665b2c253,mason,advanced,54,semi-urban,gu,[np.str_('gu')],2025-10-11T18:57:17.131913,79,30,14,evening,ios,moderate,True,False
+USER_00223,43cbaacaa60b87ec,homestay_owner,expert,52,semi-urban,te,"[np.str_('te'), np.str_('gu')]",2025-06-01T18:57:17.132145,35,13,47,evening,android,moderate,True,False
+USER_00224,174966d7646bd8e5,homestay_owner,intermediate,35,urban,bn,[],2025-12-19T18:57:17.132337,51,0,48,evening,ios,good,True,True
+USER_00225,24b20dc29976dacb,welder,intermediate,34,urban,mr,[],2025-11-15T18:57:17.132526,99,25,40,night,web,good,True,True
+USER_00226,a2edac66ec2a5a41,farmer,advanced,55,semi-urban,bn,[],2025-05-10T18:57:17.132717,82,38,55,morning,web,moderate,True,False
+USER_00227,304d18fad73a8a9d,carpenter,beginner,53,urban,te,"[np.str_('mr'), np.str_('gu')]",2025-04-15T18:57:17.132944,40,39,11,morning,android,poor,True,True
+USER_00228,d2073b5116dcaa60,electrician,advanced,28,semi-urban,pa,"[np.str_('hi'), np.str_('pa')]",2025-07-06T18:57:17.133177,42,24,59,night,android,good,True,True
+USER_00229,9bde70dad050dbfb,electrician,advanced,64,semi-urban,kn,[],2025-12-06T18:57:17.133372,68,24,34,morning,android,poor,True,False
+USER_00230,f169523609f13b80,mobile_repair,expert,54,semi-urban,gu,[np.str_('kn')],2025-08-13T18:57:17.133584,57,2,12,morning,web,moderate,True,True
+USER_00231,04f44466e9cd63bc,farmer,intermediate,55,rural,te,"[np.str_('gu'), np.str_('ta')]",2025-06-04T18:57:17.134258,88,36,26,afternoon,android,poor,True,True
+USER_00232,2b179f0008ca5d20,electrician,intermediate,51,urban,gu,[],2026-01-18T18:57:17.135027,6,34,34,night,ios,poor,True,False
+USER_00233,2dba8a8f2a9424e5,mobile_repair,expert,18,semi-urban,ml,"[np.str_('pa'), np.str_('ml')]",2025-09-09T18:57:17.137038,11,5,13,afternoon,ios,moderate,True,False
+USER_00234,4fbe308e5df50063,plumber,expert,34,urban,te,"[np.str_('te'), np.str_('mr')]",2025-11-28T18:57:17.137727,17,29,24,morning,ios,poor,True,False
+USER_00235,163ef47fd16f5517,artisan,advanced,28,urban,te,[np.str_('te')],2026-01-16T18:57:17.138060,19,48,22,night,ios,good,True,True
+USER_00236,a897225f161adb05,electrician,beginner,39,semi-urban,te,[np.str_('bn')],2025-07-12T18:57:17.138695,59,3,11,afternoon,ios,poor,True,False
+USER_00237,3ab7b05b49d33005,welder,intermediate,36,urban,mr,"[np.str_('pa'), np.str_('ta')]",2025-04-19T18:57:17.139247,31,43,21,afternoon,web,good,True,False
+USER_00238,221cae7a480f4a59,mobile_repair,expert,44,rural,mr,"[np.str_('gu'), np.str_('en')]",2025-08-27T18:57:17.139536,7,34,39,afternoon,android,moderate,True,True
+USER_00239,84e7437ab4f3fde8,appliance_repair,intermediate,60,urban,hi,[],2025-10-20T18:57:17.139737,47,49,54,afternoon,web,good,True,True
+USER_00240,62056e61adbf1ae1,farmer,expert,62,rural,ta,"[np.str_('gu'), np.str_('hi')]",2025-11-27T18:57:17.140244,31,26,7,night,web,good,True,True
+USER_00241,f67faa7c70620cf5,carpenter,expert,39,urban,gu,"[np.str_('te'), np.str_('bn')]",2025-04-26T18:57:17.140483,63,6,55,evening,android,moderate,True,False
+USER_00242,2ede14b615de4256,mason,intermediate,45,rural,te,[],2025-11-13T18:57:17.140689,45,13,26,morning,ios,good,True,False
+USER_00243,3939ff3966f4797e,mobile_repair,advanced,23,urban,ml,[],2025-07-18T18:57:17.141126,16,34,51,afternoon,web,poor,True,False
+USER_00244,048c640b2b62598a,homestay_owner,advanced,59,semi-urban,ta,[np.str_('te')],2026-01-25T18:57:17.141610,58,41,7,evening,android,good,True,True
+USER_00245,bf5c1d8c2ce028c1,electrician,intermediate,45,semi-urban,mr,[],2025-06-05T18:57:17.141823,58,32,12,night,android,moderate,True,False
+USER_00246,ca96fecdb9ea86be,homestay_owner,advanced,37,rural,pa,[np.str_('ta')],2025-02-15T18:57:17.142046,50,39,43,morning,web,poor,True,False
+USER_00247,b123f164e71a490c,mason,advanced,19,semi-urban,gu,"[np.str_('ta'), np.str_('kn')]",2025-08-18T18:57:17.142285,69,6,49,night,web,good,True,True
+USER_00248,1252b9355aa1ca96,mason,intermediate,48,semi-urban,en,[np.str_('pa')],2025-06-14T18:57:17.142502,14,42,29,morning,web,good,True,True
+USER_00249,4bc9af062fd6a14b,appliance_repair,beginner,20,urban,pa,[],2025-08-02T18:57:17.142697,11,2,17,evening,ios,moderate,True,False
+USER_00250,9c458114e1fbeb1e,welder,expert,31,urban,mr,[np.str_('pa')],2025-10-06T18:57:17.142908,35,7,7,afternoon,android,moderate,True,False
+USER_00251,7ee12bf2b865d7dd,welder,beginner,59,urban,en,[np.str_('ml')],2025-05-02T18:57:17.143125,20,20,55,evening,web,good,True,True
+USER_00252,eddc0e7c98c35e4d,carpenter,advanced,64,rural,pa,"[np.str_('kn'), np.str_('en')]",2025-12-11T18:57:17.143362,7,6,54,afternoon,ios,poor,True,True
+USER_00253,b63243aad97edebc,plumber,beginner,18,semi-urban,pa,[np.str_('mr')],2025-04-05T18:57:17.143575,25,31,6,night,ios,poor,True,True
+USER_00254,62d28937b9ffe0d2,plumber,advanced,35,urban,bn,[np.str_('gu')],2025-12-28T18:57:17.143791,38,28,24,night,web,poor,True,True
+USER_00255,0cf6f5daa445377a,carpenter,intermediate,50,semi-urban,hi,[],2025-05-10T18:57:17.143983,5,35,48,night,android,poor,True,True
+USER_00256,5f79d27590017db9,mason,expert,22,semi-urban,ml,"[np.str_('pa'), np.str_('bn')]",2025-06-27T18:57:17.144211,32,10,19,evening,web,poor,True,True
+USER_00257,c895bb90ee1abdea,artisan,expert,21,urban,kn,"[np.str_('pa'), np.str_('mr')]",2025-10-08T18:57:17.144448,75,45,24,evening,android,good,True,True
+USER_00258,980b1354dbe20445,electrician,advanced,31,rural,te,[],2025-05-16T18:57:17.144642,13,34,12,afternoon,ios,good,True,True
+USER_00259,74a09d5c063e9e67,electrician,expert,45,rural,bn,[],2025-02-18T18:57:17.144833,29,45,40,afternoon,ios,moderate,True,True
+USER_00260,9012d17a3634a959,mobile_repair,intermediate,52,urban,ml,[],2025-05-22T18:57:17.145030,3,10,44,night,android,poor,True,False
+USER_00261,182f9e550d07390a,artisan,beginner,43,rural,mr,"[np.str_('pa'), np.str_('te')]",2025-12-12T18:57:17.145260,46,24,57,night,ios,poor,True,False
+USER_00262,358ff962f2eb89df,carpenter,expert,62,urban,ml,[],2025-05-06T18:57:17.145458,49,37,18,afternoon,web,poor,True,False
+USER_00263,9084fd8dbea1ad2a,appliance_repair,intermediate,26,urban,ta,[np.str_('mr')],2025-10-20T18:57:17.145673,1,21,33,night,android,poor,True,False
+USER_00264,7fb668a8bb29fede,mason,expert,29,rural,gu,"[np.str_('te'), np.str_('pa')]",2025-07-13T18:57:17.145902,85,9,44,evening,android,good,True,False
+USER_00265,e712925df321bb95,carpenter,advanced,23,rural,en,"[np.str_('ml'), np.str_('en')]",2026-01-20T18:57:17.146131,78,49,35,afternoon,android,good,True,True
+USER_00266,4d770441ceff2f03,mobile_repair,advanced,63,urban,te,[],2025-06-19T18:57:17.146322,48,13,12,afternoon,android,good,True,False
+USER_00267,398ef3dd843b8916,carpenter,intermediate,51,urban,pa,[np.str_('ml')],2025-07-05T18:57:17.146534,99,8,52,morning,android,poor,True,True
+USER_00268,9da6edcac2d8a86b,farmer,beginner,24,semi-urban,te,[np.str_('ml')],2025-06-01T18:57:17.146748,40,9,19,evening,ios,moderate,True,True
+USER_00269,169638e63a93c40f,homestay_owner,intermediate,52,urban,en,[np.str_('bn')],2025-06-11T18:57:17.146965,8,12,23,afternoon,android,good,True,True
+USER_00270,1092ec3eb39ff675,electrician,intermediate,58,urban,hi,"[np.str_('te'), np.str_('ml')]",2025-12-15T18:57:17.147193,53,37,24,night,web,poor,True,True
+USER_00271,79e0caca96673a31,appliance_repair,intermediate,23,rural,kn,[],2025-07-19T18:57:17.147384,44,29,16,morning,ios,moderate,True,True
+USER_00272,7003893d55bde51a,electrician,expert,52,rural,mr,[],2025-10-08T18:57:17.147580,75,47,52,night,android,moderate,True,False
+USER_00273,fae30613f8f86ce3,mason,intermediate,53,semi-urban,bn,[],2025-05-12T18:57:17.147769,72,49,47,morning,web,poor,True,False
+USER_00274,547641c1ed07b9a0,plumber,expert,27,semi-urban,bn,[np.str_('hi')],2025-10-05T18:57:17.147982,16,44,59,evening,ios,moderate,True,True
+USER_00275,8152f34bce71322f,mobile_repair,beginner,60,rural,hi,[np.str_('en')],2025-12-30T18:57:17.148194,76,7,19,morning,android,poor,True,True
+USER_00276,6dfc1ab36f8ada47,plumber,advanced,46,urban,bn,[],2025-04-20T18:57:17.148390,85,26,48,afternoon,web,good,True,False
+USER_00277,aab148a58f72d81d,plumber,advanced,57,semi-urban,en,[],2025-12-13T18:57:17.148580,78,46,22,night,android,moderate,True,True
+USER_00278,2275e0c4cce0100b,plumber,expert,25,rural,hi,[],2025-07-06T18:57:17.148793,96,3,16,morning,android,good,True,True
+USER_00279,a32fd54520856150,plumber,expert,47,semi-urban,mr,"[np.str_('ml'), np.str_('en')]",2025-12-24T18:57:17.149025,90,8,29,evening,web,moderate,True,True
+USER_00280,a2059ab914ec3217,mason,beginner,45,rural,kn,"[np.str_('en'), np.str_('mr')]",2026-01-25T18:57:17.149261,55,11,17,night,web,moderate,True,True
+USER_00281,d4c93363a38116f7,mobile_repair,advanced,21,semi-urban,bn,[],2026-01-02T18:57:17.149455,93,42,39,night,android,moderate,True,True
+USER_00282,27f5c005a4771399,plumber,intermediate,51,rural,te,"[np.str_('mr'), np.str_('kn')]",2026-01-26T18:57:17.149688,61,47,15,night,web,moderate,True,False
+USER_00283,132df484a0171720,electrician,intermediate,57,rural,kn,"[np.str_('hi'), np.str_('bn')]",2025-09-06T18:57:17.149918,63,37,49,night,web,poor,True,False
+USER_00284,f18115362b839aec,mason,intermediate,45,semi-urban,te,[],2025-11-05T18:57:17.150111,75,44,31,night,android,moderate,True,False
+USER_00285,b264b99eae415c1c,homestay_owner,beginner,23,urban,hi,"[np.str_('ml'), np.str_('mr')]",2025-04-02T18:57:17.150954,37,6,47,night,ios,good,True,True
+USER_00286,0fd33415cc45c6fc,artisan,intermediate,25,urban,kn,[np.str_('pa')],2025-08-28T18:57:17.152157,58,40,41,night,android,good,True,False
+USER_00287,e5af82d8320a3169,welder,advanced,29,semi-urban,te,[np.str_('bn')],2025-03-30T18:57:17.153274,21,18,52,evening,android,poor,True,True
+USER_00288,0ec24adf5d0caf04,appliance_repair,advanced,23,urban,en,"[np.str_('te'), np.str_('gu')]",2025-07-02T18:57:17.153898,10,4,50,night,ios,moderate,True,False
+USER_00289,7968b38a67710169,carpenter,advanced,53,semi-urban,te,[],2025-08-06T18:57:17.154369,97,30,13,night,android,good,True,False
+USER_00290,9da924f0ceb12f70,artisan,beginner,39,rural,en,[np.str_('bn')],2025-06-09T18:57:17.154794,14,47,15,afternoon,android,moderate,True,False
+USER_00291,484d2ae04dc9c65f,artisan,beginner,48,urban,mr,[],2025-09-22T18:57:17.155358,53,42,45,afternoon,web,moderate,True,False
+USER_00292,c9e560a37cc13245,artisan,beginner,50,rural,ta,"[np.str_('mr'), np.str_('hi')]",2025-05-18T18:57:17.155837,21,33,48,morning,web,good,True,True
+USER_00293,234152f02daf178c,mobile_repair,intermediate,32,semi-urban,mr,[np.str_('ml')],2025-05-30T18:57:17.156265,84,7,22,evening,android,poor,True,True
+USER_00294,2ce35662509b1c9f,farmer,advanced,30,semi-urban,te,"[np.str_('kn'), np.str_('bn')]",2025-04-21T18:57:17.156791,58,35,37,morning,ios,moderate,True,True
+USER_00295,3c62b4f872926a4b,artisan,advanced,53,rural,kn,"[np.str_('te'), np.str_('en')]",2025-03-02T18:57:17.157209,36,1,30,night,ios,good,True,False
+USER_00296,b560233dada9eb03,plumber,intermediate,47,rural,bn,"[np.str_('pa'), np.str_('kn')]",2025-07-26T18:57:17.157506,27,23,35,morning,ios,moderate,True,False
+USER_00297,54b587fcc0c68e41,farmer,expert,34,semi-urban,bn,[np.str_('en')],2025-05-05T18:57:17.157737,72,17,17,night,ios,moderate,True,False
+USER_00298,95632cfe5d7c976c,appliance_repair,intermediate,62,rural,ta,[np.str_('en')],2025-08-26T18:57:17.157953,29,7,46,night,web,good,True,True
+USER_00299,0d82087ced7e2b86,artisan,beginner,25,rural,ta,[],2025-03-18T18:57:17.158148,91,21,35,night,android,moderate,True,False
+USER_00300,0cbf5aaea2e03e75,welder,intermediate,30,rural,gu,"[np.str_('gu'), np.str_('pa')]",2025-12-11T18:57:17.158379,84,34,42,afternoon,ios,poor,True,True
+USER_00301,90f91ec370437411,electrician,intermediate,50,semi-urban,bn,[np.str_('en')],2025-03-08T18:57:17.158590,29,19,36,afternoon,ios,moderate,True,False
+USER_00302,5f48d5a485b3a820,artisan,expert,25,urban,gu,[np.str_('ta')],2025-12-08T18:57:17.158816,94,14,36,night,web,good,True,False
+USER_00303,33d3f0d010691492,artisan,advanced,52,rural,hi,"[np.str_('te'), np.str_('ml')]",2025-09-04T18:57:17.159051,68,14,5,night,web,good,True,True
+USER_00304,378ab72bba0a62ef,mason,expert,20,semi-urban,en,"[np.str_('ml'), np.str_('ml')]",2025-10-31T18:57:17.159281,32,24,45,morning,ios,poor,True,False
+USER_00305,8b082d45e3c3624f,artisan,intermediate,28,rural,hi,"[np.str_('mr'), np.str_('ml')]",2025-03-04T18:57:17.159510,47,33,8,evening,ios,poor,True,True
+USER_00306,86272112941d6111,carpenter,advanced,63,urban,hi,"[np.str_('en'), np.str_('gu')]",2025-03-26T18:57:17.159739,93,0,31,morning,android,moderate,True,True
+USER_00307,ade03b0aec916576,homestay_owner,expert,32,semi-urban,ta,[],2025-12-09T18:57:17.159934,72,44,42,afternoon,android,poor,True,False
+USER_00308,2ffa8b832b0532db,homestay_owner,beginner,63,rural,bn,[np.str_('gu')],2025-11-29T18:57:17.160152,73,27,11,morning,android,poor,True,True
+USER_00309,819bd4c81d8273f5,electrician,expert,43,urban,ml,"[np.str_('hi'), np.str_('pa')]",2025-10-22T18:57:17.160382,68,28,44,night,android,poor,True,False
+USER_00310,1cac70ce7f67adee,homestay_owner,intermediate,20,rural,hi,"[np.str_('te'), np.str_('kn')]",2025-11-29T18:57:17.160609,64,38,35,afternoon,ios,poor,True,False
+USER_00311,58136ba842ba4dd7,mason,expert,20,urban,gu,"[np.str_('ml'), np.str_('te')]",2026-01-09T18:57:17.160836,12,18,55,night,android,good,True,True
+USER_00312,36f9bb367016ee7d,artisan,intermediate,45,semi-urban,kn,"[np.str_('kn'), np.str_('hi')]",2025-06-14T18:57:17.161067,25,49,6,afternoon,web,moderate,True,True
+USER_00313,977a00c0183e2672,appliance_repair,expert,47,semi-urban,hi,[np.str_('mr')],2025-06-04T18:57:17.161281,41,47,51,afternoon,web,poor,True,True
+USER_00314,c4daee2e39a3e7d9,homestay_owner,beginner,44,rural,ta,"[np.str_('en'), np.str_('en')]",2025-03-25T18:57:17.161511,35,12,44,afternoon,android,poor,True,True
+USER_00315,43904b7417f15276,artisan,intermediate,61,semi-urban,bn,[],2025-05-14T18:57:17.161703,93,9,46,afternoon,ios,poor,True,True
+USER_00316,5e494b24c73e4baa,welder,advanced,64,rural,kn,"[np.str_('gu'), np.str_('bn')]",2025-10-21T18:57:17.161929,33,32,20,afternoon,ios,poor,True,True
+USER_00317,80d9aaefbd79b000,plumber,advanced,27,semi-urban,ml,[np.str_('ml')],2026-02-06T18:57:17.162138,38,24,40,afternoon,web,good,True,True
+USER_00318,a632bb76a484216f,plumber,expert,27,rural,bn,[np.str_('ta')],2025-08-10T18:57:17.162352,72,26,54,morning,ios,good,True,True
+USER_00319,00346717be3f408f,plumber,intermediate,56,semi-urban,kn,"[np.str_('bn'), np.str_('en')]",2025-06-21T18:57:17.162579,42,13,49,morning,web,good,True,False
+USER_00320,4234a9742893fd64,farmer,expert,28,semi-urban,te,[],2025-07-19T18:57:17.162769,43,39,45,afternoon,web,moderate,True,False
+USER_00321,93d15bc8436d09b4,electrician,expert,35,urban,kn,"[np.str_('ml'), np.str_('en')]",2025-04-15T18:57:17.162994,17,19,17,evening,ios,good,True,False
+USER_00322,6f1405d3995f5945,plumber,expert,52,rural,mr,[np.str_('ml')],2025-07-28T18:57:17.163207,28,9,39,evening,android,good,True,True
+USER_00323,012461bce9afb204,farmer,expert,46,rural,pa,"[np.str_('mr'), np.str_('bn')]",2025-06-21T18:57:17.163435,2,6,51,afternoon,web,good,True,False
+USER_00324,cd8c97beaea85e1d,electrician,beginner,18,urban,pa,"[np.str_('bn'), np.str_('bn')]",2025-05-25T18:57:17.163675,76,10,54,evening,android,good,True,False
+USER_00325,8cef84b303d052b5,welder,expert,50,urban,te,"[np.str_('mr'), np.str_('pa')]",2025-08-02T18:57:17.163903,45,43,24,night,ios,poor,True,True
+USER_00326,f0cc50ace651fd70,homestay_owner,beginner,20,urban,en,[np.str_('pa')],2025-10-09T18:57:17.164115,31,0,37,night,web,moderate,True,True
+USER_00327,8a79018053427e93,carpenter,beginner,26,rural,mr,[],2026-01-14T18:57:17.164305,34,27,46,evening,ios,poor,True,False
+USER_00328,08da8d9ad4ad6f32,carpenter,expert,41,rural,pa,[],2025-03-14T18:57:17.164493,69,21,41,morning,ios,moderate,True,False
+USER_00329,76032536b60cd4a6,mason,beginner,38,rural,te,[],2025-11-28T18:57:17.164685,10,22,7,night,android,moderate,True,False
+USER_00330,5ea75cafa032de67,artisan,advanced,21,rural,ml,[],2025-06-09T18:57:17.164875,18,15,33,morning,android,good,True,False
+USER_00331,3af4efb4f058786c,mason,beginner,38,urban,en,[np.str_('bn')],2025-11-03T18:57:17.165082,35,7,35,morning,ios,poor,True,False
+USER_00332,a5d16484a372878a,appliance_repair,intermediate,31,urban,mr,[],2025-03-01T18:57:17.165277,16,40,51,evening,android,moderate,True,True
+USER_00333,8d675564361b994d,mobile_repair,beginner,22,urban,mr,[np.str_('pa')],2025-03-16T18:57:17.165486,98,41,12,afternoon,ios,moderate,True,True
+USER_00334,6f8340a861ec4458,welder,advanced,60,rural,en,"[np.str_('kn'), np.str_('hi')]",2025-06-02T18:57:17.165714,81,38,48,afternoon,android,poor,True,False
+USER_00335,33c767a5587a4c07,appliance_repair,expert,35,semi-urban,kn,"[np.str_('kn'), np.str_('te')]",2025-10-24T18:57:17.165945,28,19,13,night,ios,moderate,True,False
+USER_00336,45d1d2d436c2f4b2,farmer,advanced,50,urban,kn,"[np.str_('en'), np.str_('mr')]",2025-12-23T18:57:17.166171,55,8,43,evening,web,poor,True,True
+USER_00337,8f6ac5de544e4a18,mobile_repair,expert,47,semi-urban,kn,[],2025-07-07T18:57:17.166360,94,25,23,afternoon,android,good,True,False
+USER_00338,99e1750ca881067a,appliance_repair,advanced,64,rural,ml,"[np.str_('gu'), np.str_('hi')]",2025-05-28T18:57:17.166584,42,9,51,night,android,moderate,True,True
+USER_00339,8a37ca20cfcae508,plumber,beginner,31,rural,ta,[np.str_('hi')],2025-08-03T18:57:17.166801,75,14,37,night,android,poor,True,False
+USER_00340,15ac9bb4bc064d12,plumber,intermediate,20,semi-urban,kn,[],2025-08-07T18:57:17.167440,94,3,10,night,ios,poor,True,True
+USER_00341,b1dd865ebf987333,appliance_repair,beginner,63,urban,gu,[],2025-04-04T18:57:17.167710,49,29,20,morning,android,good,True,True
+USER_00342,5d2eaf5df0e3250c,appliance_repair,advanced,61,urban,ml,"[np.str_('ta'), np.str_('en')]",2025-08-11T18:57:17.168045,40,0,24,evening,android,moderate,True,False
+USER_00343,053d63c6f89c16a9,carpenter,intermediate,50,urban,kn,[],2025-11-14T18:57:17.168776,52,38,33,night,ios,moderate,True,False
+USER_00344,e9d955c6ac4f2461,appliance_repair,intermediate,33,urban,ta,[np.str_('pa')],2026-02-08T18:57:17.169448,19,22,8,evening,web,poor,True,True
+USER_00345,913177078ded426c,electrician,advanced,25,semi-urban,hi,[],2026-01-29T18:57:17.169684,50,5,5,evening,ios,moderate,True,False
+USER_00346,babf9988918835df,mason,advanced,29,urban,bn,[],2026-01-03T18:57:17.169913,75,38,57,evening,ios,good,True,False
+USER_00347,e8b647334d8a100f,mobile_repair,intermediate,42,urban,en,[np.str_('te')],2025-06-16T18:57:17.170185,65,6,5,evening,web,poor,True,True
+USER_00348,204762db8e1929b9,carpenter,intermediate,35,urban,te,"[np.str_('gu'), np.str_('mr')]",2025-03-21T18:57:17.170456,72,34,35,afternoon,android,moderate,True,False
+USER_00349,3517642acc8f72b4,farmer,expert,59,urban,en,"[np.str_('kn'), np.str_('mr')]",2025-05-13T18:57:17.170684,61,8,30,evening,android,poor,True,True
+USER_00350,2c2fd89669c30674,artisan,intermediate,45,urban,mr,"[np.str_('hi'), np.str_('mr')]",2026-01-17T18:57:17.170910,1,18,24,afternoon,ios,poor,True,True
+USER_00351,51d6e25b994bb7d4,appliance_repair,intermediate,26,rural,te,"[np.str_('ta'), np.str_('kn')]",2025-07-16T18:57:17.171162,1,18,34,morning,ios,poor,True,False
+USER_00352,cff1ccd6ee745756,mobile_repair,beginner,25,rural,ml,"[np.str_('ml'), np.str_('hi')]",2025-05-28T18:57:17.171405,1,6,18,morning,web,poor,True,False
+USER_00353,8c0e9e6667639fd0,appliance_repair,expert,27,rural,hi,[],2025-04-15T18:57:17.171599,87,2,40,evening,ios,good,True,False
+USER_00354,def195be0310da02,carpenter,advanced,24,semi-urban,hi,"[np.str_('ml'), np.str_('te')]",2025-12-07T18:57:17.171826,69,2,54,afternoon,ios,moderate,True,True
+USER_00355,2790b7cb38b06b9d,plumber,beginner,39,semi-urban,pa,[np.str_('te')],2025-08-08T18:57:17.172041,9,44,54,evening,android,good,True,False
+USER_00356,f8f2327ab5c656b8,artisan,beginner,44,semi-urban,gu,[],2026-01-28T18:57:17.172462,25,34,8,morning,android,moderate,True,False
+USER_00357,b29f82fa3cb25784,artisan,advanced,30,semi-urban,gu,[],2026-01-24T18:57:17.172830,77,1,16,evening,web,moderate,True,False
+USER_00358,34311fee11bf3fe7,mason,expert,49,semi-urban,mr,"[np.str_('gu'), np.str_('hi')]",2025-05-01T18:57:17.173481,79,46,52,afternoon,ios,poor,True,False
+USER_00359,aeb36dad39827d34,carpenter,expert,39,rural,te,"[np.str_('ta'), np.str_('gu')]",2025-10-10T18:57:17.174047,59,16,45,afternoon,android,moderate,True,False
+USER_00360,183e542e479e5026,farmer,advanced,34,urban,en,[np.str_('kn')],2025-07-04T18:57:17.174536,47,31,53,evening,web,moderate,True,False
+USER_00361,5779fbb5f2d00a68,homestay_owner,expert,39,rural,te,[],2025-11-14T18:57:17.174760,97,23,17,morning,web,good,True,True
+USER_00362,abe9f68920d30e86,homestay_owner,advanced,19,urban,hi,[np.str_('hi')],2025-05-16T18:57:17.175167,12,33,6,night,ios,poor,True,False
+USER_00363,a61fb30e1ad5ada6,electrician,advanced,47,urban,en,[np.str_('hi')],2025-08-28T18:57:17.175942,9,40,33,afternoon,ios,moderate,True,False
+USER_00364,214e28cff27ac2e1,mobile_repair,expert,54,semi-urban,en,[np.str_('kn')],2025-04-21T18:57:17.176428,49,3,16,morning,ios,poor,True,False
+USER_00365,7857d75671a5e3e4,carpenter,advanced,40,urban,ml,[np.str_('kn')],2025-07-05T18:57:17.176771,69,38,25,evening,ios,poor,True,False
+USER_00366,13c11925aae24656,farmer,beginner,18,rural,gu,"[np.str_('te'), np.str_('te')]",2025-02-27T18:57:17.177412,60,7,54,night,ios,poor,True,True
+USER_00367,68e0f02ac3e030eb,homestay_owner,beginner,52,rural,pa,"[np.str_('pa'), np.str_('en')]",2025-06-13T18:57:17.177893,57,14,6,night,web,poor,True,False
+USER_00368,aa853e635969a400,plumber,expert,38,semi-urban,kn,[np.str_('mr')],2025-11-07T18:57:17.178381,76,28,58,evening,web,poor,True,True
+USER_00369,d664e204592156d6,mobile_repair,intermediate,64,urban,ta,"[np.str_('te'), np.str_('kn')]",2025-03-31T18:57:17.178831,17,39,58,morning,ios,poor,True,False
+USER_00370,468c30ae55398699,artisan,expert,26,urban,ta,"[np.str_('mr'), np.str_('bn')]",2025-04-25T18:57:17.179131,4,27,8,afternoon,ios,poor,True,False
+USER_00371,53793421d0e4e367,mobile_repair,beginner,34,rural,ta,[np.str_('gu')],2025-08-07T18:57:17.179383,64,7,37,morning,ios,good,True,True
+USER_00372,bdf02369705be2e7,plumber,expert,56,rural,ml,"[np.str_('te'), np.str_('hi')]",2025-06-14T18:57:17.179626,12,48,39,afternoon,android,good,True,True
+USER_00373,16f0eb07ec9391e0,welder,advanced,47,urban,pa,[np.str_('kn')],2025-05-07T18:57:17.179838,65,21,53,morning,web,poor,True,True
+USER_00374,f945ba2cc16a2be9,carpenter,intermediate,56,semi-urban,mr,[],2025-08-12T18:57:17.180037,75,21,23,morning,android,moderate,True,False
+USER_00375,b04c298ae90da3de,electrician,advanced,48,urban,gu,"[np.str_('en'), np.str_('ml')]",2025-08-30T18:57:17.180268,32,8,31,evening,web,poor,True,True
+USER_00376,e0c1b7080134c680,carpenter,expert,24,semi-urban,bn,[],2026-01-05T18:57:17.180460,39,28,6,night,android,moderate,True,False
+USER_00377,55a8c1c70006adb4,farmer,advanced,54,rural,ta,"[np.str_('mr'), np.str_('hi')]",2025-10-29T18:57:17.180685,43,25,14,evening,ios,good,True,True
+USER_00378,b8bf83820453bbb3,welder,beginner,19,urban,bn,[],2025-08-25T18:57:17.180875,79,13,23,afternoon,ios,moderate,True,False
+USER_00379,e2297dafce2eaf7e,plumber,expert,28,semi-urban,mr,[np.str_('gu')],2025-07-15T18:57:17.181082,23,13,51,evening,android,good,True,False
+USER_00380,8067fb0ba0e4a1b0,mobile_repair,advanced,33,urban,bn,[np.str_('hi')],2025-06-18T18:57:17.181297,62,31,39,night,web,poor,True,True
+USER_00381,865782cb293bc042,plumber,expert,23,urban,ta,[np.str_('mr')],2025-04-28T18:57:17.181504,8,49,24,morning,ios,poor,True,True
+USER_00382,13523a95ea398119,mason,advanced,29,urban,hi,"[np.str_('gu'), np.str_('mr')]",2025-09-12T18:57:17.181736,96,3,52,afternoon,ios,moderate,True,True
+USER_00383,63f23ae86ddfbafe,appliance_repair,expert,63,urban,hi,"[np.str_('te'), np.str_('bn')]",2025-09-12T18:57:17.181963,73,23,15,morning,ios,moderate,True,True
+USER_00384,ee1b6379f7263f6e,appliance_repair,intermediate,37,urban,ta,[],2025-10-29T18:57:17.182154,49,12,8,afternoon,ios,good,True,False
+USER_00385,feed1e2e31730ad6,farmer,intermediate,41,semi-urban,kn,"[np.str_('en'), np.str_('pa')]",2025-12-04T18:57:17.182381,37,42,57,evening,web,moderate,True,False
+USER_00386,4f22ac060f26e275,carpenter,intermediate,29,rural,gu,"[np.str_('te'), np.str_('bn')]",2025-05-23T18:57:17.182608,1,46,13,afternoon,ios,moderate,True,False
+USER_00387,e72b6485041b3259,carpenter,advanced,48,rural,ta,"[np.str_('en'), np.str_('en')]",2026-01-25T18:57:17.182844,50,3,55,night,android,moderate,True,False
+USER_00388,6db241fd02342cd2,carpenter,advanced,48,rural,mr,[np.str_('hi')],2025-07-03T18:57:17.183053,53,16,17,evening,ios,poor,True,False
+USER_00389,c6a08ece940bebd7,appliance_repair,expert,59,rural,pa,[np.str_('hi')],2025-08-07T18:57:17.183261,51,45,56,afternoon,web,good,True,True
+USER_00390,d98792e23d2723b0,mason,beginner,25,urban,te,"[np.str_('en'), np.str_('gu')]",2026-01-06T18:57:17.183487,10,25,18,morning,ios,good,True,False
+USER_00391,1a93026d2f3c0ef0,welder,expert,35,rural,ml,"[np.str_('ta'), np.str_('en')]",2025-09-18T18:57:17.184211,48,15,45,evening,web,moderate,True,True
+USER_00392,2a9498d62b08a60a,artisan,beginner,29,urban,te,"[np.str_('en'), np.str_('mr')]",2025-10-06T18:57:17.185304,85,40,32,afternoon,android,poor,True,True
+USER_00393,ca46cae486cea42b,welder,beginner,26,semi-urban,mr,"[np.str_('te'), np.str_('hi')]",2025-04-01T18:57:17.185630,86,34,50,evening,web,moderate,True,False
+USER_00394,4558e42c57c895e3,appliance_repair,expert,22,urban,mr,[],2025-08-15T18:57:17.185833,9,47,26,evening,web,moderate,True,False
+USER_00395,69e8a7701e7df999,carpenter,expert,55,rural,bn,"[np.str_('ta'), np.str_('en')]",2025-08-16T18:57:17.186062,75,4,44,night,ios,poor,True,False
+USER_00396,b364f6ac4d8cd652,mobile_repair,intermediate,29,rural,hi,[],2025-10-09T18:57:17.186267,9,47,6,evening,android,good,True,False
+USER_00397,4d3578a22391dc9f,mason,intermediate,38,rural,te,[np.str_('en')],2025-03-06T18:57:17.186496,5,37,35,morning,ios,poor,True,False
+USER_00398,cb15f04fc35aa3db,appliance_repair,advanced,20,semi-urban,ta,[np.str_('bn')],2025-05-24T18:57:17.186715,75,29,28,night,web,moderate,True,False
+USER_00399,6c6ba64e0fcd790f,plumber,expert,26,semi-urban,gu,"[np.str_('te'), np.str_('mr')]",2025-06-26T18:57:17.186942,68,14,5,evening,web,moderate,True,False
+USER_00400,25e659da985bf3ba,carpenter,advanced,23,semi-urban,te,"[np.str_('te'), np.str_('bn')]",2026-02-08T18:57:17.187168,57,19,42,morning,android,moderate,True,False
+USER_00401,eaa9c4394a36e345,farmer,expert,22,rural,ml,[],2025-10-13T18:57:17.187360,32,7,56,evening,ios,poor,True,False
+USER_00402,d09f23e9a3d69330,appliance_repair,beginner,53,rural,ml,"[np.str_('gu'), np.str_('hi')]",2025-06-28T18:57:17.187981,84,17,6,morning,web,good,True,False
+USER_00403,d3df9499df5000ff,welder,advanced,19,urban,ml,"[np.str_('mr'), np.str_('bn')]",2025-05-27T18:57:17.188550,56,45,59,morning,android,moderate,True,False
+USER_00404,8c3ffa09b49143ae,mason,expert,48,rural,bn,"[np.str_('gu'), np.str_('hi')]",2025-09-24T18:57:17.189029,14,15,5,evening,web,good,True,False
+USER_00405,9200fce1d7bc87b0,homestay_owner,expert,34,urban,kn,"[np.str_('hi'), np.str_('bn')]",2025-02-19T18:57:17.189536,22,25,43,evening,web,moderate,True,True
+USER_00406,25ec61c0cf13623f,appliance_repair,advanced,24,semi-urban,ml,[],2025-08-15T18:57:17.189873,76,29,54,evening,android,good,True,False
+USER_00407,50fdba06be18de1a,appliance_repair,intermediate,22,urban,kn,[np.str_('gu')],2025-05-04T18:57:17.190353,41,28,43,night,android,moderate,True,False
+USER_00408,07bc8e3703ee1554,electrician,expert,47,semi-urban,gu,[np.str_('mr')],2025-10-26T18:57:17.191303,14,27,26,morning,web,good,True,False
+USER_00409,4398b438e65a48aa,mason,beginner,62,rural,ta,[],2025-07-09T18:57:17.191818,54,11,48,morning,android,moderate,True,False
+USER_00410,95f336258f94c03e,artisan,expert,31,urban,te,[np.str_('ml')],2025-05-12T18:57:17.192372,36,48,22,morning,ios,good,True,False
+USER_00411,21960b02f6a6980a,appliance_repair,beginner,52,semi-urban,kn,[],2025-08-31T18:57:17.193235,50,30,17,morning,web,good,True,False
+USER_00412,68672580480e4396,appliance_repair,expert,29,urban,en,[],2025-03-05T18:57:17.193588,50,32,40,evening,web,poor,True,False
+USER_00413,e5e580adcd3db0ea,mason,expert,18,rural,gu,"[np.str_('hi'), np.str_('ta')]",2025-08-31T18:57:17.193891,88,21,17,evening,android,good,True,False
+USER_00414,52706c9db6665cac,carpenter,advanced,49,urban,bn,[np.str_('bn')],2025-03-08T18:57:17.194122,81,32,33,night,web,moderate,True,False
+USER_00415,f20c58a1f43d1c4a,farmer,advanced,25,semi-urban,kn,[np.str_('mr')],2026-01-10T18:57:17.194646,36,35,24,morning,web,poor,True,True
+USER_00416,21c46a94f0e9d30d,mason,expert,35,urban,mr,"[np.str_('hi'), np.str_('kn')]",2025-02-20T18:57:17.194945,34,20,13,morning,ios,good,True,True
+USER_00417,cb20bc110dc9248c,welder,beginner,18,rural,ta,[np.str_('hi')],2025-05-30T18:57:17.195205,24,8,53,night,android,poor,True,False
+USER_00418,2dc791655246f904,homestay_owner,advanced,59,semi-urban,te,[np.str_('ml')],2025-06-12T18:57:17.195475,32,3,57,night,android,poor,True,False
+USER_00419,0b4de171c8825fe5,welder,intermediate,55,rural,mr,[],2025-03-20T18:57:17.195698,79,18,51,evening,web,moderate,True,True
+USER_00420,712bf7fb4bccd657,plumber,advanced,24,rural,hi,"[np.str_('ml'), np.str_('te')]",2025-07-26T18:57:17.196209,64,35,15,evening,android,poor,True,False
+USER_00421,0fdc78e64228cab8,mobile_repair,advanced,30,urban,kn,"[np.str_('bn'), np.str_('mr')]",2025-10-15T18:57:17.196724,8,30,28,evening,web,moderate,True,True
+USER_00422,fcf80a66bddb7e55,mason,advanced,35,urban,en,"[np.str_('gu'), np.str_('pa')]",2025-02-18T18:57:17.196998,60,13,13,morning,android,poor,True,False
+USER_00423,1307943c6f3395c4,mason,expert,38,urban,bn,[np.str_('pa')],2025-06-09T18:57:17.197222,68,25,11,night,ios,good,True,True
+USER_00424,6eb772c01944518a,carpenter,intermediate,33,rural,gu,"[np.str_('ml'), np.str_('gu')]",2025-06-10T18:57:17.197468,49,41,13,afternoon,web,good,True,False
+USER_00425,d4d3f928b76f864c,farmer,advanced,31,semi-urban,mr,[np.str_('te')],2025-11-05T18:57:17.197690,22,8,30,night,android,moderate,True,True
+USER_00426,1c5c4e12d9f45c95,plumber,advanced,59,rural,hi,"[np.str_('mr'), np.str_('gu')]",2025-10-05T18:57:17.197923,35,38,57,morning,ios,moderate,True,True
+USER_00427,83407a7ed80d929b,electrician,beginner,30,urban,en,[np.str_('en')],2025-06-23T18:57:17.198133,89,34,9,night,android,moderate,True,False
+USER_00428,deac52495903c116,farmer,advanced,30,urban,kn,[np.str_('gu')],2025-11-15T18:57:17.198346,68,26,34,morning,ios,moderate,True,True
+USER_00429,dfdbeeb591411dc1,mobile_repair,expert,48,rural,bn,[],2025-04-19T18:57:17.198553,94,23,46,night,ios,moderate,True,False
+USER_00430,89ec6f99c108fb68,plumber,beginner,56,rural,en,[],2025-02-18T18:57:17.198750,46,38,15,afternoon,ios,moderate,True,False
+USER_00431,a303297deb557528,mobile_repair,intermediate,47,urban,ml,[],2025-03-08T18:57:17.198948,31,0,46,afternoon,ios,moderate,True,False
+USER_00432,014fa058c3f43f38,welder,intermediate,59,urban,pa,[],2025-11-24T18:57:17.199153,51,6,48,afternoon,android,moderate,True,False
+USER_00433,d1526956179700ef,homestay_owner,expert,37,rural,hi,[],2025-03-13T18:57:17.199350,64,37,50,morning,web,good,True,False
+USER_00434,374a47c3d69d6326,mason,beginner,47,urban,hi,"[np.str_('gu'), np.str_('en')]",2025-07-28T18:57:17.199584,80,14,49,evening,ios,poor,True,True
+USER_00435,d9bf77a415dc01c5,carpenter,beginner,55,semi-urban,te,"[np.str_('te'), np.str_('ml')]",2025-08-12T18:57:17.199828,16,46,48,evening,ios,good,True,True
+USER_00436,032993a33959a446,electrician,beginner,24,rural,pa,[np.str_('gu')],2025-11-14T18:57:17.200057,71,24,5,evening,web,good,True,False
+USER_00437,1bd93d39075804dd,plumber,expert,55,urban,ta,[],2025-06-01T18:57:17.200283,87,2,7,evening,web,moderate,True,False
+USER_00438,649fc210e9620019,electrician,intermediate,51,urban,te,"[np.str_('mr'), np.str_('ml')]",2025-05-11T18:57:17.202032,82,45,39,morning,web,good,True,False
+USER_00439,02c119d3bdf18176,artisan,expert,52,semi-urban,en,[],2025-10-15T18:57:17.202595,72,43,40,evening,web,moderate,True,False
+USER_00440,06576b93ca032ac6,carpenter,beginner,58,urban,kn,"[np.str_('ta'), np.str_('te')]",2025-11-03T18:57:17.202878,18,5,33,afternoon,ios,good,True,True
+USER_00441,2e26cbf6e951c561,carpenter,advanced,51,rural,en,[],2025-11-08T18:57:17.203090,79,17,51,morning,android,moderate,True,False
+USER_00442,d2a0ab8b43cd5955,appliance_repair,advanced,26,urban,en,[np.str_('kn')],2025-08-07T18:57:17.203341,32,37,26,evening,android,poor,True,False
+USER_00443,fd9ad9e55a90a04d,mobile_repair,advanced,19,rural,pa,[],2025-11-01T18:57:17.203544,17,18,33,afternoon,ios,good,True,False
+USER_00444,565616fc27245bd9,appliance_repair,advanced,27,rural,mr,"[np.str_('te'), np.str_('pa')]",2025-11-06T18:57:17.203775,76,7,54,evening,android,good,True,False
+USER_00445,9dfc1e6da572926b,plumber,expert,55,rural,te,[],2026-02-12T18:57:17.203968,69,39,30,morning,android,poor,True,True
+USER_00446,6481c5c3ae1d35eb,mobile_repair,intermediate,61,semi-urban,gu,"[np.str_('en'), np.str_('mr')]",2025-07-30T18:57:17.204198,99,15,53,evening,android,good,True,True
+USER_00447,d0d7b0683fe4eb08,homestay_owner,intermediate,55,rural,ta,[np.str_('hi')],2025-08-03T18:57:17.204443,94,31,46,afternoon,android,moderate,True,False
+USER_00448,eec2b6d32b6d830d,carpenter,advanced,61,urban,ta,[np.str_('gu')],2026-01-23T18:57:17.204657,47,46,53,night,android,good,True,False
+USER_00449,5a0cbd0f60627b6f,homestay_owner,expert,23,urban,te,[],2025-02-27T18:57:17.204849,87,37,59,afternoon,ios,poor,True,False
+USER_00450,19bc46df098fade9,homestay_owner,intermediate,33,semi-urban,ml,[],2025-08-17T18:57:17.205042,9,47,31,evening,ios,poor,True,True
+USER_00451,971d31cafd8da0b6,plumber,expert,55,rural,bn,"[np.str_('mr'), np.str_('ml')]",2025-03-31T18:57:17.205296,61,14,55,evening,web,good,True,False
+USER_00452,950baa4d95045eef,mason,advanced,61,semi-urban,en,"[np.str_('ta'), np.str_('te')]",2025-05-14T18:57:17.205536,86,28,17,morning,ios,poor,True,False
+USER_00453,582607907936ff58,farmer,intermediate,42,semi-urban,kn,[np.str_('mr')],2025-07-03T18:57:17.205753,53,20,33,evening,android,moderate,True,True
+USER_00454,7266625392d7d8aa,welder,advanced,22,urban,hi,"[np.str_('mr'), np.str_('ta')]",2025-11-12T18:57:17.205983,72,40,34,night,web,poor,True,True
+USER_00455,964be6f6ba07e06c,artisan,expert,63,semi-urban,hi,[],2025-11-06T18:57:17.206177,54,29,39,night,android,poor,True,False
+USER_00456,81fb03782befc4b0,welder,beginner,39,urban,pa,[np.str_('kn')],2025-08-07T18:57:17.206426,84,6,44,night,web,moderate,True,False
+USER_00457,3939ba5e13999d2e,mobile_repair,advanced,56,semi-urban,gu,"[np.str_('hi'), np.str_('hi')]",2025-12-25T18:57:17.206800,12,35,49,morning,web,good,True,False
+USER_00458,4cc4ab319d00d0d9,farmer,intermediate,31,rural,kn,"[np.str_('ml'), np.str_('en')]",2025-04-22T18:57:17.207338,86,32,46,morning,ios,moderate,True,True
+USER_00459,0dcae51e0cf26158,electrician,intermediate,47,rural,mr,"[np.str_('te'), np.str_('kn')]",2025-08-22T18:57:17.207880,57,7,44,morning,web,poor,True,False
+USER_00460,cf52fcfca37fa74a,homestay_owner,advanced,44,semi-urban,pa,"[np.str_('hi'), np.str_('gu')]",2025-04-30T18:57:17.208664,90,42,42,morning,ios,good,True,True
+USER_00461,1d6e6082efe4908e,plumber,advanced,53,semi-urban,kn,[],2026-01-22T18:57:17.209220,82,49,14,evening,android,good,True,True
+USER_00462,b0f7daff55fe57a2,homestay_owner,intermediate,34,rural,mr,[],2025-11-30T18:57:17.209484,94,48,56,evening,web,poor,True,False
+USER_00463,985b7917d9828937,artisan,expert,36,urban,pa,[np.str_('en')],2025-07-19T18:57:17.209844,2,25,48,afternoon,ios,good,True,False
+USER_00464,4770df310e4c54e2,artisan,expert,47,semi-urban,en,[np.str_('hi')],2026-01-01T18:57:17.210172,77,21,32,afternoon,ios,poor,True,False
+USER_00465,6a8456c860b48dde,mason,beginner,34,urban,pa,[np.str_('bn')],2025-11-12T18:57:17.210396,47,10,47,night,web,good,True,False
+USER_00466,4bb32bd57b3420fc,farmer,beginner,60,rural,kn,"[np.str_('ml'), np.str_('gu')]",2025-07-30T18:57:17.210632,51,49,53,evening,web,good,True,False
+USER_00467,187546b3055f28d2,artisan,beginner,23,urban,en,[np.str_('kn')],2025-04-26T18:57:17.211104,89,37,34,morning,android,poor,True,False
+USER_00468,456783651b1cc951,artisan,expert,26,rural,te,"[np.str_('pa'), np.str_('mr')]",2025-05-09T18:57:17.211355,85,35,7,evening,web,good,True,True
+USER_00469,15e4d9a2aed3a4f1,plumber,beginner,31,semi-urban,ml,[],2025-06-07T18:57:17.211558,49,21,9,afternoon,ios,moderate,True,True
+USER_00470,47a4bb3450844efa,plumber,beginner,21,urban,gu,[],2025-03-09T18:57:17.211920,59,3,39,afternoon,ios,good,True,False
+USER_00471,74d278f7172b248e,carpenter,expert,46,rural,gu,"[np.str_('hi'), np.str_('mr')]",2025-07-29T18:57:17.212462,94,17,22,morning,android,poor,True,False
+USER_00472,a9707a08bccea29a,electrician,advanced,48,urban,gu,[np.str_('mr')],2025-03-02T18:57:17.212719,6,19,52,morning,ios,moderate,True,True
+USER_00473,f3d5c80a03b4615a,carpenter,beginner,29,rural,pa,[],2025-09-19T18:57:17.212921,17,8,55,evening,android,poor,True,False
+USER_00474,5b0a13f87955e847,appliance_repair,intermediate,64,semi-urban,bn,[np.str_('bn')],2025-12-07T18:57:17.213139,53,12,51,evening,ios,poor,True,False
+USER_00475,9a592d271ed68461,mobile_repair,expert,52,semi-urban,bn,[np.str_('bn')],2025-12-04T18:57:17.213359,28,0,17,evening,web,good,True,True
+USER_00476,50a9476e128217df,carpenter,intermediate,53,semi-urban,te,"[np.str_('bn'), np.str_('ta')]",2025-11-30T18:57:17.213591,28,48,25,morning,ios,good,True,False
+USER_00477,cdbf761ce519e47a,electrician,beginner,52,semi-urban,pa,[np.str_('en')],2025-09-24T18:57:17.213804,49,13,47,morning,web,good,True,True
+USER_00478,11468cde2a58b073,carpenter,intermediate,26,semi-urban,ml,[],2026-01-13T18:57:17.213997,90,39,54,morning,android,good,True,False
+USER_00479,70896c0e1fcb051f,mason,advanced,20,urban,ml,[np.str_('kn')],2025-12-08T18:57:17.214208,36,6,42,afternoon,ios,poor,True,True
+USER_00480,967e3a266b9c4e15,appliance_repair,expert,52,rural,hi,[],2025-02-27T18:57:17.214401,40,34,19,morning,web,moderate,True,True
+USER_00481,de86801d4b277dc9,mobile_repair,advanced,60,semi-urban,en,"[np.str_('ta'), np.str_('te')]",2025-06-01T18:57:17.214640,7,14,34,morning,web,poor,True,True
+USER_00482,da4c1aaa1226b7f2,welder,expert,41,urban,gu,"[np.str_('gu'), np.str_('te')]",2026-01-08T18:57:17.214876,82,16,47,night,ios,poor,True,True
+USER_00483,04fec628cd980006,homestay_owner,expert,45,semi-urban,gu,"[np.str_('en'), np.str_('ta')]",2025-08-28T18:57:17.215115,27,46,26,night,ios,poor,True,False
+USER_00484,636e0c2188314169,electrician,advanced,25,rural,gu,"[np.str_('ml'), np.str_('hi')]",2025-10-28T18:57:17.215345,28,11,32,afternoon,web,poor,True,False
+USER_00485,f39f17574df654cb,welder,expert,53,rural,gu,[np.str_('en')],2025-11-02T18:57:17.215557,57,46,42,morning,android,poor,True,True
+USER_00486,9e68d383de53f137,mobile_repair,intermediate,47,urban,mr,[np.str_('ml')],2025-12-06T18:57:17.215773,90,41,23,afternoon,android,good,True,True
+USER_00487,21af82d78603353e,plumber,advanced,24,semi-urban,kn,"[np.str_('bn'), np.str_('ta')]",2026-01-26T18:57:17.216003,49,36,56,evening,ios,poor,True,True
+USER_00488,12c6f2e83684daea,electrician,expert,32,semi-urban,hi,[],2025-12-21T18:57:17.216195,91,45,11,afternoon,web,moderate,True,True
+USER_00489,029d097e8b755a7f,mobile_repair,advanced,30,semi-urban,hi,"[np.str_('gu'), np.str_('pa')]",2025-08-15T18:57:17.216423,6,44,57,evening,web,good,True,False
+USER_00490,06ca577b25c7d4bd,plumber,beginner,63,semi-urban,en,[np.str_('hi')],2025-09-22T18:57:17.216634,40,32,7,afternoon,android,good,True,False
+USER_00491,d8e0a3a4a9b4fcaa,carpenter,expert,61,semi-urban,gu,[np.str_('bn')],2025-05-27T18:57:17.217307,73,29,21,night,android,good,True,False
+USER_00492,e4aa6fc02a58749b,plumber,intermediate,44,semi-urban,pa,"[np.str_('en'), np.str_('ta')]",2025-09-08T18:57:17.217622,25,24,30,night,ios,moderate,True,False
+USER_00493,9e743696890ebb05,homestay_owner,beginner,45,urban,gu,[],2025-07-25T18:57:17.217895,8,30,16,afternoon,android,good,True,False
+USER_00494,10b8cb4058c28d78,farmer,beginner,26,rural,en,[],2025-02-21T18:57:17.218596,70,5,44,night,ios,good,True,True
+USER_00495,19aa5f684fde0858,plumber,beginner,32,urban,pa,"[np.str_('te'), np.str_('en')]",2026-01-02T18:57:17.218950,83,46,47,night,web,good,True,False
+USER_00496,86694d5bdd29d0cc,carpenter,beginner,57,rural,te,[],2025-03-31T18:57:17.219238,67,8,58,night,ios,moderate,True,True
+USER_00497,a604bd1c1ffd1bbe,farmer,intermediate,46,rural,pa,[],2025-09-12T18:57:17.219939,9,33,46,afternoon,ios,poor,True,False
+USER_00498,d45f743931251339,carpenter,expert,39,semi-urban,ml,[np.str_('ml')],2025-03-23T18:57:17.220726,19,26,21,night,android,good,True,False
+USER_00499,ea2f80fb7fd24966,homestay_owner,advanced,39,semi-urban,ml,[np.str_('ta')],2025-08-28T18:57:17.221117,90,46,38,afternoon,web,good,True,True
+USER_00500,ea4d8f2342a616f7,homestay_owner,advanced,44,semi-urban,ta,[],2025-09-04T18:57:17.221458,4,3,42,night,ios,good,True,True
+USER_00501,c4187b5e40333472,farmer,expert,33,semi-urban,bn,"[np.str_('pa'), np.str_('mr')]",2026-01-29T18:57:17.222065,59,22,18,night,web,good,True,True
+USER_00502,108b4164b3d546b3,artisan,intermediate,21,urban,hi,[np.str_('ta')],2025-06-25T18:57:17.222424,70,47,43,evening,ios,poor,True,True
+USER_00503,9f92589d2d89289b,mobile_repair,beginner,47,urban,ml,[np.str_('pa')],2025-09-06T18:57:17.222702,93,46,35,morning,android,good,True,True
+USER_00504,5e347096e728999c,electrician,expert,62,semi-urban,pa,"[np.str_('pa'), np.str_('ml')]",2026-01-22T18:57:17.223405,21,22,57,morning,ios,poor,True,False
+USER_00505,8128e461641996f6,plumber,expert,44,rural,ml,"[np.str_('bn'), np.str_('gu')]",2025-09-28T18:57:17.223871,81,6,5,evening,android,good,True,True
+USER_00506,c67ce519828410ef,artisan,advanced,18,rural,te,[],2025-04-26T18:57:17.224294,49,11,7,evening,ios,good,True,False
+USER_00507,08a4673e5f69d142,homestay_owner,expert,48,semi-urban,ta,"[np.str_('bn'), np.str_('gu')]",2026-01-10T18:57:17.224786,70,30,21,evening,web,poor,True,True
+USER_00508,84b83deb931e9109,carpenter,beginner,36,urban,bn,"[np.str_('ta'), np.str_('gu')]",2025-06-03T18:57:17.225113,84,44,45,night,ios,poor,True,False
+USER_00509,36ed49904ca57308,mason,intermediate,48,urban,gu,"[np.str_('mr'), np.str_('hi')]",2025-12-16T18:57:17.225355,60,25,18,evening,web,moderate,True,False
+USER_00510,4d560a7b249a6cef,welder,beginner,50,urban,kn,[np.str_('hi')],2025-08-28T18:57:17.225568,92,33,34,afternoon,web,poor,True,True
+USER_00511,e9e9a1bd75017118,artisan,beginner,21,semi-urban,ml,"[np.str_('pa'), np.str_('hi')]",2025-04-01T18:57:17.225799,40,26,14,evening,ios,poor,True,False
+USER_00512,87271e6bc990db1c,welder,intermediate,47,rural,ta,[np.str_('te')],2025-12-08T18:57:17.226017,34,41,26,afternoon,ios,good,True,False
+USER_00513,7d3ffa1c8830bfd3,electrician,intermediate,26,urban,mr,"[np.str_('gu'), np.str_('kn')]",2025-08-27T18:57:17.226246,70,15,40,afternoon,web,poor,True,True
+USER_00514,524f867f34a5bb02,welder,advanced,28,urban,bn,[],2025-09-14T18:57:17.226441,15,41,46,morning,web,good,True,True
+USER_00515,47fce675a5e8f750,artisan,beginner,47,semi-urban,mr,[np.str_('mr')],2025-10-20T18:57:17.226655,31,11,40,evening,web,good,True,False
+USER_00516,dcdc7afc2a9558ae,homestay_owner,beginner,52,urban,ml,"[np.str_('bn'), np.str_('hi')]",2025-10-17T18:57:17.226883,77,3,7,morning,web,good,True,False
+USER_00517,78062816ac4524fb,homestay_owner,beginner,32,rural,pa,[],2026-01-18T18:57:17.227073,27,2,31,night,ios,poor,True,True
+USER_00518,4deb0b2c72194bcf,appliance_repair,expert,26,urban,gu,[],2025-02-28T18:57:17.227262,28,23,50,afternoon,web,poor,True,False
+USER_00519,4762f5651667522f,electrician,expert,18,semi-urban,ml,[],2025-05-07T18:57:17.227463,73,2,31,night,ios,moderate,True,True
+USER_00520,8c2f77be1395a6e4,mobile_repair,intermediate,33,urban,ml,[],2025-03-11T18:57:17.227658,42,42,49,night,web,poor,True,False
+USER_00521,cfa6edfa820fa73e,plumber,intermediate,62,rural,mr,[np.str_('ta')],2025-06-27T18:57:17.227869,23,23,39,morning,android,poor,True,False
+USER_00522,8e89b3f8de3decc3,carpenter,beginner,49,semi-urban,bn,[],2025-06-24T18:57:17.228065,4,32,31,morning,android,poor,True,True
+USER_00523,770ac9ca5d73aa09,mason,expert,29,rural,pa,[np.str_('hi')],2025-07-06T18:57:17.228274,22,6,31,night,android,moderate,True,True
+USER_00524,770589bc7d885e55,welder,intermediate,31,urban,gu,[np.str_('bn')],2026-02-08T18:57:17.228483,46,31,12,afternoon,ios,good,True,False
+USER_00525,8a2aabff95bfdd86,appliance_repair,intermediate,37,urban,mr,[np.str_('te')],2025-04-09T18:57:17.228692,2,42,39,morning,web,good,True,False
+USER_00526,e84c0251e44af48d,homestay_owner,expert,55,rural,mr,"[np.str_('bn'), np.str_('gu')]",2026-01-30T18:57:17.228931,70,19,59,night,web,good,True,True
+USER_00527,f1eb0690f576dd64,homestay_owner,intermediate,18,semi-urban,pa,[],2025-12-03T18:57:17.229122,14,43,8,morning,ios,poor,True,False
+USER_00528,55df572e9dec9f41,mason,beginner,32,semi-urban,en,[],2025-12-30T18:57:17.229311,98,25,11,morning,web,moderate,True,False
+USER_00529,f697ee7a3f2c0f78,welder,beginner,22,rural,ta,[np.str_('mr')],2025-03-19T18:57:17.229517,6,4,5,night,android,moderate,True,False
+USER_00530,df6d0a92de892963,electrician,intermediate,23,rural,te,[],2025-03-26T18:57:17.229708,63,15,9,afternoon,ios,good,True,False
+USER_00531,283b61e6f8df9d03,welder,intermediate,32,urban,pa,[np.str_('te')],2025-06-04T18:57:17.229922,68,20,27,afternoon,ios,poor,True,False
+USER_00532,8dd3fd2ac3f74f64,appliance_repair,advanced,42,rural,en,"[np.str_('mr'), np.str_('hi')]",2025-05-28T18:57:17.230165,18,48,36,evening,web,good,True,False
+USER_00533,5201b3ee513b6a5b,welder,intermediate,45,rural,kn,"[np.str_('en'), np.str_('ta')]",2025-04-13T18:57:17.230392,11,43,47,evening,web,poor,True,True
+USER_00534,e11b23298674d865,plumber,beginner,18,semi-urban,te,[np.str_('pa')],2025-07-20T18:57:17.230601,39,43,49,night,ios,poor,True,False
+USER_00535,485aaf3de416802f,carpenter,expert,36,semi-urban,kn,[],2025-08-05T18:57:17.230791,64,49,47,morning,android,moderate,True,True
+USER_00536,0531a145f147ddb2,welder,expert,22,semi-urban,hi,"[np.str_('en'), np.str_('pa')]",2025-11-24T18:57:17.231016,4,30,39,afternoon,android,good,True,False
+USER_00537,c0030b40658391d0,plumber,intermediate,20,rural,te,[np.str_('mr')],2026-02-09T18:57:17.231229,17,32,40,afternoon,android,moderate,True,False
+USER_00538,9925d4390615eb13,homestay_owner,expert,52,rural,en,"[np.str_('en'), np.str_('hi')]",2025-12-12T18:57:17.231456,88,28,22,night,ios,moderate,True,True
+USER_00539,9e3866c4af9c69d4,mason,intermediate,46,urban,hi,[],2025-02-24T18:57:17.231647,2,25,16,evening,web,poor,True,False
+USER_00540,ed7d992580edac0f,carpenter,expert,32,semi-urban,bn,[np.str_('te')],2026-01-27T18:57:17.231854,49,3,35,morning,android,good,True,True
+USER_00541,6b2c8ad9f24d25b3,mason,advanced,21,rural,te,[],2025-05-14T18:57:17.232044,38,43,42,afternoon,web,poor,True,False
+USER_00542,c6a25dcde9df6e70,electrician,beginner,35,rural,ta,"[np.str_('hi'), np.str_('gu')]",2025-03-11T18:57:17.232275,55,48,28,afternoon,ios,poor,True,True
+USER_00543,689473b943da9af1,electrician,beginner,43,semi-urban,kn,[np.str_('hi')],2025-11-02T18:57:17.232488,35,28,15,night,ios,moderate,True,True
+USER_00544,2ebcc34f1f52328b,plumber,advanced,63,semi-urban,mr,[],2025-04-08T18:57:17.232681,87,36,58,evening,web,poor,True,False
+USER_00545,7fde5c2da99f139d,welder,advanced,36,rural,pa,"[np.str_('gu'), np.str_('kn')]",2026-01-21T18:57:17.232908,80,47,33,afternoon,web,good,True,False
+USER_00546,8280babf5b064d13,mobile_repair,expert,42,semi-urban,te,[],2026-01-08T18:57:17.233100,60,31,56,afternoon,ios,moderate,True,False
+USER_00547,307b6462d75bc9ac,homestay_owner,intermediate,21,rural,ml,[np.str_('hi')],2025-06-01T18:57:17.233312,41,4,29,night,ios,moderate,True,True
+USER_00548,b2630c2477a3dee1,plumber,intermediate,19,rural,ml,[],2025-03-06T18:57:17.233502,56,23,5,night,android,moderate,True,True
+USER_00549,d312f9bad253a46e,farmer,beginner,52,semi-urban,hi,"[np.str_('te'), np.str_('bn')]",2025-12-05T18:57:17.234402,48,6,14,morning,ios,good,True,False
+USER_00550,a0472389de2f0d2c,mason,intermediate,54,rural,kn,"[np.str_('en'), np.str_('en')]",2026-01-30T18:57:17.235726,87,41,52,afternoon,android,poor,True,True
+USER_00551,d77ed5ec5dd894aa,artisan,advanced,58,semi-urban,te,[],2025-08-09T18:57:17.236190,6,42,28,night,android,poor,True,True
+USER_00552,8ee6916bff50e9ff,mason,advanced,64,rural,kn,[],2025-05-01T18:57:17.236661,51,33,58,afternoon,web,moderate,True,True
+USER_00553,10904f61eb8941ef,electrician,beginner,53,rural,mr,[],2025-04-12T18:57:17.237236,35,15,32,evening,web,good,True,True
+USER_00554,22c20b1cb69eabeb,appliance_repair,intermediate,21,rural,bn,[np.str_('ta')],2025-03-31T18:57:17.237509,45,44,9,afternoon,android,good,True,True
+USER_00555,9f7cb6fb0df97db2,homestay_owner,beginner,55,semi-urban,kn,"[np.str_('kn'), np.str_('gu')]",2025-10-21T18:57:17.237757,72,24,40,afternoon,web,good,True,False
+USER_00556,a1eb5d1dfd0aa5e8,appliance_repair,expert,55,rural,en,"[np.str_('en'), np.str_('kn')]",2025-11-08T18:57:17.237995,86,37,49,morning,ios,poor,True,False
+USER_00557,5df12b4a830b3d2f,electrician,intermediate,41,rural,ta,[],2025-11-11T18:57:17.238458,40,39,29,afternoon,android,good,True,False
+USER_00558,8ed05a95b23f6aed,mason,advanced,54,semi-urban,pa,[np.str_('en')],2025-07-07T18:57:17.238723,7,5,20,evening,web,poor,True,True
+USER_00559,402fcd20e4919aca,appliance_repair,advanced,35,semi-urban,hi,[],2026-02-03T18:57:17.238957,82,37,18,night,web,poor,True,False
+USER_00560,e23ef069a57c82ad,appliance_repair,beginner,43,semi-urban,en,[],2025-03-07T18:57:17.239186,7,5,41,evening,android,good,True,False
+USER_00561,3b52a163d16fb847,electrician,intermediate,54,semi-urban,kn,[np.str_('pa')],2025-04-22T18:57:17.239587,98,16,54,morning,android,good,True,True
+USER_00562,3d4ae1a175d5a8f8,appliance_repair,intermediate,56,urban,hi,[np.str_('gu')],2025-10-25T18:57:17.240081,59,41,39,night,android,good,True,True
+USER_00563,f43eec2c5d0c5e3b,homestay_owner,advanced,36,semi-urban,ml,"[np.str_('kn'), np.str_('gu')]",2025-03-20T18:57:17.240346,82,17,55,evening,android,poor,True,True
+USER_00564,943be511b18533ed,homestay_owner,beginner,30,rural,gu,[np.str_('kn')],2025-10-09T18:57:17.240566,79,45,36,afternoon,web,moderate,True,False
+USER_00565,8825900047a1a486,carpenter,advanced,40,semi-urban,gu,[],2025-12-08T18:57:17.240769,95,21,29,morning,ios,poor,True,False
+USER_00566,a47be2dc11785c67,plumber,intermediate,62,semi-urban,kn,[],2025-04-29T18:57:17.240968,61,11,54,morning,android,good,True,True
+USER_00567,595f560858baf84d,mobile_repair,expert,51,urban,te,[],2025-10-12T18:57:17.241162,71,30,7,morning,android,good,True,True
+USER_00568,8a6d7d13f1249acb,welder,intermediate,61,semi-urban,kn,[],2025-08-07T18:57:17.241353,77,16,7,evening,ios,good,True,False
+USER_00569,93c37faaa29e24fe,appliance_repair,intermediate,59,semi-urban,kn,[],2025-07-10T18:57:17.241548,65,5,7,night,ios,moderate,True,False
+USER_00570,b8495bce319c6617,farmer,advanced,47,urban,mr,[],2025-08-21T18:57:17.241739,11,44,23,evening,web,poor,True,True
+USER_00571,4c9e745bf02098dc,mason,expert,37,rural,bn,"[np.str_('bn'), np.str_('pa')]",2025-06-23T18:57:17.241969,99,25,26,evening,android,good,True,False
+USER_00572,eae57219a554764a,mobile_repair,intermediate,22,semi-urban,ml,"[np.str_('ml'), np.str_('gu')]",2025-12-07T18:57:17.242213,64,0,37,evening,android,good,True,True
+USER_00573,b304db80810916d5,appliance_repair,beginner,26,rural,gu,[np.str_('te')],2025-05-01T18:57:17.242424,22,38,34,evening,web,moderate,True,True
+USER_00574,e6da616a589b44c3,welder,intermediate,37,urban,gu,[],2025-07-30T18:57:17.242617,55,45,17,night,android,poor,True,True
+USER_00575,a7e90c09ede73770,homestay_owner,beginner,63,rural,ta,[np.str_('hi')],2025-10-23T18:57:17.242826,85,27,13,morning,web,moderate,True,True
+USER_00576,4769834ebdba920f,plumber,advanced,33,semi-urban,en,[np.str_('bn')],2025-02-21T18:57:17.243036,27,30,21,afternoon,ios,poor,True,False
+USER_00577,34fe58d5cba10de4,welder,beginner,22,urban,en,[np.str_('mr')],2025-03-24T18:57:17.243246,65,18,31,evening,web,moderate,True,True
+USER_00578,284eaa7dfa054cd4,plumber,intermediate,33,rural,pa,[np.str_('te')],2025-05-09T18:57:17.243461,65,24,59,evening,ios,moderate,True,False
+USER_00579,2d9f0dc6819e4884,carpenter,beginner,33,semi-urban,te,[np.str_('ml')],2025-03-09T18:57:17.243679,75,33,32,night,android,poor,True,False
+USER_00580,11222f64595d8401,appliance_repair,intermediate,35,rural,te,[],2025-11-27T18:57:17.243873,74,19,57,morning,web,good,True,False
+USER_00581,6fee80b41774d2c9,mason,expert,55,semi-urban,hi,[],2025-06-16T18:57:17.244065,76,47,9,afternoon,web,moderate,True,False
+USER_00582,bace57c110449a6f,farmer,expert,25,urban,bn,"[np.str_('en'), np.str_('hi')]",2025-08-18T18:57:17.244297,26,15,39,morning,web,good,True,False
+USER_00583,d658f0571bfd8719,carpenter,expert,22,rural,ta,[],2025-03-25T18:57:17.244492,94,30,49,morning,android,moderate,True,True
+USER_00584,425c4f5bdfe39b9c,homestay_owner,beginner,37,rural,te,"[np.str_('kn'), np.str_('pa')]",2025-03-01T18:57:17.244721,37,46,58,morning,android,poor,True,False
+USER_00585,a56208c6d86ce69e,carpenter,intermediate,36,semi-urban,en,"[np.str_('gu'), np.str_('gu')]",2025-08-04T18:57:17.244950,39,22,29,night,web,moderate,True,False
+USER_00586,58ab437f34bff4c4,appliance_repair,expert,26,urban,mr,"[np.str_('ml'), np.str_('gu')]",2025-11-24T18:57:17.245178,9,24,23,night,web,moderate,True,True
+USER_00587,16650831bef8141a,artisan,expert,47,urban,kn,[],2025-04-22T18:57:17.245369,29,20,17,night,ios,poor,True,True
+USER_00588,2ca9d469feb7728f,electrician,intermediate,27,rural,mr,[np.str_('ta')],2025-08-13T18:57:17.245579,84,2,6,afternoon,android,good,True,False
+USER_00589,6dd2de6c4110a2b1,mason,advanced,40,rural,gu,[np.str_('bn')],2025-06-04T18:57:17.245793,22,15,26,night,web,good,True,True
+USER_00590,fdf35df66210f9d2,plumber,intermediate,37,urban,en,[],2025-11-15T18:57:17.245986,72,18,29,evening,android,moderate,True,False
+USER_00591,76b065f926d94057,electrician,advanced,41,semi-urban,ta,[np.str_('mr')],2025-12-21T18:57:17.246195,5,19,29,evening,web,moderate,True,False
+USER_00592,304071dd85321bc0,welder,advanced,18,urban,ml,[],2025-10-08T18:57:17.246391,54,37,5,evening,ios,moderate,True,False
+USER_00593,f4ea6fc5305f6bb1,mason,expert,28,rural,en,[],2025-11-27T18:57:17.246587,20,37,56,night,ios,moderate,True,True
+USER_00594,3ef4b4a80dd3f5ee,appliance_repair,beginner,42,semi-urban,bn,[np.str_('gu')],2025-06-18T18:57:17.246802,45,34,19,night,web,poor,True,True
+USER_00595,6362feabf182f4ef,plumber,advanced,51,semi-urban,kn,"[np.str_('pa'), np.str_('te')]",2025-07-01T18:57:17.247039,54,14,14,night,ios,moderate,True,True
+USER_00596,b5888271af8c4eeb,artisan,beginner,32,semi-urban,en,[np.str_('ta')],2025-08-20T18:57:17.247250,89,17,19,afternoon,android,good,True,False
+USER_00597,72a1de4f23b1e6da,artisan,advanced,39,urban,mr,[np.str_('en')],2025-08-29T18:57:17.247461,32,17,36,morning,web,good,True,False
+USER_00598,80325ea34a793bef,electrician,expert,48,rural,gu,"[np.str_('hi'), np.str_('pa')]",2025-08-29T18:57:17.247694,21,28,51,night,android,good,True,False
+USER_00599,da9837359a3f98f5,mobile_repair,expert,33,semi-urban,hi,[],2025-08-06T18:57:17.247886,60,33,37,night,ios,moderate,True,True
+USER_00600,90216e1423518ad4,electrician,expert,57,urban,hi,"[np.str_('ml'), np.str_('gu')]",2025-05-03T18:57:17.248116,6,8,57,evening,web,poor,True,False
+USER_00601,ebff08d1e9e3a1f0,plumber,expert,54,urban,ml,[np.str_('mr')],2025-10-03T18:57:17.248327,58,47,29,morning,web,moderate,True,False
+USER_00602,ecd389acac8ebf12,mobile_repair,advanced,42,rural,te,[np.str_('ml')],2025-09-26T18:57:17.248542,68,33,27,night,web,good,True,False
+USER_00603,219d2c799f7c52c2,farmer,advanced,48,rural,ta,"[np.str_('hi'), np.str_('en')]",2025-05-25T18:57:17.248771,37,7,29,afternoon,web,moderate,True,False
+USER_00604,f104d5281433529b,artisan,intermediate,24,urban,kn,[],2025-03-14T18:57:17.248965,67,26,17,night,ios,poor,True,True
+USER_00605,430a4e4bb84b2d37,plumber,advanced,60,semi-urban,bn,[np.str_('bn')],2025-12-07T18:57:17.249174,39,42,25,morning,android,good,True,True
+USER_00606,ee5eb1718f4369a6,artisan,expert,55,urban,bn,[np.str_('gu')],2025-05-15T18:57:17.249391,38,24,38,afternoon,ios,moderate,True,False
+USER_00607,db9618ab25f25858,carpenter,beginner,26,rural,bn,[np.str_('te')],2025-05-05T18:57:17.249601,1,7,44,morning,web,poor,True,False
+USER_00608,ac2ccf02cfbd7e69,mason,beginner,19,rural,hi,[],2025-06-09T18:57:17.249793,87,5,44,evening,ios,moderate,True,True
+USER_00609,d588e07cff114519,artisan,advanced,64,urban,te,"[np.str_('en'), np.str_('kn')]",2025-11-12T18:57:17.250020,42,39,18,evening,web,good,True,True
+USER_00610,0b7d164723008dc8,appliance_repair,beginner,31,semi-urban,ml,"[np.str_('pa'), np.str_('hi')]",2025-08-15T18:57:17.251037,85,11,10,afternoon,web,good,True,False
+USER_00611,6dda45dd82837a31,welder,intermediate,41,rural,bn,[],2025-07-19T18:57:17.252443,89,34,6,morning,android,poor,True,False
+USER_00612,af28e3e137100e76,electrician,expert,55,rural,pa,[],2025-07-10T18:57:17.253157,78,31,58,morning,web,moderate,True,False
+USER_00613,62e0c7ec3a8b9d69,homestay_owner,intermediate,59,urban,mr,[np.str_('gu')],2025-12-29T18:57:17.253815,16,48,23,evening,ios,poor,True,True
+USER_00614,55e50081a0ede6d6,electrician,advanced,39,urban,hi,"[np.str_('hi'), np.str_('te')]",2025-10-06T18:57:17.254451,37,37,16,evening,ios,poor,True,True
+USER_00615,3aa874be144f3486,mason,expert,47,semi-urban,bn,[np.str_('hi')],2025-04-07T18:57:17.254718,94,26,32,night,web,poor,True,True
+USER_00616,3f558ef42a0f724c,appliance_repair,advanced,44,rural,ta,[],2026-01-19T18:57:17.255180,56,13,12,evening,android,poor,True,False
+USER_00617,08a790c6c34077a2,mason,advanced,29,urban,mr,[np.str_('te')],2025-08-21T18:57:17.255441,83,23,36,night,ios,good,True,False
+USER_00618,8a50958759dcffe3,appliance_repair,advanced,64,semi-urban,mr,[],2025-03-15T18:57:17.255656,30,36,54,night,ios,moderate,True,True
+USER_00619,8af8b579f71ff237,artisan,intermediate,50,semi-urban,kn,[],2025-09-16T18:57:17.256041,93,25,16,evening,ios,moderate,True,True
+USER_00620,a7f36dfbc22fa7bf,artisan,advanced,18,rural,hi,[],2025-03-09T18:57:17.256510,20,46,59,evening,web,good,True,True
+USER_00621,42d7a2157e025cdd,mason,advanced,47,urban,te,[np.str_('kn')],2025-12-16T18:57:17.256783,99,30,44,evening,web,good,True,False
+USER_00622,3b58861231747025,mobile_repair,advanced,28,urban,pa,[np.str_('ta')],2025-12-12T18:57:17.257019,67,5,36,afternoon,web,poor,True,False
+USER_00623,6f8b367b8cf9e3e5,electrician,expert,64,rural,hi,[np.str_('hi')],2025-08-14T18:57:17.257240,3,34,6,evening,web,good,True,False
+USER_00624,062bdfdc3d862e89,electrician,advanced,57,semi-urban,hi,[np.str_('te')],2025-08-06T18:57:17.257455,8,31,8,afternoon,android,good,True,False
+USER_00625,2295247ecc50d0f0,mobile_repair,expert,33,rural,mr,[],2025-06-17T18:57:17.257649,80,0,15,night,android,good,True,True
+USER_00626,59cc44d78226dd0c,appliance_repair,advanced,38,rural,mr,"[np.str_('kn'), np.str_('ta')]",2025-11-27T18:57:17.257883,52,20,18,night,ios,poor,True,True
+USER_00627,0b6d0ee724a3f08f,mason,advanced,48,semi-urban,gu,[],2025-06-08T18:57:17.258076,89,41,38,evening,web,good,True,False
+USER_00628,04797b7e3f0ab974,artisan,expert,56,rural,pa,[np.str_('en')],2026-01-17T18:57:17.258287,93,24,53,morning,ios,moderate,True,True
+USER_00629,7cf7c7e9e7b97caa,appliance_repair,intermediate,47,urban,gu,"[np.str_('te'), np.str_('bn')]",2025-03-11T18:57:17.258522,97,49,26,afternoon,web,moderate,True,True
+USER_00630,bb018c888d488b4b,mobile_repair,expert,35,semi-urban,pa,"[np.str_('ta'), np.str_('bn')]",2025-08-23T18:57:17.258756,71,21,14,night,ios,good,True,True
+USER_00631,b4c2aba350eeaa3e,farmer,beginner,29,semi-urban,ml,[np.str_('gu')],2025-02-23T18:57:17.258973,19,17,42,evening,android,good,True,True
+USER_00632,2eb2e1ffc29207a9,appliance_repair,beginner,41,urban,kn,"[np.str_('ml'), np.str_('gu')]",2025-07-20T18:57:17.259208,63,14,28,evening,android,good,True,False
+USER_00633,8910404f67633ab7,appliance_repair,intermediate,26,semi-urban,hi,"[np.str_('bn'), np.str_('hi')]",2025-09-14T18:57:17.259439,87,36,56,night,web,good,True,False
+USER_00634,893b2bc39b12fe66,welder,beginner,43,semi-urban,hi,"[np.str_('mr'), np.str_('hi')]",2025-02-18T18:57:17.259672,3,10,10,night,web,good,True,True
+USER_00635,bdbdfdb40c70a8a2,homestay_owner,intermediate,52,urban,hi,[np.str_('en')],2025-08-02T18:57:17.259884,36,2,35,afternoon,android,good,True,False
+USER_00636,0cefd61aaee1e30a,mobile_repair,beginner,26,urban,hi,"[np.str_('hi'), np.str_('mr')]",2025-08-03T18:57:17.260113,13,20,56,night,android,good,True,False
+USER_00637,c673dc8503fa6b55,mobile_repair,beginner,32,semi-urban,pa,[np.str_('te')],2026-02-06T18:57:17.260324,48,0,27,afternoon,android,poor,True,True
+USER_00638,dfe1bf09676abf3d,artisan,expert,61,semi-urban,kn,[],2025-11-14T18:57:17.260515,66,33,55,afternoon,web,moderate,True,True
+USER_00639,e75a4f3ed0f39847,mason,intermediate,20,rural,te,[np.str_('mr')],2025-09-29T18:57:17.260724,50,30,36,evening,android,good,True,True
+USER_00640,34154e4335806e7f,welder,beginner,63,urban,ml,[],2025-03-28T18:57:17.260923,41,9,34,afternoon,web,good,True,True
+USER_00641,d75b31cdc0ef2e7c,welder,expert,18,rural,hi,[],2025-03-11T18:57:17.261114,13,41,19,afternoon,ios,poor,True,False
+USER_00642,eb8a3c3bcca56de6,homestay_owner,expert,20,urban,mr,"[np.str_('kn'), np.str_('te')]",2025-04-05T18:57:17.261356,9,3,23,afternoon,web,poor,True,False
+USER_00643,347f79c634f52387,farmer,expert,34,urban,te,[],2025-02-15T18:57:17.261550,17,19,46,night,android,moderate,True,False
+USER_00644,6673ac6c4f83993d,electrician,advanced,64,urban,ta,[np.str_('pa')],2025-12-15T18:57:17.261758,89,41,8,night,ios,good,True,False
+USER_00645,cbaf28d02f69a8dc,mobile_repair,advanced,47,semi-urban,kn,[],2025-04-26T18:57:17.261949,89,48,28,afternoon,android,poor,True,False
+USER_00646,ca596891cb6b5bff,mason,expert,31,rural,pa,"[np.str_('ta'), np.str_('mr')]",2025-09-19T18:57:17.262181,90,41,37,morning,android,poor,True,True
+USER_00647,25ae4ca378a3f1a8,homestay_owner,intermediate,28,urban,ml,[],2025-09-21T18:57:17.262372,24,37,37,night,android,poor,True,False
+USER_00648,4a1473ac209fb90e,appliance_repair,beginner,20,semi-urban,bn,"[np.str_('kn'), np.str_('bn')]",2025-11-14T18:57:17.262598,13,33,23,morning,android,good,True,True
+USER_00649,b40642fb3e114a90,carpenter,advanced,53,urban,mr,[],2026-01-01T18:57:17.262789,88,4,8,evening,web,moderate,True,True
+USER_00650,43bf9246d0e1fe64,electrician,intermediate,54,semi-urban,pa,[],2025-07-02T18:57:17.262977,32,17,9,evening,web,moderate,True,False
+USER_00651,4f40603abb3cc251,appliance_repair,advanced,43,urban,mr,"[np.str_('te'), np.str_('hi')]",2025-07-27T18:57:17.263204,66,43,59,night,ios,poor,True,False
+USER_00652,bb470a489caf301b,homestay_owner,advanced,64,semi-urban,gu,[np.str_('mr')],2025-08-22T18:57:17.263422,64,27,12,afternoon,web,moderate,True,True
+USER_00653,0098f9dfdc017995,welder,intermediate,53,urban,ta,[np.str_('mr')],2025-03-22T18:57:17.263631,2,25,16,evening,ios,moderate,True,True
+USER_00654,8bd30d11035e0933,mobile_repair,expert,36,urban,en,[],2025-03-11T18:57:17.263822,63,27,46,morning,android,poor,True,True
+USER_00655,0a0a46a17e664f23,artisan,beginner,55,semi-urban,mr,"[np.str_('en'), np.str_('mr')]",2025-12-22T18:57:17.264051,24,32,36,afternoon,android,moderate,True,False
+USER_00656,60f35865d41e59a2,welder,expert,26,semi-urban,te,[],2025-10-19T18:57:17.264241,64,11,52,afternoon,web,moderate,True,False
+USER_00657,b9329cbb43f954d7,carpenter,expert,37,urban,en,[],2025-03-30T18:57:17.264434,70,11,21,night,android,moderate,True,False
+USER_00658,28f34be28cff4ae7,mason,intermediate,53,rural,hi,[],2025-04-25T18:57:17.264630,62,10,15,night,web,good,True,False
+USER_00659,2519743b9b6652aa,homestay_owner,expert,50,urban,ta,"[np.str_('ml'), np.str_('gu')]",2025-08-06T18:57:17.264857,23,2,37,evening,android,good,True,False
+USER_00660,b1ab9c44e7edacb3,farmer,intermediate,29,urban,ml,[np.str_('gu')],2025-06-07T18:57:17.265067,14,7,53,afternoon,web,moderate,True,True
+USER_00661,9c8852c2431a848a,homestay_owner,intermediate,37,semi-urban,kn,[],2025-11-01T18:57:17.265258,43,38,34,morning,ios,poor,True,False
+USER_00662,e15e446867b8fd52,mobile_repair,intermediate,28,semi-urban,ml,"[np.str_('te'), np.str_('pa')]",2025-05-19T18:57:17.265492,43,49,18,night,android,poor,True,True
+USER_00663,d8529f28a679d050,plumber,advanced,28,semi-urban,te,[],2025-12-09T18:57:17.265689,64,37,28,morning,web,good,True,True
+USER_00664,d8e97dd8beec5ec6,welder,expert,64,rural,mr,[],2025-07-21T18:57:17.265886,61,12,14,afternoon,android,good,True,True
+USER_00665,e3969ae2abef353c,carpenter,advanced,59,rural,ml,[],2025-08-21T18:57:17.266076,90,13,36,morning,android,good,True,False
+USER_00666,db59b7dc1b83c60c,appliance_repair,intermediate,48,rural,bn,[np.str_('bn')],2025-12-06T18:57:17.266316,21,37,8,morning,android,moderate,True,True
+USER_00667,d85957bb7bb03845,appliance_repair,advanced,37,semi-urban,bn,[np.str_('en')],2025-12-06T18:57:17.266528,73,27,57,night,ios,moderate,True,True
+USER_00668,56d17b1619b28fe2,mason,intermediate,45,rural,mr,"[np.str_('te'), np.str_('ml')]",2025-06-29T18:57:17.266870,14,3,45,afternoon,android,moderate,True,True
+USER_00669,ca17051fbcfd95ad,homestay_owner,beginner,38,urban,hi,[],2025-12-17T18:57:17.268340,39,9,48,night,ios,good,True,True
+USER_00670,3bc9d991b8c5d5ca,appliance_repair,intermediate,48,urban,hi,"[np.str_('te'), np.str_('kn')]",2025-07-26T18:57:17.270530,29,1,47,afternoon,android,moderate,True,False
+USER_00671,a75d32e42d353d17,welder,expert,30,semi-urban,hi,"[np.str_('ml'), np.str_('te')]",2025-12-11T18:57:17.271607,43,14,54,evening,web,good,True,False
+USER_00672,d6474d406b85ce22,appliance_repair,beginner,46,rural,hi,[np.str_('bn')],2025-11-16T18:57:17.272340,71,35,9,morning,ios,poor,True,False
+USER_00673,537568daa5c07511,electrician,advanced,22,urban,kn,[np.str_('kn')],2025-12-29T18:57:17.272596,66,32,42,morning,web,poor,True,False
+USER_00674,4c0fac7648b343a1,plumber,advanced,30,semi-urban,bn,[np.str_('ml')],2026-01-10T18:57:17.272843,8,35,55,night,web,moderate,True,True
+USER_00675,c2106e728717f7f9,homestay_owner,intermediate,23,urban,en,"[np.str_('ml'), np.str_('ta')]",2025-11-02T18:57:17.273359,43,35,57,morning,android,good,True,True
+USER_00676,a2eb05624a6d88ba,farmer,intermediate,48,urban,mr,[],2025-12-09T18:57:17.273571,81,28,38,evening,android,poor,True,False
+USER_00677,b1e35b0791514c8b,carpenter,advanced,55,semi-urban,en,"[np.str_('gu'), np.str_('te')]",2025-03-29T18:57:17.273802,1,20,43,morning,android,good,True,False
+USER_00678,54f704ead1c9ff40,artisan,advanced,24,urban,bn,[],2025-07-02T18:57:17.274000,35,8,57,night,ios,poor,True,True
+USER_00679,d6c31c88f0749869,plumber,intermediate,44,urban,en,[np.str_('hi')],2025-09-28T18:57:17.274264,62,36,7,night,ios,moderate,True,True
+USER_00680,05f5250ebd65c8e4,mason,expert,39,rural,pa,"[np.str_('ml'), np.str_('kn')]",2025-11-20T18:57:17.274767,20,27,52,evening,android,poor,True,False
+USER_00681,7f2f3af64ad353ba,mobile_repair,advanced,19,urban,te,[],2025-10-15T18:57:17.275310,86,16,10,morning,ios,moderate,True,False
+USER_00682,8b54665e6c46ffb3,welder,expert,50,semi-urban,ml,[np.str_('kn')],2025-08-18T18:57:17.275729,46,15,53,evening,web,moderate,True,True
+USER_00683,583d5b51d2aecd41,carpenter,beginner,24,urban,gu,[],2025-09-11T18:57:17.276083,1,34,21,morning,android,moderate,True,True
+USER_00684,f0515504fd6e9b4e,mason,expert,51,rural,hi,[],2025-06-02T18:57:17.276433,89,29,6,morning,android,moderate,True,True
+USER_00685,bdbfa3506115aaa3,farmer,beginner,51,rural,mr,[np.str_('ml')],2025-12-28T18:57:17.276817,47,10,17,morning,android,poor,True,True
+USER_00686,4e1ac61cbe0e4941,mobile_repair,expert,34,semi-urban,ta,[np.str_('gu')],2025-10-29T18:57:17.277210,66,25,5,morning,web,good,True,False
+USER_00687,070fc22444def989,farmer,advanced,36,urban,kn,[],2025-06-25T18:57:17.277552,11,20,19,night,web,good,True,True
+USER_00688,d715685f17fd4d4f,electrician,advanced,50,urban,gu,[np.str_('gu')],2025-04-22T18:57:17.277835,6,13,19,afternoon,web,good,True,False
+USER_00689,ad8d39472148de04,artisan,intermediate,40,semi-urban,kn,"[np.str_('en'), np.str_('hi')]",2025-12-10T18:57:17.278077,32,21,24,evening,ios,moderate,True,False
+USER_00690,363b09be9d93762c,welder,beginner,38,semi-urban,pa,[np.str_('ta')],2025-09-02T18:57:17.278295,71,30,22,afternoon,android,poor,True,False
+USER_00691,0e62f85bb1ea4d7a,mason,expert,36,rural,pa,"[np.str_('mr'), np.str_('bn')]",2025-08-06T18:57:17.278525,28,31,27,afternoon,android,moderate,True,False
+USER_00692,4a7194f76b42cd5f,appliance_repair,advanced,60,semi-urban,mr,[np.str_('te')],2025-02-21T18:57:17.278748,68,6,52,evening,ios,poor,True,True
+USER_00693,1fbcecaee5078c7a,plumber,intermediate,32,semi-urban,te,[],2025-05-04T18:57:17.278940,98,43,35,afternoon,ios,moderate,True,True
+USER_00694,bb1b5847d12c6f28,farmer,beginner,25,urban,bn,[],2025-05-17T18:57:17.279130,58,42,8,afternoon,ios,poor,True,True
+USER_00695,de238f06cc548cf9,appliance_repair,intermediate,56,rural,ta,[np.str_('en')],2025-09-04T18:57:17.279338,86,35,15,night,ios,good,True,False
+USER_00696,ac36cf5a024f037e,artisan,expert,61,semi-urban,hi,"[np.str_('en'), np.str_('ml')]",2025-03-13T18:57:17.279570,28,6,20,evening,android,moderate,True,True
+USER_00697,48f7392b98a7f125,mobile_repair,advanced,64,urban,bn,[np.str_('hi')],2026-02-07T18:57:17.279781,17,25,53,afternoon,android,good,True,True
+USER_00698,358169d79c4d53ab,plumber,intermediate,42,semi-urban,hi,[],2025-05-17T18:57:17.279975,36,20,59,morning,web,moderate,True,False
+USER_00699,2ef4506d9160143d,mobile_repair,advanced,53,semi-urban,ml,[np.str_('mr')],2025-12-26T18:57:17.280182,38,4,13,afternoon,android,poor,True,False
+USER_00700,d5efb1582d8f468a,farmer,expert,29,urban,gu,"[np.str_('ta'), np.str_('te')]",2025-08-16T18:57:17.280409,12,8,47,afternoon,web,moderate,True,False
+USER_00701,d90840959c7a282e,plumber,expert,22,urban,hi,[],2025-05-15T18:57:17.280599,63,47,6,morning,ios,good,True,False
+USER_00702,ef4de9182edc7576,mobile_repair,beginner,43,urban,kn,[],2025-03-26T18:57:17.280792,4,18,44,night,android,poor,True,False
+USER_00703,96c7bf4f2a0c1dcd,mason,advanced,54,urban,bn,[],2025-07-24T18:57:17.280985,82,11,6,evening,web,good,True,True
+USER_00704,c243e9316b0167e4,mobile_repair,expert,35,rural,mr,[],2025-02-16T18:57:17.281178,78,18,36,night,android,moderate,True,False
+USER_00705,0a5f8f800138cf36,electrician,advanced,31,semi-urban,ta,"[np.str_('ta'), np.str_('en')]",2025-04-07T18:57:17.281403,93,4,58,evening,ios,good,True,True
+USER_00706,59c98714ea0464b5,carpenter,intermediate,29,semi-urban,mr,[],2025-07-27T18:57:17.281598,48,41,42,morning,android,poor,True,True
+USER_00707,aff5fbc40a00f516,electrician,advanced,50,urban,gu,[],2025-06-23T18:57:17.281786,67,22,48,afternoon,ios,poor,True,True
+USER_00708,944b9d16f48e27c6,welder,beginner,25,semi-urban,ml,"[np.str_('te'), np.str_('mr')]",2025-08-15T18:57:17.282011,61,37,8,evening,android,poor,True,True
+USER_00709,bf275c471eb91a8a,mason,beginner,62,semi-urban,ml,[np.str_('en')],2026-01-01T18:57:17.282225,14,49,29,morning,android,moderate,True,False
+USER_00710,be0beb2f57eed6e5,mobile_repair,intermediate,61,rural,mr,[],2025-11-28T18:57:17.282415,85,48,30,afternoon,android,poor,True,False
+USER_00711,0fc4d5aa2e5cdc97,appliance_repair,expert,44,semi-urban,ml,"[np.str_('hi'), np.str_('bn')]",2026-01-19T18:57:17.282640,20,24,7,afternoon,ios,good,True,True
+USER_00712,6d344245b89d2a16,farmer,intermediate,24,urban,ml,[],2025-11-13T18:57:17.282835,2,32,41,night,android,poor,True,True
+USER_00713,296f6f8c6543be58,plumber,beginner,48,semi-urban,bn,[np.str_('gu')],2025-05-08T18:57:17.283041,6,31,49,evening,web,poor,True,True
+USER_00714,789f64ccc55549f6,appliance_repair,advanced,22,rural,gu,"[np.str_('gu'), np.str_('gu')]",2026-01-16T18:57:17.283267,71,36,11,morning,android,poor,True,False
+USER_00715,cc70539d46139c0d,mobile_repair,intermediate,33,rural,pa,"[np.str_('bn'), np.str_('mr')]",2025-11-20T18:57:17.283497,51,30,33,afternoon,android,good,True,True
+USER_00716,927d26099b058146,mobile_repair,beginner,22,rural,pa,[],2025-05-06T18:57:17.285384,3,0,21,morning,ios,moderate,True,False
+USER_00717,d3245e09d4400884,plumber,intermediate,18,urban,ml,[],2025-10-07T18:57:17.285902,50,26,20,evening,web,good,True,False
+USER_00718,9d6d8e92be83107b,carpenter,expert,25,semi-urban,mr,"[np.str_('te'), np.str_('kn')]",2025-11-17T18:57:17.286489,65,26,46,afternoon,web,good,True,True
+USER_00719,c54595db37a4f8a3,homestay_owner,expert,43,rural,mr,[np.str_('te')],2026-01-01T18:57:17.287064,29,39,24,afternoon,android,moderate,True,False
+USER_00720,f1e63236441e53ae,artisan,advanced,50,rural,en,[np.str_('mr')],2026-01-25T18:57:17.287293,19,45,51,night,web,moderate,True,False
+USER_00721,417591d00f31ff48,homestay_owner,advanced,37,rural,bn,"[np.str_('hi'), np.str_('en')]",2025-02-21T18:57:17.287571,52,7,34,night,web,poor,True,True
+USER_00722,2bdd56d886469a15,homestay_owner,beginner,21,rural,te,[np.str_('en')],2025-03-12T18:57:17.288091,42,12,6,morning,android,good,True,False
+USER_00723,0bb5f59b6a6ada94,appliance_repair,beginner,57,rural,te,[],2025-06-18T18:57:17.288295,47,27,52,morning,android,good,True,True
+USER_00724,41fa2de1f643a8c0,electrician,beginner,27,urban,hi,"[np.str_('kn'), np.str_('bn')]",2025-03-17T18:57:17.288527,30,3,54,night,ios,moderate,True,False
+USER_00725,3cdda6fae777947d,farmer,expert,28,urban,ml,[],2025-02-22T18:57:17.288914,52,2,11,afternoon,web,poor,True,False
+USER_00726,7b842651a0666ecb,artisan,expert,63,urban,mr,"[np.str_('ta'), np.str_('gu')]",2025-10-11T18:57:17.289468,12,16,28,evening,ios,poor,True,False
+USER_00727,df15223f62346a7a,homestay_owner,beginner,23,rural,ta,"[np.str_('en'), np.str_('ml')]",2026-01-15T18:57:17.289720,32,22,43,night,web,good,True,True
+USER_00728,f15a475209d2bd4d,farmer,expert,22,semi-urban,en,[],2025-08-31T18:57:17.289918,42,29,37,evening,android,moderate,True,True
+USER_00729,5d0aa5902499debc,plumber,advanced,46,rural,ta,[],2025-10-23T18:57:17.290122,47,41,39,morning,android,good,True,True
+USER_00730,d7b2b95a787db805,electrician,expert,23,urban,ml,[],2025-04-23T18:57:17.290313,42,13,17,evening,ios,poor,True,True
+USER_00731,b67bd5b5ffba4d39,appliance_repair,advanced,52,urban,ta,[],2025-11-17T18:57:17.290506,78,16,42,afternoon,web,moderate,True,True
+USER_00732,579e59c909220864,mason,intermediate,33,rural,pa,[],2025-07-02T18:57:17.290708,63,44,5,evening,ios,poor,True,False
+USER_00733,c2790fba911c58c6,plumber,intermediate,64,rural,gu,[np.str_('ml')],2025-05-02T18:57:17.290922,29,10,13,morning,web,moderate,True,True
+USER_00734,38243fbb9f40b1fd,mason,intermediate,26,rural,bn,[np.str_('bn')],2025-12-14T18:57:17.291132,38,16,58,night,ios,moderate,True,False
+USER_00735,41c825375e8a98a7,mason,advanced,38,rural,ml,[np.str_('hi')],2025-12-04T18:57:17.291341,58,20,53,night,android,poor,True,True
+USER_00736,e4411ec769c1f9c7,carpenter,expert,29,urban,kn,[],2025-08-30T18:57:17.291532,64,10,45,afternoon,android,good,True,False
+USER_00737,57b2923ad56d4e4b,electrician,beginner,24,semi-urban,mr,[np.str_('en')],2025-06-04T18:57:17.291739,41,23,50,afternoon,web,moderate,True,True
+USER_00738,b88375dfbe0512ae,carpenter,beginner,27,semi-urban,gu,[np.str_('bn')],2025-09-27T18:57:17.291957,41,4,14,evening,web,good,True,True
+USER_00739,e8b596b0f06581d4,electrician,expert,56,rural,te,[np.str_('kn')],2025-11-12T18:57:17.292168,31,1,34,afternoon,ios,good,True,True
+USER_00740,f925482c7ada340b,electrician,intermediate,43,urban,ml,[],2025-11-19T18:57:17.292358,93,39,33,morning,web,poor,True,False
+USER_00741,c44223507be60842,plumber,beginner,57,semi-urban,te,"[np.str_('mr'), np.str_('ml')]",2025-12-19T18:57:17.292586,52,48,27,night,android,poor,True,False
+USER_00742,3525f9b9652ad589,plumber,advanced,21,semi-urban,gu,[],2025-08-15T18:57:17.292780,21,21,55,morning,ios,good,True,True
+USER_00743,6925ad8ca93681a2,mobile_repair,beginner,51,semi-urban,bn,"[np.str_('ta'), np.str_('kn')]",2025-11-06T18:57:17.293005,8,36,42,night,web,poor,True,False
+USER_00744,6f559223942ef419,homestay_owner,expert,24,semi-urban,kn,[],2025-08-01T18:57:17.293201,97,42,56,evening,android,poor,True,True
+USER_00745,c4e013c4beb6eaa4,mason,expert,27,urban,bn,[np.str_('bn')],2025-11-05T18:57:17.293409,56,20,12,evening,web,poor,True,False
+USER_00746,f35d68d9e9bfd7f4,carpenter,intermediate,60,urban,gu,[np.str_('gu')],2025-05-14T18:57:17.293618,37,40,19,evening,ios,poor,True,False
+USER_00747,4f4cfabe7f5f77c0,homestay_owner,advanced,50,urban,ml,[],2025-12-04T18:57:17.293810,43,21,22,afternoon,ios,poor,True,True
+USER_00748,4c8f526e9659750f,mobile_repair,advanced,44,rural,kn,[],2025-07-28T18:57:17.294000,41,9,5,night,android,poor,True,False
+USER_00749,c8cdcf12a99703bd,plumber,advanced,38,urban,kn,[np.str_('kn')],2025-04-26T18:57:17.294207,5,45,43,morning,android,good,True,False
+USER_00750,d48b8bcb95870cc9,carpenter,expert,54,rural,gu,"[np.str_('bn'), np.str_('gu')]",2026-01-01T18:57:17.294438,89,27,14,afternoon,web,good,True,True
+USER_00751,52bb8e8572dd6dd4,artisan,intermediate,34,urban,gu,[],2025-06-28T18:57:17.294628,21,42,15,evening,android,moderate,True,True
+USER_00752,e75f8e1077aea13f,appliance_repair,advanced,53,rural,mr,[],2025-08-17T18:57:17.294821,55,9,19,afternoon,ios,moderate,True,True
+USER_00753,f528c7ca8913e9e4,carpenter,expert,56,rural,en,[np.str_('te')],2025-07-06T18:57:17.295029,27,37,14,afternoon,android,poor,True,True
+USER_00754,b6c6ab6f783ddf0f,artisan,intermediate,35,rural,ta,[],2025-09-08T18:57:17.295226,99,19,32,morning,android,poor,True,False
+USER_00755,5d12ec6aa5110cdb,welder,intermediate,54,rural,mr,"[np.str_('pa'), np.str_('ml')]",2025-11-26T18:57:17.295451,31,6,19,afternoon,ios,moderate,True,True
+USER_00756,b1ab27731f045d4d,mason,beginner,27,rural,ml,[],2026-01-24T18:57:17.295648,24,15,24,evening,android,good,True,False
+USER_00757,3f8863bb54657bc2,mobile_repair,beginner,36,urban,te,[np.str_('ml')],2025-09-25T18:57:17.295855,68,21,18,morning,web,moderate,True,True
+USER_00758,4bc168bbc708f9f5,mobile_repair,advanced,42,urban,kn,[np.str_('hi')],2025-12-15T18:57:17.296064,1,0,59,night,web,poor,True,True
+USER_00759,71e0062a4ea8ce7a,homestay_owner,expert,40,urban,en,[np.str_('bn')],2026-01-22T18:57:17.296272,46,45,50,morning,ios,poor,True,False
+USER_00760,6f6fc3a1c6b29f6c,welder,expert,28,semi-urban,pa,[],2025-06-03T18:57:17.296462,80,40,28,morning,android,poor,True,True
+USER_00761,dbd3372ab7b4f8c5,welder,advanced,32,semi-urban,kn,[np.str_('kn')],2026-02-08T18:57:17.296682,66,24,38,evening,android,poor,True,True
+USER_00762,2d2d49111f15dd61,welder,intermediate,60,urban,te,[np.str_('mr')],2025-06-25T18:57:17.296894,30,4,56,afternoon,web,good,True,True
+USER_00763,85211b6c3bcdfecd,artisan,expert,45,rural,bn,[],2025-02-28T18:57:17.297087,76,41,34,evening,web,moderate,True,True
+USER_00764,00f91490a27deaa2,appliance_repair,beginner,52,urban,kn,[],2025-02-18T18:57:17.297276,66,10,5,night,web,poor,True,False
+USER_00765,f084c0388feb4ce8,farmer,beginner,61,rural,hi,"[np.str_('hi'), np.str_('gu')]",2025-04-04T18:57:17.297504,98,7,59,afternoon,ios,moderate,True,True
+USER_00766,5697d9d9a1c654e4,plumber,expert,48,semi-urban,bn,"[np.str_('kn'), np.str_('kn')]",2025-10-08T18:57:17.297733,47,11,56,afternoon,android,moderate,True,True
+USER_00767,fe3d7c71a834d6ed,plumber,expert,41,rural,mr,[],2025-09-29T18:57:17.297927,28,14,45,evening,web,moderate,True,False
+USER_00768,a68da8c02cb146e4,homestay_owner,beginner,21,rural,bn,[],2025-05-21T18:57:17.298114,39,9,24,night,web,good,True,False
+USER_00769,b9ba2fd5345a56d4,mobile_repair,advanced,19,rural,hi,[np.str_('kn')],2026-01-20T18:57:17.298322,73,32,52,evening,ios,good,True,False
+USER_00770,a0c882f493238d09,plumber,advanced,53,rural,hi,[np.str_('gu')],2025-05-16T18:57:17.298534,26,4,21,afternoon,web,moderate,True,True
+USER_00771,e86d8b19896c818f,welder,beginner,45,semi-urban,ml,[],2025-06-12T18:57:17.298724,86,42,49,night,web,moderate,True,False
+USER_00772,7efc78f036640fde,appliance_repair,intermediate,23,semi-urban,pa,[],2025-05-10T18:57:17.298917,11,11,24,morning,ios,poor,True,True
+USER_00773,c0e4da689dcaaa99,artisan,expert,20,rural,ml,[],2025-03-27T18:57:17.299110,82,5,39,morning,ios,good,True,False
+USER_00774,2809f6ab948d9053,mason,intermediate,32,semi-urban,bn,[np.str_('hi')],2025-09-18T18:57:17.299351,63,3,52,afternoon,android,moderate,True,False
+USER_00775,3668b00acc49eb24,carpenter,expert,58,semi-urban,hi,"[np.str_('pa'), np.str_('ml')]",2025-05-20T18:57:17.299577,29,20,48,night,ios,moderate,True,False
+USER_00776,6af7fa16a38cb860,electrician,intermediate,28,semi-urban,te,[np.str_('en')],2025-12-08T18:57:17.299786,63,20,35,night,ios,moderate,True,False
+USER_00777,12dd17fac59b4da2,mobile_repair,advanced,23,rural,gu,"[np.str_('en'), np.str_('kn')]",2025-03-14T18:57:17.300015,29,29,40,afternoon,ios,moderate,True,False
+USER_00778,9d50ed0c9e1f2c44,carpenter,beginner,33,rural,ta,[],2026-01-07T18:57:17.302472,81,44,22,afternoon,ios,moderate,True,True
+USER_00779,e7773e660697c3be,artisan,beginner,61,urban,bn,[np.str_('mr')],2025-08-22T18:57:17.303290,93,6,52,afternoon,ios,moderate,True,True
+USER_00780,6f4dcd72d59df53e,appliance_repair,expert,53,rural,gu,[],2025-04-21T18:57:17.303526,47,15,50,night,web,poor,True,False
+USER_00781,11dcfe13d92f5229,carpenter,intermediate,51,semi-urban,ml,[np.str_('bn')],2025-04-11T18:57:17.303748,81,41,22,evening,web,poor,True,True
+USER_00782,40f60056a3ee8a6c,electrician,expert,47,urban,en,"[np.str_('ta'), np.str_('en')]",2026-02-08T18:57:17.303998,18,5,27,afternoon,ios,poor,True,False
+USER_00783,c8d39d7ac368096c,plumber,expert,51,semi-urban,te,"[np.str_('gu'), np.str_('gu')]",2025-08-06T18:57:17.304499,23,15,49,afternoon,web,moderate,True,False
+USER_00784,49051db1bd071d8d,appliance_repair,intermediate,62,semi-urban,gu,[np.str_('bn')],2025-03-31T18:57:17.304780,1,44,38,afternoon,web,poor,True,False
+USER_00785,dfdd0f81c50f6c51,appliance_repair,intermediate,39,rural,en,[],2026-01-08T18:57:17.304980,97,31,9,morning,web,poor,True,True
+USER_00786,544d3e2031be8a96,farmer,expert,41,urban,ta,"[np.str_('hi'), np.str_('ta')]",2025-05-30T18:57:17.305375,84,37,42,morning,ios,poor,True,False
+USER_00787,3b0105598b5911aa,plumber,beginner,37,semi-urban,te,"[np.str_('gu'), np.str_('pa')]",2025-12-30T18:57:17.305947,5,4,19,night,web,good,True,True
+USER_00788,0893f85277305734,plumber,intermediate,24,urban,bn,[],2025-04-27T18:57:17.306204,81,39,31,morning,web,poor,True,True
+USER_00789,a3d18fa03a6b5078,plumber,intermediate,56,urban,mr,[np.str_('gu')],2025-03-08T18:57:17.306468,40,32,53,night,ios,poor,True,False
+USER_00790,83e5f6b34f6e157f,carpenter,intermediate,64,semi-urban,hi,[],2025-06-25T18:57:17.307081,1,26,41,night,ios,poor,True,False
+USER_00791,11b80c1e62a4308f,electrician,beginner,62,urban,bn,[np.str_('te')],2025-12-06T18:57:17.307302,95,29,56,afternoon,ios,poor,True,True
+USER_00792,6774c522ed0638cf,carpenter,expert,19,urban,pa,[],2025-04-30T18:57:17.307504,9,17,53,afternoon,android,poor,True,False
+USER_00793,1f6ce8dfa1823d67,plumber,expert,55,semi-urban,pa,[],2025-11-28T18:57:17.307698,44,33,58,morning,web,good,True,True
+USER_00794,d3f6ec1e6ea1dc4b,farmer,intermediate,31,semi-urban,en,[],2026-01-08T18:57:17.307890,49,29,31,afternoon,web,good,True,False
+USER_00795,2503f2123764e730,plumber,expert,24,rural,mr,"[np.str_('te'), np.str_('bn')]",2025-10-08T18:57:17.308118,42,11,29,night,android,moderate,True,True
+USER_00796,f742937f4a569a49,mobile_repair,beginner,35,urban,te,[np.str_('mr')],2025-04-08T18:57:17.308341,80,8,43,afternoon,ios,good,True,True
+USER_00797,dc33a9a2492c8a1b,artisan,beginner,24,urban,te,"[np.str_('mr'), np.str_('hi')]",2025-09-02T18:57:17.308571,64,18,15,night,ios,moderate,True,True
+USER_00798,edee2d3064948fad,homestay_owner,expert,32,semi-urban,ml,"[np.str_('hi'), np.str_('hi')]",2025-08-24T18:57:17.308802,83,19,34,morning,web,good,True,True
+USER_00799,fe7fdaa894f46b64,farmer,beginner,57,semi-urban,mr,[np.str_('gu')],2026-01-06T18:57:17.309012,93,31,6,night,ios,poor,True,False
+USER_00800,3e9c7b2e311688c2,electrician,beginner,39,semi-urban,mr,[np.str_('pa')],2025-11-27T18:57:17.309223,30,34,23,morning,web,good,True,False
+USER_00801,7ebcefd3711d99af,electrician,advanced,43,urban,en,[np.str_('te')],2025-11-03T18:57:17.309432,16,42,18,afternoon,web,good,True,True
+USER_00802,4084a9b997b29b35,electrician,advanced,35,urban,gu,"[np.str_('kn'), np.str_('mr')]",2025-11-09T18:57:17.309673,30,30,23,morning,android,good,True,True
+USER_00803,4c44e3da1d6405cc,plumber,advanced,48,urban,gu,[],2025-10-22T18:57:17.309867,35,8,55,night,android,poor,True,True
+USER_00804,981ec3248fa284cf,artisan,beginner,41,rural,hi,[],2025-02-19T18:57:17.310057,95,26,26,afternoon,android,moderate,True,True
+USER_00805,979818677b081aec,appliance_repair,expert,53,rural,mr,[np.str_('te')],2025-11-10T18:57:17.310265,80,11,30,morning,web,moderate,True,False
+USER_00806,83dc886b52057a73,homestay_owner,advanced,30,rural,ta,"[np.str_('ta'), np.str_('pa')]",2025-05-18T18:57:17.310493,86,0,42,morning,ios,moderate,True,False
+USER_00807,a4548ee4267c8e41,artisan,beginner,58,semi-urban,ta,[np.str_('en')],2025-08-15T18:57:17.310707,49,29,8,afternoon,android,poor,True,False
+USER_00808,17f9cf3dfcc74a7f,carpenter,advanced,35,urban,te,"[np.str_('pa'), np.str_('gu')]",2025-06-21T18:57:17.310936,4,36,12,night,android,good,True,True
+USER_00809,3b9d9ad1aeb1cb0c,appliance_repair,intermediate,39,urban,ta,"[np.str_('bn'), np.str_('ml')]",2025-05-19T18:57:17.311164,88,28,13,morning,ios,good,True,False
+USER_00810,117c4999010f23a8,appliance_repair,beginner,23,semi-urban,kn,[np.str_('mr')],2025-05-13T18:57:17.311374,30,21,25,afternoon,ios,good,True,True
+USER_00811,a5b63f6c5919b4e5,electrician,intermediate,24,urban,ml,[],2025-09-25T18:57:17.311566,80,11,54,night,ios,poor,True,False
+USER_00812,7a0b5d5ee2a06c18,plumber,intermediate,62,urban,ta,[np.str_('hi')],2025-05-22T18:57:17.311779,13,24,38,evening,ios,moderate,True,False
+USER_00813,8cca6cff99da58f2,carpenter,intermediate,43,semi-urban,hi,"[np.str_('kn'), np.str_('ml')]",2025-11-14T18:57:17.312013,16,35,45,afternoon,android,poor,True,True
+USER_00814,ae4671e45c2f9974,plumber,intermediate,29,rural,hi,"[np.str_('mr'), np.str_('mr')]",2025-08-17T18:57:17.312241,49,28,53,morning,web,good,True,False
+USER_00815,63adc43c4aa67d0e,electrician,intermediate,46,semi-urban,kn,[np.str_('bn')],2025-02-20T18:57:17.312454,53,44,22,night,ios,moderate,True,True
+USER_00816,e66860741f912eef,plumber,beginner,55,urban,pa,[],2025-07-11T18:57:17.312645,34,48,39,afternoon,web,poor,True,True
+USER_00817,41daaa82fdcb5434,mobile_repair,intermediate,51,urban,mr,[],2026-01-22T18:57:17.312834,37,16,27,morning,ios,moderate,True,True
+USER_00818,1514aa7197e1f260,appliance_repair,expert,57,semi-urban,hi,[],2025-06-18T18:57:17.313032,8,10,41,evening,ios,good,True,True
+USER_00819,f9253fb8d17ce564,mobile_repair,beginner,34,rural,en,[np.str_('ml')],2025-12-22T18:57:17.313241,62,37,13,morning,ios,poor,True,False
+USER_00820,c9e10bd502ab0b27,plumber,advanced,39,rural,te,[],2025-05-26T18:57:17.313431,59,3,29,morning,web,poor,True,False
+USER_00821,58675699d937756b,plumber,expert,62,urban,kn,[],2025-10-05T18:57:17.313622,88,12,34,evening,ios,good,True,True
+USER_00822,b3662fe120335178,welder,expert,19,semi-urban,en,"[np.str_('hi'), np.str_('ml')]",2026-01-18T18:57:17.313854,4,12,43,morning,ios,poor,True,False
+USER_00823,2e18064f64e88053,mobile_repair,beginner,56,rural,gu,[np.str_('gu')],2025-09-11T18:57:17.314063,7,21,19,morning,android,moderate,True,False
+USER_00824,4b60b3d2162beba2,mason,intermediate,32,rural,bn,[np.str_('bn')],2025-08-01T18:57:17.314278,54,39,48,evening,web,moderate,True,True
+USER_00825,ffa4e15e45c735aa,electrician,beginner,43,urban,mr,"[np.str_('pa'), np.str_('ta')]",2025-04-16T18:57:17.314508,89,32,18,evening,ios,moderate,True,False
+USER_00826,ef5d3c65d5e4e8a8,mobile_repair,advanced,57,rural,kn,[],2025-09-20T18:57:17.314698,71,26,50,night,web,good,True,True
+USER_00827,61032cff29dd5c9a,carpenter,beginner,47,urban,hi,[],2025-08-13T18:57:17.314888,23,32,18,morning,android,good,True,True
+USER_00828,74551bca3712200d,mobile_repair,advanced,23,semi-urban,bn,"[np.str_('hi'), np.str_('ta')]",2025-04-08T18:57:17.315121,99,7,42,afternoon,android,moderate,True,True
+USER_00829,d6f698b1065b6e36,homestay_owner,intermediate,48,urban,ml,[],2025-03-25T18:57:17.315314,83,25,34,morning,android,moderate,True,False
+USER_00830,4acf00f5a0915a8b,plumber,beginner,25,urban,bn,"[np.str_('te'), np.str_('ml')]",2025-11-14T18:57:17.315546,10,32,52,afternoon,web,good,True,True
+USER_00831,d7d2c2d8b6928f9f,artisan,beginner,47,rural,bn,[],2025-09-13T18:57:17.315737,34,25,40,evening,web,moderate,True,True
+USER_00832,ea9709b46a8c1a74,homestay_owner,intermediate,63,semi-urban,en,[np.str_('hi')],2025-11-02T18:57:17.315950,63,25,56,morning,android,poor,True,True
+USER_00833,e4f98d25a6b07f38,mason,expert,36,rural,bn,[],2026-02-11T18:57:17.316142,71,19,23,afternoon,android,poor,True,True
+USER_00834,46d3a3b7d1399281,mason,intermediate,37,urban,gu,[],2025-08-02T18:57:17.316337,98,49,11,evening,android,moderate,True,False
+USER_00835,3f2bbf896cb2a365,welder,advanced,34,urban,ml,[],2025-03-30T18:57:17.316527,50,11,21,morning,android,good,True,False
+USER_00836,c0f5f3bc517f18f0,plumber,intermediate,58,rural,hi,[],2026-01-12T18:57:17.316828,1,9,10,morning,android,moderate,True,False
+USER_00837,83f0c7ad20476eec,carpenter,beginner,48,semi-urban,gu,[np.str_('bn')],2025-11-18T18:57:17.317851,93,18,7,night,web,good,True,False
+USER_00838,62e2a0d840150cde,mobile_repair,beginner,50,rural,kn,"[np.str_('mr'), np.str_('te')]",2025-04-29T18:57:17.319225,81,9,39,night,android,good,True,False
+USER_00839,fc730b36d24fabdb,electrician,advanced,43,rural,ta,[],2025-11-21T18:57:17.319973,66,36,23,evening,web,poor,True,False
+USER_00840,da2d5891bdd4254d,mobile_repair,expert,48,semi-urban,en,[],2025-05-20T18:57:17.320472,66,41,16,afternoon,web,moderate,True,True
+USER_00841,39c577ffb06ff1db,welder,advanced,62,urban,bn,"[np.str_('ta'), np.str_('kn')]",2025-04-17T18:57:17.321134,30,12,44,morning,android,good,True,True
+USER_00842,0b532e9639c4516c,artisan,advanced,60,urban,ta,"[np.str_('ta'), np.str_('en')]",2025-11-08T18:57:17.321641,32,6,43,afternoon,web,moderate,True,True
+USER_00843,811432c910a2056a,mobile_repair,intermediate,39,urban,en,[np.str_('te')],2026-01-23T18:57:17.322187,38,6,13,afternoon,android,moderate,True,False
+USER_00844,b33eb6a13ffadf16,carpenter,intermediate,39,semi-urban,pa,[],2026-01-19T18:57:17.322571,8,47,43,morning,ios,good,True,False
+USER_00845,dacffe13b444bd3b,plumber,advanced,48,rural,en,[np.str_('kn')],2025-11-24T18:57:17.322988,73,15,32,morning,ios,poor,True,False
+USER_00846,517844d42f4dab9b,welder,intermediate,20,rural,mr,[],2025-04-11T18:57:17.323414,43,23,37,afternoon,ios,poor,True,True
+USER_00847,e2afa73847a41064,welder,beginner,33,semi-urban,te,"[np.str_('mr'), np.str_('ta')]",2025-06-21T18:57:17.323871,13,41,11,afternoon,android,poor,True,True
+USER_00848,d4954496dfe330be,electrician,intermediate,43,rural,hi,"[np.str_('gu'), np.str_('ta')]",2025-04-06T18:57:17.324152,81,22,47,afternoon,android,good,True,False
+USER_00849,0accd2995d175a99,mason,expert,19,rural,ta,[],2025-05-31T18:57:17.324358,33,44,34,morning,android,moderate,True,True
+USER_00850,e7cf39c99cad06d6,farmer,intermediate,36,urban,pa,[],2025-03-27T18:57:17.324553,83,40,35,night,web,moderate,True,True
+USER_00851,6553267a1202392c,homestay_owner,expert,61,urban,te,[np.str_('bn')],2025-05-10T18:57:17.324765,65,40,10,night,ios,poor,True,True
+USER_00852,4dbf195519be193e,carpenter,expert,50,semi-urban,mr,[np.str_('ml')],2025-07-21T18:57:17.324985,99,24,51,morning,web,moderate,True,True
+USER_00853,0b5f3dc4cdf69c72,appliance_repair,beginner,60,urban,ml,[np.str_('te')],2025-05-22T18:57:17.325202,90,15,14,evening,ios,poor,True,True
+USER_00854,f7e1208c5c9f8c5c,mobile_repair,intermediate,34,rural,te,"[np.str_('hi'), np.str_('en')]",2025-07-22T18:57:17.325434,70,36,13,afternoon,android,poor,True,True
+USER_00855,0adf15864426d755,carpenter,advanced,30,semi-urban,en,"[np.str_('hi'), np.str_('ta')]",2025-08-19T18:57:17.325663,47,23,44,night,ios,good,True,True
+USER_00856,4b80761977724502,homestay_owner,advanced,61,rural,en,[],2026-02-09T18:57:17.325854,3,46,27,evening,web,good,True,False
+USER_00857,21e032a655d1dcd6,carpenter,expert,23,urban,mr,[],2025-09-04T18:57:17.326045,92,28,17,afternoon,web,poor,True,False
+USER_00858,2a065fe16b6e4188,artisan,advanced,33,semi-urban,pa,"[np.str_('hi'), np.str_('te')]",2025-08-19T18:57:17.326272,9,47,7,evening,ios,moderate,True,False
+USER_00859,e82faf76b839b9e1,artisan,beginner,32,urban,pa,"[np.str_('ta'), np.str_('ta')]",2025-03-02T18:57:17.326504,69,20,20,night,ios,good,True,True
+USER_00860,23c6332ced9ae68c,mobile_repair,advanced,42,urban,en,"[np.str_('bn'), np.str_('en')]",2025-11-19T18:57:17.326732,99,14,41,evening,ios,moderate,True,True
+USER_00861,b6b41ba156220a5c,electrician,intermediate,22,urban,kn,"[np.str_('pa'), np.str_('gu')]",2025-03-17T18:57:17.326974,43,8,34,morning,web,poor,True,True
+USER_00862,d5938e42fc2a2287,carpenter,intermediate,38,urban,en,[],2025-07-07T18:57:17.327173,88,36,52,night,web,poor,True,True
+USER_00863,49025771ad518296,mason,advanced,22,urban,kn,[],2025-08-24T18:57:17.327363,23,42,28,night,ios,good,True,True
+USER_00864,9d966240c27265ca,plumber,expert,60,rural,mr,[],2025-10-26T18:57:17.327556,96,41,22,morning,ios,good,True,False
+USER_00865,6cd274d62d6ce537,homestay_owner,beginner,59,urban,kn,[],2025-02-26T18:57:17.327754,6,29,50,morning,android,poor,True,True
+USER_00866,a55507084eed98dc,carpenter,intermediate,60,urban,bn,"[np.str_('pa'), np.str_('kn')]",2025-11-08T18:57:17.327981,76,1,36,afternoon,web,good,True,False
+USER_00867,1eab8ab505c012c9,carpenter,beginner,31,rural,ta,[np.str_('gu')],2025-11-14T18:57:17.328191,24,37,58,night,ios,moderate,True,True
+USER_00868,07e6426c0b99f21f,appliance_repair,advanced,43,urban,te,[np.str_('kn')],2025-06-24T18:57:17.328400,69,8,57,night,web,moderate,True,True
+USER_00869,51ad85bb02dc1181,appliance_repair,advanced,35,semi-urban,bn,[],2025-07-15T18:57:17.328591,36,27,44,evening,web,poor,True,False
+USER_00870,84ad7442880089f2,carpenter,beginner,44,urban,kn,[],2025-05-11T18:57:17.328785,43,2,37,evening,ios,moderate,True,True
+USER_00871,29baceaa4aa7e4e3,farmer,intermediate,31,semi-urban,pa,[np.str_('te')],2025-04-02T18:57:17.328996,56,14,25,afternoon,android,poor,True,True
+USER_00872,9b1f34bf8b4e087f,plumber,intermediate,30,urban,ml,"[np.str_('ml'), np.str_('en')]",2025-10-25T18:57:17.329229,21,19,25,morning,web,poor,True,True
+USER_00873,6092e96244eabe4d,carpenter,expert,53,semi-urban,ml,"[np.str_('pa'), np.str_('ta')]",2025-02-19T18:57:17.329459,73,37,32,afternoon,web,good,True,True
+USER_00874,29b41e2d3eca491a,artisan,beginner,21,rural,bn,"[np.str_('mr'), np.str_('mr')]",2025-08-25T18:57:17.329687,33,38,16,evening,android,moderate,True,True
+USER_00875,bc0ba5b31bb196eb,mobile_repair,expert,37,rural,mr,[np.str_('ml')],2025-09-27T18:57:17.329896,41,14,7,night,web,moderate,True,True
+USER_00876,239bf48f8aa794a7,homestay_owner,beginner,23,rural,bn,[],2025-03-08T18:57:17.330092,45,22,7,night,web,good,True,True
+USER_00877,4360494937646788,plumber,advanced,20,semi-urban,pa,[],2025-12-14T18:57:17.330285,9,29,7,evening,web,poor,True,True
+USER_00878,792b8cc575a2bcdc,electrician,advanced,39,urban,bn,[],2025-07-15T18:57:17.330474,43,37,49,morning,android,moderate,True,True
+USER_00879,274e13f60297fdec,artisan,expert,54,semi-urban,pa,[],2025-11-18T18:57:17.330664,52,42,32,afternoon,ios,moderate,True,True
+USER_00880,64b2a6b922bf0138,carpenter,intermediate,45,urban,bn,[np.str_('te')],2026-01-18T18:57:17.330871,9,26,30,morning,android,good,True,True
+USER_00881,0ee1950476f6a7af,appliance_repair,intermediate,57,rural,gu,[],2026-01-31T18:57:17.331066,70,4,36,night,android,poor,True,True
+USER_00882,0c521c5e62f7b376,plumber,intermediate,47,rural,mr,[np.str_('ta')],2025-05-18T18:57:17.331282,64,9,52,afternoon,web,good,True,False
+USER_00883,2f3fd2077c559f1a,farmer,intermediate,26,urban,bn,"[np.str_('bn'), np.str_('bn')]",2025-02-24T18:57:17.331509,21,47,15,morning,ios,poor,True,False
+USER_00884,0cef8351e5caa495,farmer,beginner,41,urban,ta,"[np.str_('ta'), np.str_('pa')]",2025-06-20T18:57:17.331736,95,32,37,afternoon,web,good,True,False
+USER_00885,7831f108d8c6c5df,welder,expert,60,semi-urban,ta,[],2025-07-23T18:57:17.331928,9,35,32,morning,android,poor,True,False
+USER_00886,ac3f985640265277,appliance_repair,advanced,30,semi-urban,bn,"[np.str_('ml'), np.str_('gu')]",2025-12-09T18:57:17.332154,65,42,17,afternoon,android,moderate,True,False
+USER_00887,ea9cbd6284f27f63,homestay_owner,advanced,33,rural,ta,"[np.str_('gu'), np.str_('ml')]",2025-12-25T18:57:17.332385,69,37,26,evening,android,moderate,True,True
+USER_00888,b9ed70c16d16724e,artisan,beginner,40,urban,te,"[np.str_('bn'), np.str_('ta')]",2025-10-31T18:57:17.332612,19,3,55,evening,ios,good,True,True
+USER_00889,4717b0bdef08342f,electrician,beginner,36,semi-urban,kn,"[np.str_('hi'), np.str_('bn')]",2025-11-07T18:57:17.332841,93,19,25,night,ios,good,True,True
+USER_00890,a89883943dc401ae,farmer,beginner,53,semi-urban,gu,"[np.str_('ml'), np.str_('hi')]",2025-08-28T18:57:17.333069,45,24,36,night,ios,moderate,True,True
+USER_00891,1162be773efa7a1b,farmer,expert,33,urban,en,"[np.str_('mr'), np.str_('te')]",2026-01-13T18:57:17.333296,70,6,47,afternoon,ios,good,True,False
+USER_00892,fef3859cfc53dc8f,mason,intermediate,29,urban,ta,"[np.str_('ml'), np.str_('en')]",2025-07-22T18:57:17.333953,98,29,46,morning,web,poor,True,False
+USER_00893,e2688c35414c8c73,carpenter,beginner,36,urban,te,"[np.str_('te'), np.str_('pa')]",2026-02-01T18:57:17.334832,7,24,50,morning,android,good,True,True
+USER_00894,4fba35f597539fd9,farmer,intermediate,45,rural,ta,[],2025-04-02T18:57:17.335901,8,29,13,evening,ios,poor,True,True
+USER_00895,faaefb6937fd4b50,appliance_repair,advanced,34,rural,bn,"[np.str_('pa'), np.str_('ta')]",2025-12-06T18:57:17.336673,89,4,20,evening,ios,poor,True,True
+USER_00896,b653dc438a8b7d1c,homestay_owner,intermediate,25,urban,en,[],2025-09-08T18:57:17.337187,79,36,48,night,web,poor,True,True
+USER_00897,0b288c82a95858c4,carpenter,advanced,33,urban,kn,"[np.str_('bn'), np.str_('pa')]",2025-06-03T18:57:17.337473,91,31,41,night,ios,poor,True,True
+USER_00898,804b5dedca9c3def,farmer,advanced,27,urban,gu,[np.str_('bn')],2025-12-02T18:57:17.337695,49,40,47,morning,web,good,True,False
+USER_00899,ce1c82354b2fa53d,plumber,intermediate,27,rural,ta,"[np.str_('hi'), np.str_('kn')]",2025-04-18T18:57:17.338116,21,15,44,morning,web,poor,True,True
+USER_00900,386dfa7d3c5c489e,homestay_owner,intermediate,21,semi-urban,ta,"[np.str_('mr'), np.str_('ml')]",2025-08-23T18:57:17.338453,97,25,18,afternoon,web,moderate,True,False
+USER_00901,e05e01b138cda960,carpenter,beginner,36,urban,gu,"[np.str_('kn'), np.str_('ta')]",2025-12-22T18:57:17.338732,33,24,57,evening,web,poor,True,False
+USER_00902,b33f9339995f8d65,artisan,beginner,38,urban,bn,[],2025-10-15T18:57:17.339152,66,42,20,morning,android,moderate,True,False
+USER_00903,3166d49d6ac60d16,welder,advanced,44,urban,pa,[],2025-06-22T18:57:17.339602,14,4,8,afternoon,ios,moderate,True,False
+USER_00904,cdd97889113d1748,mobile_repair,beginner,47,urban,kn,"[np.str_('mr'), np.str_('mr')]",2025-06-13T18:57:17.339852,21,21,8,evening,ios,poor,True,True
+USER_00905,7d382b93a868363d,carpenter,intermediate,36,rural,gu,[],2025-12-18T18:57:17.340052,91,4,49,afternoon,android,good,True,False
+USER_00906,629fd69ef63cd3f1,artisan,advanced,37,rural,bn,"[np.str_('hi'), np.str_('pa')]",2025-11-11T18:57:17.340282,1,25,41,evening,android,good,True,False
+USER_00907,96bf18276e55ffa0,mobile_repair,advanced,40,urban,te,[np.str_('ml')],2025-06-03T18:57:17.340493,51,41,54,morning,web,moderate,True,True
+USER_00908,6508c00d0ccc5183,mason,intermediate,19,rural,mr,[np.str_('pa')],2025-05-04T18:57:17.340703,23,29,35,afternoon,android,good,True,True
+USER_00909,e0d2b7b51f59bb81,carpenter,beginner,35,semi-urban,ta,[],2025-07-08T18:57:17.340904,89,9,16,morning,ios,poor,True,True
+USER_00910,30c15529e9b6b557,farmer,expert,36,semi-urban,mr,[],2025-05-22T18:57:17.341097,41,0,24,afternoon,web,moderate,True,True
+USER_00911,f284307ed8e42599,electrician,advanced,45,semi-urban,ml,[np.str_('pa')],2025-08-21T18:57:17.341307,26,23,6,evening,ios,poor,True,False
+USER_00912,81fffe97cd97a1d9,plumber,intermediate,43,urban,en,[np.str_('kn')],2025-04-14T18:57:17.341522,36,42,5,night,ios,poor,True,False
+USER_00913,33e54eaeab0d07fc,carpenter,intermediate,48,semi-urban,hi,"[np.str_('pa'), np.str_('pa')]",2025-12-11T18:57:17.341758,53,25,10,night,web,moderate,True,False
+USER_00914,5ef79e34636064d0,homestay_owner,expert,18,semi-urban,mr,"[np.str_('kn'), np.str_('bn')]",2025-09-20T18:57:17.341986,81,8,50,morning,android,moderate,True,True
+USER_00915,d94869e3680cf687,homestay_owner,intermediate,58,urban,mr,"[np.str_('bn'), np.str_('hi')]",2025-12-06T18:57:17.342222,69,17,8,afternoon,ios,moderate,True,True
+USER_00916,79d71f7350a120db,welder,advanced,18,rural,en,[],2025-07-20T18:57:17.342414,2,8,16,afternoon,ios,moderate,True,True
+USER_00917,e8c81fc9c76ff066,appliance_repair,beginner,35,rural,kn,[],2025-06-30T18:57:17.342602,51,39,28,evening,android,good,True,False
+USER_00918,882685a07dac6044,homestay_owner,beginner,43,semi-urban,hi,"[np.str_('en'), np.str_('pa')]",2025-04-03T18:57:17.342827,39,41,55,morning,ios,poor,True,True
+USER_00919,63cba9d8fc2c32bf,electrician,expert,51,semi-urban,pa,"[np.str_('kn'), np.str_('te')]",2025-07-13T18:57:17.343054,78,46,57,evening,ios,moderate,True,True
+USER_00920,3b3b0e08d46a56be,carpenter,intermediate,47,rural,en,[np.str_('bn')],2025-06-11T18:57:17.343266,68,13,26,night,web,good,True,True
+USER_00921,9c10065140eaa12c,mason,intermediate,27,urban,bn,[np.str_('hi')],2025-07-30T18:57:17.343475,22,1,57,night,android,moderate,True,False
+USER_00922,d6b5e0a799ff2540,welder,intermediate,47,rural,bn,[np.str_('en')],2025-07-15T18:57:17.343686,90,48,39,afternoon,web,poor,True,False
+USER_00923,32b825310187401d,welder,expert,23,semi-urban,mr,[],2025-02-16T18:57:17.343877,29,28,54,morning,web,moderate,True,True
+USER_00924,cde8d364d0d8f1de,electrician,expert,47,urban,mr,"[np.str_('ml'), np.str_('kn')]",2026-02-01T18:57:17.344101,31,10,54,morning,web,good,True,False
+USER_00925,c7f07543ad40fe60,homestay_owner,intermediate,20,urban,gu,"[np.str_('pa'), np.str_('gu')]",2025-10-12T18:57:17.344335,70,49,42,morning,web,poor,True,False
+USER_00926,4bdf3409a19ae03e,homestay_owner,expert,58,semi-urban,hi,[],2025-11-07T18:57:17.344532,29,0,56,evening,web,good,True,False
+USER_00927,a123321014b13378,artisan,beginner,38,semi-urban,pa,"[np.str_('pa'), np.str_('mr')]",2025-12-10T18:57:17.344757,26,39,17,morning,android,moderate,True,False
+USER_00928,3dfaaa0978f96406,carpenter,intermediate,44,rural,en,[],2025-05-29T18:57:17.344947,89,47,57,afternoon,ios,moderate,True,False
+USER_00929,146731a70b11461e,carpenter,advanced,18,urban,kn,[np.str_('gu')],2025-12-14T18:57:17.345158,79,32,51,afternoon,ios,good,True,False
+USER_00930,8a5d533926a6ae87,plumber,expert,18,semi-urban,gu,"[np.str_('ta'), np.str_('kn')]",2025-12-05T18:57:17.345384,43,17,19,morning,ios,poor,True,False
+USER_00931,993f8459df69e558,farmer,advanced,60,semi-urban,te,"[np.str_('mr'), np.str_('mr')]",2025-04-25T18:57:17.345612,4,46,51,night,web,moderate,True,True
+USER_00932,d9000288d67c661c,farmer,advanced,56,rural,ta,[],2025-06-08T18:57:17.345807,58,27,23,evening,ios,moderate,True,True
+USER_00933,ede38e035d0cba5d,welder,expert,21,semi-urban,en,"[np.str_('te'), np.str_('gu')]",2026-01-16T18:57:17.346031,57,22,49,night,android,good,True,True
+USER_00934,88bcb957b5576e1c,carpenter,advanced,55,urban,ml,[],2026-01-21T18:57:17.346221,20,32,46,afternoon,android,poor,True,True
+USER_00935,5c1456874b65e825,homestay_owner,expert,57,semi-urban,hi,[],2025-07-09T18:57:17.346410,51,34,10,night,android,poor,True,True
+USER_00936,57807dd7d74de325,carpenter,intermediate,54,semi-urban,bn,[],2025-08-30T18:57:17.346598,44,29,36,morning,ios,poor,True,False
+USER_00937,d41767f70cfab135,welder,beginner,56,semi-urban,ta,[],2025-11-13T18:57:17.346789,65,7,6,morning,android,moderate,True,False
+USER_00938,6c3cfa92d862e1b9,electrician,beginner,48,semi-urban,kn,"[np.str_('kn'), np.str_('kn')]",2025-02-19T18:57:17.347021,54,10,46,night,android,good,True,True
+USER_00939,4f9cd8ae1a860f38,farmer,intermediate,29,semi-urban,mr,[np.str_('mr')],2025-05-02T18:57:17.347229,15,24,48,afternoon,android,moderate,True,True
+USER_00940,44f0fc0daa3db3cf,electrician,beginner,46,rural,te,[np.str_('gu')],2025-03-19T18:57:17.347438,3,2,13,morning,android,moderate,True,False
+USER_00941,1b9745149e07392a,electrician,intermediate,24,rural,ml,"[np.str_('ta'), np.str_('pa')]",2025-07-09T18:57:17.347664,15,35,32,night,ios,poor,True,False
+USER_00942,49af7e36e9e105bb,carpenter,expert,51,semi-urban,gu,[],2025-06-23T18:57:17.347859,81,19,42,afternoon,ios,moderate,True,True
+USER_00943,349aee711e0c9dad,appliance_repair,beginner,31,rural,bn,[np.str_('gu')],2025-03-28T18:57:17.348071,83,30,22,morning,web,good,True,True
+USER_00944,f463910089b966ea,plumber,beginner,60,urban,te,[np.str_('pa')],2025-06-18T18:57:17.348279,20,48,23,afternoon,android,moderate,True,True
+USER_00945,23c30377c35b347c,carpenter,intermediate,46,rural,ta,"[np.str_('kn'), np.str_('gu')]",2026-01-31T18:57:17.348509,15,20,48,night,web,poor,True,False
+USER_00946,d5d7be25bb8fbe4c,homestay_owner,advanced,40,urban,pa,"[np.str_('pa'), np.str_('bn')]",2025-05-16T18:57:17.348735,23,44,51,night,web,good,True,True
+USER_00947,858d6a6fd3eda9d5,welder,expert,38,urban,ta,"[np.str_('pa'), np.str_('te')]",2025-07-23T18:57:17.348962,5,25,20,night,web,good,True,True
+USER_00948,7135fa28c9b1e6f1,mason,advanced,59,urban,mr,"[np.str_('mr'), np.str_('en')]",2025-11-28T18:57:17.349225,14,14,49,afternoon,web,moderate,True,True
+USER_00949,92e27cb6c659806e,welder,expert,48,semi-urban,ta,[],2025-12-08T18:57:17.349419,77,1,41,morning,web,moderate,True,True
+USER_00950,60ea54fbdd5112ae,carpenter,advanced,58,semi-urban,en,[],2025-04-23T18:57:17.349609,44,10,56,morning,web,poor,True,True
+USER_00951,aca585dd2ea6cacd,carpenter,expert,29,urban,bn,[],2025-04-08T18:57:17.349798,1,35,43,evening,web,moderate,True,False
+USER_00952,7a3be7fe578c0056,mobile_repair,expert,48,rural,gu,[np.str_('pa')],2025-06-07T18:57:17.350010,56,36,22,afternoon,android,good,True,False
+USER_00953,d49e83ef6cbe2716,welder,beginner,43,rural,hi,[np.str_('gu')],2026-01-04T18:57:17.351352,81,6,47,afternoon,web,poor,True,True
+USER_00954,98559aa8a37cdb23,mason,beginner,54,urban,mr,[],2025-10-13T18:57:17.352622,63,47,35,night,android,good,True,False
+USER_00955,899463c7ecaa68f2,homestay_owner,advanced,51,urban,ta,[np.str_('ml')],2025-02-15T18:57:17.353181,12,21,50,afternoon,web,poor,True,False
+USER_00956,5ae08500df8a1884,homestay_owner,intermediate,38,rural,mr,[np.str_('ta')],2026-01-03T18:57:17.353637,44,16,41,night,ios,good,True,True
+USER_00957,15eb8108933654de,farmer,advanced,29,rural,en,"[np.str_('gu'), np.str_('hi')]",2025-08-27T18:57:17.354112,2,9,43,night,ios,good,True,False
+USER_00958,da5c960431ae535d,plumber,intermediate,61,urban,kn,"[np.str_('ta'), np.str_('gu')]",2025-08-07T18:57:17.354688,99,25,11,night,ios,poor,True,False
+USER_00959,0ff59c648c0eaf4b,electrician,advanced,46,urban,pa,[],2025-08-20T18:57:17.354978,84,29,28,morning,ios,good,True,False
+USER_00960,6e400fd4d34d0114,mason,advanced,46,rural,hi,"[np.str_('hi'), np.str_('gu')]",2025-09-08T18:57:17.355268,77,39,35,evening,android,poor,True,False
+USER_00961,9bbf79e4285f60d2,appliance_repair,beginner,55,urban,gu,[np.str_('ta')],2025-09-04T18:57:17.355635,33,48,45,night,web,poor,True,False
+USER_00962,5ae236a7ac7df20f,homestay_owner,expert,43,urban,mr,"[np.str_('te'), np.str_('gu')]",2025-11-18T18:57:17.356187,99,28,24,evening,ios,poor,True,True
+USER_00963,811a8935b03fc2c9,welder,beginner,62,urban,ta,"[np.str_('kn'), np.str_('bn')]",2025-12-09T18:57:17.356494,13,4,25,evening,android,poor,True,True
+USER_00964,caf6a1d4dfa97143,farmer,advanced,40,urban,ta,[],2026-01-03T18:57:17.356732,41,37,35,evening,android,moderate,True,False
+USER_00965,e0190a713cb75460,appliance_repair,advanced,28,urban,hi,[np.str_('en')],2025-12-28T18:57:17.356995,32,17,59,afternoon,ios,poor,True,True
+USER_00966,0197d5de279c618c,artisan,intermediate,39,rural,kn,[np.str_('hi')],2025-12-17T18:57:17.357211,80,28,8,evening,ios,poor,True,False
+USER_00967,12f0c14ad0dd6d08,appliance_repair,advanced,26,rural,hi,[],2025-07-01T18:57:17.357406,43,46,13,night,android,moderate,True,False
+USER_00968,24fe302659bb028b,welder,expert,50,rural,te,[np.str_('hi')],2025-04-13T18:57:17.357618,69,10,25,afternoon,ios,poor,True,True
+USER_00969,ae82108cc21dca92,artisan,advanced,36,semi-urban,kn,"[np.str_('gu'), np.str_('mr')]",2025-03-29T18:57:17.357851,66,10,36,night,ios,moderate,True,True
+USER_00970,3b4214d831e97ebc,homestay_owner,advanced,62,urban,mr,[],2025-09-07T18:57:17.358047,41,14,11,night,web,poor,True,True
+USER_00971,ce584d2487806099,homestay_owner,beginner,24,rural,mr,[],2025-05-21T18:57:17.358244,3,40,50,night,android,good,True,False
+USER_00972,973d6feefb16abbc,electrician,expert,41,urban,kn,[np.str_('ml')],2025-08-06T18:57:17.358461,23,38,42,night,ios,poor,True,False
+USER_00973,7bf78259715d6b85,carpenter,expert,61,rural,ml,[],2025-10-28T18:57:17.358658,33,17,25,night,android,poor,True,True
+USER_00974,61a97a3db2f19037,welder,intermediate,31,rural,pa,[],2025-03-25T18:57:17.358852,7,34,28,night,android,poor,True,True
+USER_00975,86486f8ee0ff04bb,mobile_repair,intermediate,51,rural,ml,[np.str_('ml')],2025-09-09T18:57:17.359063,53,38,55,night,ios,good,True,False
+USER_00976,e836a6efa5cdfecb,mason,advanced,22,urban,ml,"[np.str_('pa'), np.str_('hi')]",2025-11-24T18:57:17.359293,6,47,58,morning,ios,good,True,True
+USER_00977,be0367f905876011,plumber,advanced,43,urban,ta,"[np.str_('te'), np.str_('ta')]",2025-09-20T18:57:17.359529,73,13,59,afternoon,android,good,True,False
+USER_00978,cc8c7a8bce1f5522,electrician,intermediate,28,urban,gu,[np.str_('gu')],2025-11-05T18:57:17.359739,81,42,12,night,android,poor,True,True
+USER_00979,af91eee661d592c7,mason,expert,52,rural,te,"[np.str_('te'), np.str_('en')]",2025-10-11T18:57:17.359967,54,36,18,evening,web,poor,True,False
+USER_00980,83c27f4a64f23bed,homestay_owner,beginner,39,rural,hi,[np.str_('pa')],2025-10-11T18:57:17.360176,20,37,54,afternoon,android,poor,True,True
+USER_00981,66b4618c0c9a9b35,carpenter,beginner,60,urban,hi,"[np.str_('gu'), np.str_('kn')]",2025-06-10T18:57:17.360403,81,9,31,afternoon,android,poor,True,False
+USER_00982,e70609580f839f47,mason,beginner,58,semi-urban,pa,"[np.str_('gu'), np.str_('kn')]",2025-11-13T18:57:17.360641,55,39,40,evening,ios,good,True,False
+USER_00983,fcd783b428ea087c,carpenter,advanced,32,urban,ta,[np.str_('kn')],2025-02-18T18:57:17.360853,30,43,44,night,android,poor,True,False
+USER_00984,aa3852ec61d928b4,electrician,intermediate,31,rural,hi,"[np.str_('kn'), np.str_('kn')]",2025-10-20T18:57:17.361082,65,16,11,night,android,poor,True,False
+USER_00985,af3e1a28ce70d25d,artisan,expert,50,rural,bn,[],2025-03-17T18:57:17.361276,27,27,28,night,android,moderate,True,True
+USER_00986,5a84797148a72458,electrician,expert,63,semi-urban,en,[],2025-03-16T18:57:17.361466,91,37,6,night,web,poor,True,True
+USER_00987,0722fcca6e073f64,carpenter,beginner,49,semi-urban,pa,[np.str_('bn')],2025-10-04T18:57:17.361675,91,33,16,evening,android,good,True,True
+USER_00988,b64e66227763f9da,welder,beginner,58,semi-urban,ta,"[np.str_('te'), np.str_('ml')]",2025-08-05T18:57:17.361911,34,36,21,afternoon,android,moderate,True,False
+USER_00989,1d584f267c98c421,appliance_repair,intermediate,18,rural,mr,[np.str_('gu')],2026-01-27T18:57:17.362123,73,16,34,evening,web,good,True,True
+USER_00990,861bab0188bce323,homestay_owner,expert,27,urban,gu,[np.str_('ta')],2025-09-09T18:57:17.362332,34,0,51,evening,ios,poor,True,False
+USER_00991,1e85032b0c653dbd,appliance_repair,advanced,34,urban,gu,"[np.str_('en'), np.str_('kn')]",2025-03-14T18:57:17.362560,13,17,39,night,web,good,True,False
+USER_00992,e26e9a0a159ee148,farmer,expert,59,semi-urban,bn,[np.str_('en')],2025-11-14T18:57:17.362774,86,18,29,evening,android,moderate,True,True
+USER_00993,7c57b8604d43a892,welder,intermediate,19,rural,te,"[np.str_('hi'), np.str_('en')]",2025-09-04T18:57:17.363008,70,3,52,morning,ios,poor,True,True
+USER_00994,dcd3211657c5fbb5,farmer,advanced,57,rural,te,[np.str_('ml')],2025-04-29T18:57:17.363218,53,0,26,morning,android,good,True,False
+USER_00995,4ba15e1a991f580c,plumber,expert,36,urban,kn,[np.str_('gu')],2025-04-06T18:57:17.363428,26,17,20,morning,android,moderate,True,False
+USER_00996,2e319fb04f550f1d,welder,beginner,27,rural,pa,"[np.str_('hi'), np.str_('bn')]",2025-08-26T18:57:17.363654,91,12,35,afternoon,ios,moderate,True,False
+USER_00997,30354fcd5f128c27,electrician,advanced,32,rural,ml,"[np.str_('te'), np.str_('ta')]",2025-05-07T18:57:17.363885,17,22,21,evening,ios,poor,True,True
+USER_00998,7c54ca6a057d662c,carpenter,intermediate,46,rural,pa,[np.str_('kn')],2025-04-01T18:57:17.364094,13,26,51,morning,web,moderate,True,True
+USER_00999,de143e6c97d6a0c2,welder,advanced,23,semi-urban,ml,"[np.str_('gu'), np.str_('pa')]",2025-08-29T18:57:17.364325,98,44,22,afternoon,web,good,True,True

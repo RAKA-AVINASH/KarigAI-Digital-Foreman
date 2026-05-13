@@ -1,0 +1,94 @@
+name: karigai_mobile
+description: KarigAI - The Vernacular Digital Foreman mobile app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Navigation
+  go_router: ^14.6.2
+  
+  # Core dependencies
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  dio: ^5.7.0
+  
+  # State management
+  provider: ^6.1.2
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+  
+  # Local storage
+  shared_preferences: ^2.3.3
+  sqflite: ^2.4.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Audio/Voice
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+  audio_waveforms: ^1.1.0
+  record: ^5.1.2
+  
+  # Camera/Vision
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+  image: ^4.3.0
+  flutter_image_compress: ^2.3.0
+  
+  # Document generation
+  pdf: ^3.11.1
+  printing: ^5.13.4
+  path_provider: ^2.1.5
+  
+  # Networking and WebSocket
+  web_socket_channel: ^3.0.1
+  connectivity_plus: ^6.1.1
+  
+  # UI/UX
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.2
+  cached_network_image: ^3.4.1
+  lottie: ^3.2.0
+  
+  # Utils
+  uuid: ^4.5.1
+  logger: ^2.5.0
+  permission_handler: ^11.3.1
+  url_launcher: ^6.3.1
+  share_plus: ^10.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+  json_annotation: ^4.9.0
+  json_serializable: ^6.8.0
+  mockito: ^5.4.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/audio/
+  
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700

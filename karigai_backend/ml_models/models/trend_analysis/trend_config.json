@@ -1,0 +1,14 @@
+{
+  "lookback_window": 30,
+  "forecast_horizon": 7,
+  "n_estimators": 100,
+  "metrics": {
+    "trend_mae": 21.31361295351363,
+    "trend_r2": -1.0257831488440936,
+    "trend_accuracy": 0.7868638704648637,
+    "price_mae": 8.826015176093435,
+    "price_r2": 0.6825967108169111,
+    "price_accuracy": 0.6825967108169111,
+    "overall_accuracy": 0.7451570066056826
+  }
+}

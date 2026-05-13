@@ -1,0 +1,121 @@
+{
+  "test_batch_size": 32,
+  "cv_folds": 5,
+  "adversarial_epsilon": 0.1,
+  "latency_iterations": 100,
+  "memory_warmup_iterations": 10,
+  "target_metrics": {
+    "equipment_identification": {
+      "accuracy": 0.90,
+      "latency_ms": 100,
+      "model_size_mb": 500
+    },
+    "crop_disease": {
+      "accuracy": 0.92,
+      "latency_ms": 150,
+      "model_size_mb": 300
+    },
+    "ocr_model": {
+      "char_accuracy": 0.95,
+      "latency_ms": 200,
+      "model_size_mb": 200
+    },
+    "quality_assessment": {
+      "accuracy": 0.88,
+      "latency_ms": 120,
+      "model_size_mb": 400
+    },
+    "pattern_analysis": {
+      "map": 0.85,
+      "latency_ms": 300,
+      "model_size_mb": 600
+    },
+    "circuit_analysis": {
+      "map": 0.85,
+      "latency_ms": 250,
+      "model_size_mb": 550
+    },
+    "speech_recognition": {
+      "wer": 0.15,
+      "latency_ms": 500,
+      "model_size_mb": 1000
+    },
+    "text_to_speech": {
+      "mos": 4.0,
+      "latency_ms": 300,
+      "model_size_mb": 800
+    },
+    "intent_recognition": {
+      "accuracy": 0.90,
+      "latency_ms": 50,
+      "model_size_mb": 100
+    },
+    "translation": {
+      "bleu_score": 30.0,
+      "latency_ms": 200,
+      "model_size_mb": 500
+    },
+    "knowledge_retrieval": {
+      "accuracy": 0.85,
+      "latency_ms": 100,
+      "model_size_mb": 300
+    }
+  },
+  "edge_case_tests": {
+    "zero_input": true,
+    "max_values": true,
+    "min_values": true,
+    "random_noise": true,
+    "extreme_noise": true,
+    "corrupted_input": true
+  },
+  "adversarial_tests": {
+    "fgsm_attack": true,
+    "pgd_attack": false,
+    "c_w_attack": false
+  },
+  "performance_thresholds": {
+    "max_latency_ms": 1000,
+    "max_memory_mb": 2000,
+    "min_accuracy": 0.80,
+    "max_model_size_mb": 1500
+  },
+  "hardware_requirements": {
+    "min_ram_gb": 8,
+    "recommended_ram_gb": 16,
+    "gpu_memory_gb": 4,
+    "cpu_cores": 4
+  },
+  "test_datasets": {
+    "equipment_identification": {
+      "test_size": 1000,
+      "num_classes": 50,
+      "image_size": [224, 224]
+    },
+    "crop_disease": {
+      "test_size": 2000,
+      "num_classes": 38,
+      "image_size": [224, 224]
+    },
+    "ocr_model": {
+      "test_size": 500,
+      "max_text_length": 100,
+      "image_size": [128, 32]
+    },
+    "quality_assessment": {
+      "test_size": 800,
+      "num_classes": 5,
+      "image_size": [224, 224]
+    },
+    "pattern_analysis": {
+      "test_size": 600,
+      "max_objects": 10,
+      "image_size": [416, 416]
+    },
+    "circuit_analysis": {
+      "test_size": 400,
+      "max_components": 20,
+      "image_size": [416, 416]
+    }
+  }
+}

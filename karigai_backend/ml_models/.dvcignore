@@ -1,0 +1,23 @@
+# Add patterns of files dvc should ignore, which could improve
+# the performance. Learn more at
+# https://dvc.org/doc/user-guide/dvcignore
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Ignore model checkpoints (tracked separately)
+models/checkpoints/*.pt
+models/checkpoints/*.pth
+
+# Ignore logs
+*.log
+logs/

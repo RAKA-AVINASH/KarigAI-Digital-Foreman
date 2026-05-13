@@ -1,0 +1,104 @@
+# Training Configuration for All Models
+
+# General training settings
+training:
+  device: "cuda"  # cuda, cpu, or mps (for Apple Silicon)
+  mixed_precision: true  # Use automatic mixed precision (AMP)
+  gradient_accumulation_steps: 4
+  max_grad_norm: 1.0
+  seed: 42
+  
+  # Checkpointing
+  checkpoint:
+    save_every_n_epochs: 1
+    save_total_limit: 3
+    save_best_only: true
+    metric_for_best: "loss"
+    mode: "min"
+    
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 5
+    min_delta: 0.001
+    
+  # Logging
+  logging:
+    log_every_n_steps: 50
+    eval_every_n_steps: 500
+    
+# Speech Recognition Model
+speech_recognition:
+  model_name: "openai/whisper-small"  # Base model for fine-tuning
+  batch_size: 8
+  learning_rate: 1e-5
+  num_epochs: 20
+  warmup_steps: 500
+  weight_decay: 0.01
+  optimizer: "adamw"
+  scheduler: "linear"
+  
+  # Model-specific
+  freeze_encoder: false
+  gradient_checkpointing: true
+  
+# Text-to-Speech Model
+text_to_speech:
+  model_name: "tacotron2"
+  batch_size: 16
+  learning_rate: 1e-4
+  num_epochs: 100
+  warmup_steps: 1000
+  weight_decay: 0.0
+  optimizer: "adam"
+  scheduler: "noam"
+  
+  # Model-specific
+  n_mel_channels: 80
+  sampling_rate: 22050
+  
+# Computer Vision Models
+vision:
+  model_name: "microsoft/resnet-50"
+  batch_size: 32
+  learning_rate: 1e-4
+  num_epochs: 50
+  warmup_steps: 500
+  weight_decay: 0.0001
+  optimizer: "adamw"
+  scheduler: "cosine"
+  
+  # Model-specific
+  freeze_backbone: false
+  dropout: 0.3
+  
+# NLP Models
+nlp:
+  model_name: "bert-base-multilingual-cased"
+  batch_size: 16
+  learning_rate: 2e-5
+  num_epochs: 10
+  warmup_steps: 500
+  weight_decay: 0.01
+  optimizer: "adamw"
+  scheduler: "linear"
+  
+  # Model-specific
+  max_length: 512
+  dropout: 0.1
+  
+# Recommendation Models
+recommendation:
+  embedding_dim: 128
+  hidden_dims: [256, 128, 64]
+  batch_size: 256
+  learning_rate: 1e-3
+  num_epochs: 50
+  optimizer: "adam"
+  
+# Distributed training (for multi-GPU)
+distributed:
+  enabled: false
+  backend: "nccl"
+  world_size: 1
+  rank: 0

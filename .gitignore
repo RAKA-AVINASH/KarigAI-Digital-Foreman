@@ -1,0 +1,111 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Flutter/Dart
+karigai_mobile/.dart_tool/
+karigai_mobile/.flutter-plugins
+karigai_mobile/.flutter-plugins-dependencies
+karigai_mobile/.packages
+karigai_mobile/.pub-cache/
+karigai_mobile/.pub/
+karigai_mobile/build/
+karigai_mobile/ios/Flutter/Generated.xcconfig
+karigai_mobile/ios/Runner/GeneratedPluginRegistrant.*
+karigai_mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+karigai_mobile/android/local.properties
+karigai_mobile/android/key.properties
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Docker
+.dockerignore
+
+# Uploads and temporary files
+uploads/
+temp/
+tmp/
+
+# API Keys and secrets
+.env
+.env.local
+.env.production
+*.pem
+*.key
+service-account.json
+
+# Node modules (if any)
+node_modules/
+
+# Backup files
+*.bak
+*.backup
+
+# Local guide files with credentials (not for git)
+**/LIGHTNING_AI_SETUP.md
+**/LIGHTNING_AI_IMPLEMENTATION.md
+**/LIGHTNING_AI_STUDIOS_COMPLETE.md
+**/QUICK_START_GUIDE.md
+**/lightning_ai/README.md
+**/lightning_ai/run_all_models.sh
