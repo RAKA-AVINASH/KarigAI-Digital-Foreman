@@ -11,17 +11,21 @@ jobs:
         with:
           channel: 'stable'
           
-      # 🔥 Yahan hum missing packages daal rahe hain aur purane crash wale package ko force-fix kar rahe hain
+      # 🔥 THE MASTER FIX: Zabardasti naye packages install karna
       - name: Force Fix Dependencies
-        working-directory: karigai_mobile
         run: |
           flutter pub add audioplayers
-          flutter pub add "record_linux:^1.3.0"
+          flutter pub add record_linux
           flutter pub get
+        working-directory: karigai_mobile
+        
+      - name: Repair Android Setup
+        run: flutter create --platforms=android .
+        working-directory: karigai_mobile
         
       - name: Build APK
-        working-directory: karigai_mobile
         run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+        working-directory: karigai_mobile
         
       - name: Upload APK
         uses: actions/upload-artifact@v4
