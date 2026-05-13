@@ -12,14 +12,12 @@ jobs:
           
       - name: Install Dependencies
         run: flutter pub get
-        working-directory: karigai_backend/ml_models/models/colab_models/Secondary_Frontend
         
       - name: Build APK
-        run: flutter build apk --release -t main.dart
-        working-directory: karigai_backend/ml_models/models/colab_models/Secondary_Frontend
+        run: flutter build apk --release -t karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
         
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: KarigAI-App-Release
-          path: karigai_backend/ml_models/models/colab_models/Secondary_Frontend/build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
