@@ -1,54 +1,39 @@
 name: Build KarigAI APK
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: karigai_mobile
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
+      - uses: actions/checkout@v4
+      
+      - uses: subosito/flutter-action@v2
         with:
-          distribution: temurin
-          java-version: "17"
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-
-      # Clean old android project
-      - name: Remove Broken Android Folder
-        run: rm -rf android
-
-      # Recreate proper android project
-      - name: Generate Android Project
-        run: flutter create --platforms=android .
-
-      # Install dependencies
-      - name: Install Dependencies
-        run: flutter pub get
-
-      # Build APK
-      - name: Build APK
+          channel: 'stable'
+          
+      - name: Disable Desktop Platforms
         run: |
-          flutter build apk \
-          --release \
-          -t ../karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+          flutter config --no-enable-linux-desktop
+          flutter config --no-enable-macos-desktop
+          flutter config --no-enable-windows-desktop
+          flutter config --no-enable-web
 
-      # Upload artifact
+      - name: Clean and Navigate
+        run: |
+          cd karigai_mobile
+          flutter clean
+          flutter pub cache clean
+          flutter pub get
+
+      - name: Repair Android
+        run: flutter create --platforms=android .
+        working-directory: karigai_mobile
+        continue-on-error: true
+        
+      - name: Build APK
+        run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+        working-directory: karigai_mobile
+        
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
