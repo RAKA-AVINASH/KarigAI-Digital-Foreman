@@ -10,30 +10,29 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          
-      - name: Disable Desktop Platforms
+          flutter-version: '3.19.0'   # lock to a stable version
+
+      - name: Install dependencies
+        working-directory: karigai_mobile
+        run: flutter pub get
+
+      - name: Clean build cache
+        working-directory: karigai_mobile
+        run: flutter clean
+
+      # 🚫 Do NOT add record_linux
+      # Instead, disable Linux desktop so it never compiles
+      - name: Disable desktop targets
         run: |
           flutter config --no-enable-linux-desktop
           flutter config --no-enable-macos-desktop
           flutter config --no-enable-windows-desktop
-          flutter config --no-enable-web
 
-      - name: Clean and Navigate
-        run: |
-          cd karigai_mobile
-          flutter clean
-          flutter pub cache clean
-          flutter pub get
-
-      - name: Repair Android
-        run: flutter create --platforms=android .
-        working-directory: karigai_mobile
-        continue-on-error: true
-        
       - name: Build APK
-        run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
         working-directory: karigai_mobile
-        
+        run: flutter build apk --release \
+          --target=${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
