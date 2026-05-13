@@ -16,7 +16,7 @@ jobs:
         working-directory: karigai_mobile
         
       - name: Build APK
-        run: flutter build apk --release -t karigai_backend/ml_models/models/colab_models/Secondary_Frontend
+        run: flutter build apk --release -t ${{ github.workspace }}/karigai_backend/ml_models/models/colab_models/Secondary_Frontend/main.dart
         working-directory: karigai_mobile
         
       - name: Upload APK
