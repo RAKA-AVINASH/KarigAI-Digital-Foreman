@@ -11,16 +11,16 @@ jobs:
         with:
           channel: 'stable'
           
-      # 🔥 YAHAN CHANGE HAI: Missing package add karna aur sabko upgrade karna
-      - name: Fix and Install Dependencies
+      # Sirf zaroori package add karenge, faltu upgrade NAHI karenge
+      - name: Fix Dependencies
         run: |
           flutter pub add audioplayers
-          flutter pub upgrade
           flutter pub get
         working-directory: karigai_mobile
         
-      - name: Repair Android Files
-        run: flutter create .
+      # Sirf Android ki files repair karenge, Linux ki nahi
+      - name: Repair Android Setup Only
+        run: flutter create --platforms=android .
         working-directory: karigai_mobile
         
       - name: Build APK
