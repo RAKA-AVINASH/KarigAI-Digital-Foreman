@@ -544,8 +544,6 @@ if __name__ == "__main__":
     uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)
 
 
-genai.configure(api_key="YOUR_API_KEY")
-
 
 @app.post("/extract_knowledge")
 async def extract_knowledge(
