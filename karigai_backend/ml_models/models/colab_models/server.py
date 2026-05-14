@@ -92,18 +92,18 @@ if GOOGLE_API_KEY.startswith("AIza"):
         print(f"Gemini setup failed: {e}")
 
 # 3. Load Whisper Model
-print("Cleaning Memory....")
-gc.collect()
-torch.cuda.empty_cache()
-print("Loading Voice AI...")
-device = "cuda" if torch.cuda.is_available() else "cpu"
+# print("Cleaning Memory....")
+# gc.collect()
+# torch.cuda.empty_cache()
+# print("Loading Voice AI...")
+# device = "cuda" if torch.cuda.is_available() else "cpu"
 
-try:
-    ear_model = WhisperModel("large-v3", device=device, compute_type="int8")
-    print("Whisper Large Loaded")
-except:
-    ear_model = WhisperModel("medium", device=device, compute_type="int8")
-    print("Whisper Medium Loaded")
+# try:
+#     ear_model = WhisperModel("large-v3", device=device, compute_type="int8")
+#     print("Whisper Large Loaded")
+# except:
+#     ear_model = WhisperModel("medium", device=device, compute_type="int8")
+#     print("Whisper Medium Loaded")
 
 # 4. FastAPI Setup
 app = FastAPI()
@@ -412,8 +412,15 @@ async def transcribe_audio(
             shutil.copyfileobj(file.file, buffer)
 
         # 1. Transcribe (Handles Colloquial / Code-Mixed Accents)
-        segments, _ = ear_model.transcribe(file_location, beam_size=5)
-        text = " ".join([segment.text for segment in segments]).strip()
+        print("Sending audio to Groq Cloud...")
+        with open(file_location, "rb") as audio_file:
+            transcription = brain_client.audio.transcriptions.create(
+                file=(file.filename, audio_file.read()),
+                model="whisper-large-v3-turbo", 
+            )
+        text = transcription.text.strip()
+        # segments, _ = ear_model.transcribe(file_location, beam_size=5)
+        # text = " ".join([segment.text for segment in segments]).strip()
         print(f"Transcribed Text: {text}")
 
         if not text:
