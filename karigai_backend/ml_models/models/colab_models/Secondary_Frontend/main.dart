@@ -43,7 +43,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
-  final String serverUrl = "https://karigai-digital-foreman.onrender.com/";
+  final String serverUrl = "https://karigai-digital-foreman.onrender.com";
   String selectedLang = 'hi'; 
 
   @override
