@@ -14,19 +14,17 @@
 #       - name: The Nuclear Dependency Fix
 #         working-directory: karigai_mobile
 #         run: |
-#           # 1. Ziddi lock file ko delete karna
 #           rm -f pubspec.lock
-          
-#           # 2. Missing package add karna
 #           flutter pub add audioplayers
-          
-#           # 3. Zabardasti naya version code me daalna
 #           echo "" >> pubspec.yaml
 #           echo "dependency_overrides:" >> pubspec.yaml
 #           echo "  record_linux: ^1.3.0" >> pubspec.yaml
-          
-#           # 4. Naye packages refresh karna
 #           flutter pub get
+          
+
+#       - name: Repair Android Setup
+#         working-directory: karigai_mobile
+#         run: flutter create --platforms=android .
         
 #       - name: Build APK
 #         working-directory: karigai_mobile
@@ -37,6 +35,11 @@
 #         with:
 #           name: KarigAI-App-Release
 #           path: karigai_mobile/build/app/outputs/flutter-apk/app-release.apk
+
+
+
+
+
 
 
 
@@ -67,10 +70,11 @@ jobs:
           echo "  record_linux: ^1.3.0" >> pubspec.yaml
           flutter pub get
           
-      # 🔥 YAHAN MAINE GRADLE REPAIR WAPAS ADD KAR DIYA HAI
       - name: Repair Android Setup
         working-directory: karigai_mobile
-        run: flutter create --platforms=android .
+        run: |
+          flutter create --platforms=android .
+          sed -i '/<application/i \    <uses-permission android:name="android.permission.INTERNET" />\n    <uses-permission android:name="android.permission.RECORD_AUDIO" />' android/app/src/main/AndroidManifest.xml
         
       - name: Build APK
         working-directory: karigai_mobile
