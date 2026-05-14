@@ -44,9 +44,9 @@ TEMP_DIR = "temp_files"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 # 2. API Keys
-GROQ_API_KEY = "your_api_key"
-GOOGLE_API_KEY = "your_api_key"
-HF_API_KEY = "your_api_key"
+GROQ_API_KEY = os.getenv("your_api_key", "")
+GOOGLE_API_KEY = os.getenv("your_api_key", "")
+HF_API_KEY = os.getenv("your_api_key", "")
 
 brain_client = Groq(api_key=GROQ_API_KEY)
 
