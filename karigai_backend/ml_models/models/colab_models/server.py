@@ -44,9 +44,9 @@ TEMP_DIR = "temp_files"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 # 2. API Keys
-GROQ_API_KEY = os.getenv("your_api_key", "")
-GOOGLE_API_KEY = os.getenv("your_api_key", "")
-HF_API_KEY = os.getenv("your_api_key", "")
+GROQ_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
+GOOGLE_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
+HF_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 
 brain_client = Groq(api_key=GROQ_API_KEY)
 
@@ -302,15 +302,50 @@ def generate_certificate_json(transcribed_text, lang_code):
 
 
 # --- LOGIC 2: ALL VISION MODES---
-def analyze_vision_gemini(image_path, mode, lang_code):
-    if not gemini_model:
-        return {
-            "appliance": "Error",
-            "error_code": "Key Missing",
-            "solution": "Check Google Key",
-            "spoken_summary": "Config error.",
-        }
+# def analyze_vision_gemini(image_path, mode, lang_code):
+#     if not gemini_model:
+#         return {
+#             "appliance": "Error",
+#             "error_code": "Key Missing",
+#             "solution": "Check Google Key",
+#             "spoken_summary": "Config error.",
+#         }
 
+#     try:
+#         lang_name = VOICE_MAP.get(lang_code, {}).get("name", "Hindi")
+#         print(f"Processing mode '{mode}' in {lang_name}...")
+
+#         img = Image.open(image_path).convert("RGB")
+
+#         base_instruction = f"You MUST write all descriptive text (values) in {lang_name}. Do NOT translate JSON keys."
+
+#         prompts = {
+#             "repair": f"Analyze broken machine. {base_instruction} Map: appliance->Machine Name, error_code->Issue, solution->Repair Steps, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
+#             "plant": f"Analyze crop disease. {base_instruction} Map: appliance->Crop Name, error_code->Disease, solution->Treatment, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
+#             "quality": f"Grade item quality. {base_instruction} Map: appliance->Item Name, error_code->Grade(A/B/C), solution->Reason, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
+#             "inventory": f"Count items. {base_instruction} Map: appliance->Item Type, error_code->Count, solution->Restock Advice, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
+#             "pattern": f"Analyze traditional art. {base_instruction} Map: appliance->Art Style/Origin, error_code->Identified Motifs, solution->Write the historical meaning AND provide a 'Pattern Similarity Match', spoken_summary->Write a helpful 2-line summary describing the art.",
+#             "modernize": f"Suggest modernization. {base_instruction} Map: appliance->Modern Fusion Concept, error_code->Trending Colors, solution->Actionable steps, spoken_summary->Write a helpful 2-line summary explaining the modern fusion, and an EXTRA KEY 'image_prompt' (visual description in ENGLISH).",
+#             "market": f"Analyze market potential. {base_instruction} Map: appliance->Target Audience, error_code->Give a 'Popularity Score: X/10' AND Estimated Price Range INR, solution->Marketing Strategy, spoken_summary->Write a 2-line summary explaining market value.",
+#         }
+
+#         selected_prompt = prompts.get(mode, prompts["repair"])
+#         response = gemini_model.generate_content([selected_prompt, img])
+
+#         clean_text = response.text.replace("```json", "").replace("```", "").strip()
+#         match = re.search(r"\{.*\}", clean_text, re.DOTALL)
+
+#         final_data = {}
+#         if match:
+#             final_data = json.loads(match.group(0))
+#         else:
+#             return {
+#                 "appliance": "Error",
+#                 "error_code": "Parsing Failed",
+#                 "solution": clean_text,
+#                 "spoken_summary": "AI Error.",
+#             }
+def analyze_vision_gemini(image_path, mode, lang_code):
     try:
         lang_name = VOICE_MAP.get(lang_code, {}).get("name", "Hindi")
         print(f"Processing mode '{mode}' in {lang_name}...")
@@ -330,7 +365,10 @@ def analyze_vision_gemini(image_path, mode, lang_code):
         }
 
         selected_prompt = prompts.get(mode, prompts["repair"])
-        response = gemini_model.generate_content([selected_prompt, img])
+        
+        # Seedha Gemini 2.5-flash call kiya
+        model = genai.GenerativeModel("gemini-2.5-flash")
+        response = model.generate_content([selected_prompt, img])
 
         clean_text = response.text.replace("```json", "").replace("```", "").strip()
         match = re.search(r"\{.*\}", clean_text, re.DOTALL)
@@ -345,6 +383,17 @@ def analyze_vision_gemini(image_path, mode, lang_code):
                 "solution": clean_text,
                 "spoken_summary": "AI Error.",
             }
+            
+        return final_data
+        
+    except Exception as e:
+        print(f"Analysis crashed: {e}")
+        return {
+            "appliance": "Error",
+            "error_code": "Failed",
+            "solution": str(e),
+            "spoken_summary": "Processing failed.",
+        }
 
         # --- FREE IMAGE GENERATION ---
         if mode == "modernize" and HF_API_KEY:
