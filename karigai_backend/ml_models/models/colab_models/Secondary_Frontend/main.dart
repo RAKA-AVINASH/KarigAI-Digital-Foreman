@@ -12,6 +12,7 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 import 'package:image_picker/image_picker.dart'; 
 import 'package:crypto/crypto.dart'; 
+import 'package:permission_handler/permission_handler.dart';
 
 void main() {
   runApp(const KarigAIApp());
