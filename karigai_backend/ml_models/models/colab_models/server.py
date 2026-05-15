@@ -48,7 +48,11 @@ GROQ_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 GOOGLE_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 HF_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 
-brain_client = Groq(api_key=GROQ_API_KEY)
+try:
+    brain_client = Groq(api_key=GROQ_API_KEY)
+    print("Groq Client Loaded Successfully!")
+except Exception as e:
+    print(f"Groq Setup Error: {e}")
 
 # Initialize Gemini with auto-detect
 gemini_model = None
