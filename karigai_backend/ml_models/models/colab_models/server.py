@@ -422,32 +422,29 @@ async def transcribe_audio(
         with open(file_location, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
-        # 1. Transcribe (Handles Colloquial / Code-Mixed Accents)
-        print("Uploading audio to Gemini 2.5-flash...")
-        uploaded_audio = genai.upload_file(path=file_location)
+        # 1. Transcribe (Handles Colloquial / Code-Mixed Accents using Direct HTTP Request)
+        import requests
+
+        print("Uploading audio directly to Groq AI...")
+        url = "https://api.groq.com/openai/v1/audio/transcriptions"
+        headers = {
+            "Authorization": f"Bearer {GROQ_API_KEY}"
+        }
         
-        # Google ko audio process karne ke liye 1-2 second ka time dena
-        print("Waiting for Google to process the audio...")
-        while uploaded_audio.state.name == "PROCESSING":
-            time.sleep(1)
-            uploaded_audio = genai.get_file(uploaded_audio.name)
-            
-        if uploaded_audio.state.name == "FAILED":
-            print("Audio processing failed on Google servers.")
-            return JSONResponse(status_code=500, content={"error": "Audio processing failed."})
-            
-        print("Audio is ACTIVE. Generating transcription...")
-        model = genai.GenerativeModel("gemini-2.5-flash")
-        audio_response = model.generate_content([
-            "Listen to this audio carefully and transcribe EXACTLY what is spoken in the local dialect. Return ONLY the text, nothing else.", 
-            uploaded_audio
-        ])
+        with open(file_location, "rb") as audio_file:
+            # File ko .opus format de rahe hain taaki Groq Whisper isko turant pehchan le
+            files = {
+                "file": ("audio.opus", audio_file, "audio/opus"),
+                "model": (None, "whisper-large-v3-turbo")
+            }
+            response = requests.post(url, headers=headers, files=files)
         
-        text = audio_response.text.strip()
-        print(f"Transcribed Text: {text}")
-        
-        # Memory bachane ke liye Google cloud se temporary file delete karna
-        genai.delete_file(uploaded_audio.name)
+        if response.status_code == 200:
+            text = response.json().get("text", "").strip()
+            print(f"Transcribed Text: {text}")
+        else:
+            print(f"Voice API Error: {response.text}")
+            return JSONResponse(status_code=500, content={"error": f"API Error: {response.text}"})
 
         if not text:
             return {"error": "No speech detected"}
