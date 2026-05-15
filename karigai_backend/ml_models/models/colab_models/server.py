@@ -307,49 +307,6 @@ def generate_certificate_json(transcribed_text, lang_code):
 
 
 # --- LOGIC 2: ALL VISION MODES---
-# def analyze_vision_gemini(image_path, mode, lang_code):
-#     if not gemini_model:
-#         return {
-#             "appliance": "Error",
-#             "error_code": "Key Missing",
-#             "solution": "Check Google Key",
-#             "spoken_summary": "Config error.",
-#         }
-
-#     try:
-#         lang_name = VOICE_MAP.get(lang_code, {}).get("name", "Hindi")
-#         print(f"Processing mode '{mode}' in {lang_name}...")
-
-#         img = Image.open(image_path).convert("RGB")
-
-#         base_instruction = f"You MUST write all descriptive text (values) in {lang_name}. Do NOT translate JSON keys."
-
-#         prompts = {
-#             "repair": f"Analyze broken machine. {base_instruction} Map: appliance->Machine Name, error_code->Issue, solution->Repair Steps, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
-#             "plant": f"Analyze crop disease. {base_instruction} Map: appliance->Crop Name, error_code->Disease, solution->Treatment, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
-#             "quality": f"Grade item quality. {base_instruction} Map: appliance->Item Name, error_code->Grade(A/B/C), solution->Reason, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
-#             "inventory": f"Count items. {base_instruction} Map: appliance->Item Type, error_code->Count, solution->Restock Advice, spoken_summary->Write a helpful 2-line summary to be spoken out loud.",
-#             "pattern": f"Analyze traditional art. {base_instruction} Map: appliance->Art Style/Origin, error_code->Identified Motifs, solution->Write the historical meaning AND provide a 'Pattern Similarity Match', spoken_summary->Write a helpful 2-line summary describing the art.",
-#             "modernize": f"Suggest modernization. {base_instruction} Map: appliance->Modern Fusion Concept, error_code->Trending Colors, solution->Actionable steps, spoken_summary->Write a helpful 2-line summary explaining the modern fusion, and an EXTRA KEY 'image_prompt' (visual description in ENGLISH).",
-#             "market": f"Analyze market potential. {base_instruction} Map: appliance->Target Audience, error_code->Give a 'Popularity Score: X/10' AND Estimated Price Range INR, solution->Marketing Strategy, spoken_summary->Write a 2-line summary explaining market value.",
-#         }
-
-#         selected_prompt = prompts.get(mode, prompts["repair"])
-#         response = gemini_model.generate_content([selected_prompt, img])
-
-#         clean_text = response.text.replace("```json", "").replace("```", "").strip()
-#         match = re.search(r"\{.*\}", clean_text, re.DOTALL)
-
-#         final_data = {}
-#         if match:
-#             final_data = json.loads(match.group(0))
-#         else:
-#             return {
-#                 "appliance": "Error",
-#                 "error_code": "Parsing Failed",
-#                 "solution": clean_text,
-#                 "spoken_summary": "AI Error.",
-#             }
 def analyze_vision_gemini(image_path, mode, lang_code):
     try:
         lang_name = VOICE_MAP.get(lang_code, {}).get("name", "Hindi")
@@ -467,10 +424,19 @@ async def transcribe_audio(
 
         # 1. Transcribe (Handles Colloquial / Code-Mixed Accents)
         print("Uploading audio to Gemini 2.5-flash...")
-        
-        # Gemini khud audio format pehchan lega (WAV, M4A, MP3 sab chalega)
         uploaded_audio = genai.upload_file(path=file_location)
         
+        # Google ko audio process karne ke liye 1-2 second ka time dena
+        print("Waiting for Google to process the audio...")
+        while uploaded_audio.state.name == "PROCESSING":
+            time.sleep(1)
+            uploaded_audio = genai.get_file(uploaded_audio.name)
+            
+        if uploaded_audio.state.name == "FAILED":
+            print("Audio processing failed on Google servers.")
+            return JSONResponse(status_code=500, content={"error": "Audio processing failed."})
+            
+        print("Audio is ACTIVE. Generating transcription...")
         model = genai.GenerativeModel("gemini-2.5-flash")
         audio_response = model.generate_content([
             "Listen to this audio carefully and transcribe EXACTLY what is spoken in the local dialect. Return ONLY the text, nothing else.", 
@@ -480,7 +446,7 @@ async def transcribe_audio(
         text = audio_response.text.strip()
         print(f"Transcribed Text: {text}")
         
-        # Google Cloud se file delete karna taaki memory full na ho
+        # Memory bachane ke liye Google cloud se temporary file delete karna
         genai.delete_file(uploaded_audio.name)
 
         if not text:
