@@ -466,16 +466,22 @@ async def transcribe_audio(
             shutil.copyfileobj(file.file, buffer)
 
         # 1. Transcribe (Handles Colloquial / Code-Mixed Accents)
-        print("Sending audio to Groq Cloud...")
-        with open(file_location, "rb") as audio_file:
-            transcription = brain_client.audio.transcriptions.create(
-                file=(file.filename, audio_file.read()),
-                model="whisper-large-v3-turbo", 
-            )
-        text = transcription.text.strip()
-        # segments, _ = ear_model.transcribe(file_location, beam_size=5)
-        # text = " ".join([segment.text for segment in segments]).strip()
+        print("Uploading audio to Gemini 2.5-flash...")
+        
+        # Gemini khud audio format pehchan lega (WAV, M4A, MP3 sab chalega)
+        uploaded_audio = genai.upload_file(path=file_location)
+        
+        model = genai.GenerativeModel("gemini-2.5-flash")
+        audio_response = model.generate_content([
+            "Listen to this audio carefully and transcribe EXACTLY what is spoken in the local dialect. Return ONLY the text, nothing else.", 
+            uploaded_audio
+        ])
+        
+        text = audio_response.text.strip()
         print(f"Transcribed Text: {text}")
+        
+        # Google Cloud se file delete karna taaki memory full na ho
+        genai.delete_file(uploaded_audio.name)
 
         if not text:
             return {"error": "No speech detected"}
