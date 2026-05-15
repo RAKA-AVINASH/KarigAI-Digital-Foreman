@@ -49,10 +49,11 @@ GOOGLE_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 HF_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
 
 try:
+    genai.configure(api_key=GOOGLE_API_KEY)
     brain_client = Groq(api_key=GROQ_API_KEY)
-    print("Groq Client Loaded Successfully!")
+    print("API Keys Cleaned & Loaded!")
 except Exception as e:
-    print(f"Groq Setup Error: {e}")
+    print(f"Key Setup Error: {e}")
 
 # Initialize Gemini with auto-detect
 gemini_model = None
@@ -729,9 +730,56 @@ async def match_schemes(
     social_category: str = Form("General"),
     income: int = Form(100000),
 ):
-    print(
-        f" Dynamic Scheme Fetching for: {name} | Trade: {trade} | Category: {social_category}"
-    )
+    print(f" Dynamic Scheme Fetching for: {name} | Trade: {trade}")
+
+    # Seedha Gemini 2.5-flash ko instruction dena
+    prompt = f"""
+    You are 'KarigAI Yojana Helper'.
+    User Profile: Name: {name}, Trade: {trade}, Age: {age}, Gender: {gender}, Category: {social_category}, Income: ₹{income}
+    Task: Find 5 best Indian Govt schemes for this profile.
+    Output MUST be only JSON:
+    {{
+        "schemes_data": [
+            {{
+                "id": "1", "name": "Scheme Name", "description": "Details in Hindi", 
+                "eligibility_rules": "Rules", "target_trades": ["{trade}"], 
+                "match_score": 95, "eligibility_reason": "Matching trade", "missing_criteria": "None"
+            }}
+        ]
+    }}
+    """
+
+    try:
+        # Llama ko hata kar Gemini use kar rahe hain connection fix karne ke liye
+        model = genai.GenerativeModel("gemini-2.5-flash")
+        response = model.generate_content(prompt)
+        
+        # JSON nikalna
+        match = re.search(r"\{.*\}", response.text, re.DOTALL)
+        if match:
+            schemes_json = json.loads(match.group(0))
+            return {"schemes_data": schemes_json["schemes_data"]}
+        else:
+            return JSONResponse(status_code=500, content={"error": "JSON Parsing failed"})
+
+    except Exception as e:
+        print(f" Scheme Error: {e}")
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+        # --- FORM AUTO-FILLING & DATA MAPPING ---
+
+
+@app.post("/autofill_form")
+async def autofill_form(
+    scheme_name: str = Form(...),
+    name: str = Form(...),
+    trade: str = Form(...),
+    age: str = Form(...),
+    gender: str = Form(...),
+    social_category: str = Form(...),
+    income: str = Form(...),
+):
+    print(f" Generating Auto-Fill Form for: {scheme_name}")
 
     prompt = f"""
     You are 'KarigAI Yojana Helper', an expert in Indian Government Schemes.
@@ -767,74 +815,6 @@ async def match_schemes(
     }}
     """
 
-    try:
-
-        response = brain_client.chat.completions.create(
-            messages=[{"role": "user", "content": prompt}],
-            model="llama-3.3-70b-versatile",
-            temperature=0.2,
-        )
-        content = response.choices[0].message.content.strip()
-
-        # Extract JSON
-        match = re.search(r"\{.*\}", content, re.DOTALL)
-        if not match:
-            return JSONResponse(
-                status_code=500, content={"error": "Failed to generate scheme matches."}
-            )
-
-        schemes_json = json.loads(match.group(0))
-        return {"schemes_data": schemes_json["schemes_data"]}
-
-    except Exception as e:
-        print(f" Scheme Fetching Error: {e}")
-        return JSONResponse(status_code=500, content={"error": str(e)})
-
-        # --- FORM AUTO-FILLING & DATA MAPPING ---
-
-
-@app.post("/autofill_form")
-async def autofill_form(
-    scheme_name: str = Form(...),
-    name: str = Form(...),
-    trade: str = Form(...),
-    age: str = Form(...),
-    gender: str = Form(...),
-    social_category: str = Form(...),
-    income: str = Form(...),
-):
-    print(f" Generating Auto-Fill Form for: {scheme_name}")
-
-    prompt = f"""
-    You are 'KarigAI Form Assistant'. Generate a dynamic government application form schema for the scheme: "{scheme_name}".
-    
-    User Profile to Auto-Fill:
-    - Name: {name}
-    - Trade: {trade}
-    - Age: {age}
-    - Gender: {gender}
-    - Category: {social_category}
-    - Income: {income}
-    
-    Task:
-    1. Map the user's details into the "pre_filled_fields".
-    2. Identify 2 or 3 mandatory missing fields specific to Indian Govt schemes (e.g., Aadhar Number, Bank Account, PAN) that the user MUST type manually.
-    
-    Format EXACTLY as this JSON. No markdown.
-    {{
-        "form_title": "Application for {scheme_name}",
-        "pre_filled_fields": [
-            {{"label": "Applicant Name", "value": "{name}"}},
-            {{"label": "Profession/Trade", "value": "{trade}"}},
-            {{"label": "Social Category", "value": "{social_category}"}},
-            {{"label": "Annual Income", "value": "₹{income}"}}
-        ],
-        "missing_fields": [
-            {{"label": "Aadhar Number (12 Digits)", "key": "aadhar"}},
-            {{"label": "Bank Account Number", "key": "bank_acc"}}
-        ]
-    }}
-    """
 
     try:
         response = brain_client.chat.completions.create(
