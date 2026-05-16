@@ -192,37 +192,23 @@ class _VoiceInvoiceScreenState extends State<VoiceInvoiceScreen> {
     }
   }
 
-  // Future<void> _toggleRecording() async {
-  //   if (_isRecording) {
-  //     final path = await _audioRecorder.stop();
-  //     setState(() { _isRecording = false; _statusText = "Analyzing Intent & Processing..."; });
-  //     if (path != null) _uploadAudio(path);
-  //   } else {
-  //     if (await _audioRecorder.hasPermission()) {
-  //       await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
-  //       setState(() { 
-  //         _isRecording = true; 
-  //         _statusText = "Listening..."; 
-  //         _documentData = null; 
-  //         _detectedIntent = null; 
-  //         _confidenceScore = null; 
-  //         _certImageBytes = null; 
-  //       });
-  //     }
-  //   }
-  // }
   Future<void> _toggleRecording() async {
     if (_isRecording) {
       final path = await _audioRecorder.stop();
       setState(() { _isRecording = false; _statusText = "Analyzing Intent & Processing..."; });
       if (path != null) _uploadAudio(path);
     } else {
-      // NAYA PERMISSION CODE YAHAN AAYEGA
       var status = await Permission.microphone.request();
       
       if (status == PermissionStatus.granted) {
         if (await _audioRecorder.hasPermission()) {
-          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+          
+          
+          final directory = await getTemporaryDirectory();
+          final filePath = '${directory.path}/karigai_audio_1.opus';
+          
+          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
+          
           setState(() { 
             _isRecording = true; 
             _statusText = "Listening..."; 
@@ -233,7 +219,7 @@ class _VoiceInvoiceScreenState extends State<VoiceInvoiceScreen> {
           });
         }
       } else {
-        // Agar user mic ka access nahi deta
+        // if user denies permission, show message
         setState(() { _statusText = "Microphone Permission Required!"; });
       }
     }
@@ -968,30 +954,24 @@ class _LearningScreenState extends State<LearningScreen> {
     });
   }
 
-  // Future<void> _toggleRecording() async {
-  //   if (_isRecording) {
-  //     final path = await _audioRecorder.stop();
-  //     setState(() => _isRecording = false);
-  //     if (path != null) _processVoiceQuery(path);
-  //   } else {
-  //     if (await _audioRecorder.hasPermission()) {
-  //       await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
-  //       setState(() => _isRecording = true);
-  //     }
-  //   }
-  // }
+
   Future<void> _toggleRecording() async {
     if (_isRecording) {
       final path = await _audioRecorder.stop();
       setState(() => _isRecording = false);
       if (path != null) _processVoiceQuery(path);
     } else {
-      // NAYA PERMISSION CODE YAHAN AAYEGA
       var status = await Permission.microphone.request();
       
       if (status == PermissionStatus.granted) {
         if (await _audioRecorder.hasPermission()) {
-          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+          
+          
+          final directory = await getTemporaryDirectory();
+          final filePath = '${directory.path}/karigai_audio_2.opus';
+          
+          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
+          
           setState(() => _isRecording = true);
         }
       } else {
