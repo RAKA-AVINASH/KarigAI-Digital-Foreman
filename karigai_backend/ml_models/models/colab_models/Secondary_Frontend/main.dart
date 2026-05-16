@@ -198,29 +198,36 @@ class _VoiceInvoiceScreenState extends State<VoiceInvoiceScreen> {
       setState(() { _isRecording = false; _statusText = "Analyzing Intent & Processing..."; });
       if (path != null) _uploadAudio(path);
     } else {
-      var status = await Permission.microphone.request();
+    
+      bool isPermitted = false;
+      if (kIsWeb) {
       
-      if (status == PermissionStatus.granted) {
-        if (await _audioRecorder.hasPermission()) {
-          
-          // SMART CODE: Web ke liye khali chhodega, Mobile ke liye path banayega
-          String filePath = ''; 
-          if (!kIsWeb) {
-            final directory = await getTemporaryDirectory();
-            filePath = '${directory.path}/karigai_audio_1.opus';
-          }
-          
-          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
-          
-          setState(() { 
-            _isRecording = true; 
-            _statusText = "Listening..."; 
-            _documentData = null; 
-            _detectedIntent = null; 
-            _confidenceScore = null; 
-            _certImageBytes = null; 
-          });
+        isPermitted = await _audioRecorder.hasPermission();
+      } else {
+
+        var status = await Permission.microphone.request();
+        if (status == PermissionStatus.granted) {
+          isPermitted = await _audioRecorder.hasPermission();
         }
+      }
+      
+      if (isPermitted) {
+        String filePath = ''; 
+        if (!kIsWeb) {
+          final directory = await getTemporaryDirectory();
+          filePath = '${directory.path}/karigai_audio_1.opus';
+        }
+        
+        await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
+        
+        setState(() { 
+          _isRecording = true; 
+          _statusText = "Listening..."; 
+          _documentData = null; 
+          _detectedIntent = null; 
+          _confidenceScore = null; 
+          _certImageBytes = null; 
+        });
       } else {
         setState(() { _statusText = "Microphone Permission Required!"; });
       }
@@ -963,22 +970,29 @@ class _LearningScreenState extends State<LearningScreen> {
       setState(() => _isRecording = false);
       if (path != null) _processVoiceQuery(path);
     } else {
-      var status = await Permission.microphone.request();
+    
+      bool isPermitted = false;
+      if (kIsWeb) {
       
-      if (status == PermissionStatus.granted) {
-        if (await _audioRecorder.hasPermission()) {
-          
-          // SMART CODE: Web ke liye khali chhodega, Mobile ke liye path banayega
-          String filePath = ''; 
-          if (!kIsWeb) {
-            final directory = await getTemporaryDirectory();
-            filePath = '${directory.path}/karigai_audio_2.opus';
-          }
-          
-          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
-          
-          setState(() => _isRecording = true);
+        isPermitted = await _audioRecorder.hasPermission();
+      } else {
+      
+        var status = await Permission.microphone.request();
+        if (status == PermissionStatus.granted) {
+          isPermitted = await _audioRecorder.hasPermission();
         }
+      }
+      
+      if (isPermitted) {
+        String filePath = ''; 
+        if (!kIsWeb) {
+          final directory = await getTemporaryDirectory();
+          filePath = '${directory.path}/karigai_audio_2.opus';
+        }
+        
+        await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: filePath);
+        
+        setState(() => _isRecording = true);
       } else {
         print("Microphone Permission Denied");
       }
