@@ -12,6 +12,7 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 import 'package:image_picker/image_picker.dart'; 
 import 'package:crypto/crypto.dart'; 
+import 'package:permission_handler/permission_handler.dart';
 
 void main() {
   runApp(const KarigAIApp());
@@ -191,22 +192,49 @@ class _VoiceInvoiceScreenState extends State<VoiceInvoiceScreen> {
     }
   }
 
+  // Future<void> _toggleRecording() async {
+  //   if (_isRecording) {
+  //     final path = await _audioRecorder.stop();
+  //     setState(() { _isRecording = false; _statusText = "Analyzing Intent & Processing..."; });
+  //     if (path != null) _uploadAudio(path);
+  //   } else {
+  //     if (await _audioRecorder.hasPermission()) {
+  //       await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+  //       setState(() { 
+  //         _isRecording = true; 
+  //         _statusText = "Listening..."; 
+  //         _documentData = null; 
+  //         _detectedIntent = null; 
+  //         _confidenceScore = null; 
+  //         _certImageBytes = null; 
+  //       });
+  //     }
+  //   }
+  // }
   Future<void> _toggleRecording() async {
     if (_isRecording) {
       final path = await _audioRecorder.stop();
       setState(() { _isRecording = false; _statusText = "Analyzing Intent & Processing..."; });
       if (path != null) _uploadAudio(path);
     } else {
-      if (await _audioRecorder.hasPermission()) {
-        await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
-        setState(() { 
-          _isRecording = true; 
-          _statusText = "Listening..."; 
-          _documentData = null; 
-          _detectedIntent = null; 
-          _confidenceScore = null; 
-          _certImageBytes = null; 
-        });
+      // NAYA PERMISSION CODE YAHAN AAYEGA
+      var status = await Permission.microphone.request();
+      
+      if (status == PermissionStatus.granted) {
+        if (await _audioRecorder.hasPermission()) {
+          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+          setState(() { 
+            _isRecording = true; 
+            _statusText = "Listening..."; 
+            _documentData = null; 
+            _detectedIntent = null; 
+            _confidenceScore = null; 
+            _certImageBytes = null; 
+          });
+        }
+      } else {
+        // Agar user mic ka access nahi deta
+        setState(() { _statusText = "Microphone Permission Required!"; });
       }
     }
   }
@@ -940,15 +968,34 @@ class _LearningScreenState extends State<LearningScreen> {
     });
   }
 
+  // Future<void> _toggleRecording() async {
+  //   if (_isRecording) {
+  //     final path = await _audioRecorder.stop();
+  //     setState(() => _isRecording = false);
+  //     if (path != null) _processVoiceQuery(path);
+  //   } else {
+  //     if (await _audioRecorder.hasPermission()) {
+  //       await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+  //       setState(() => _isRecording = true);
+  //     }
+  //   }
+  // }
   Future<void> _toggleRecording() async {
     if (_isRecording) {
       final path = await _audioRecorder.stop();
       setState(() => _isRecording = false);
       if (path != null) _processVoiceQuery(path);
     } else {
-      if (await _audioRecorder.hasPermission()) {
-        await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
-        setState(() => _isRecording = true);
+      // NAYA PERMISSION CODE YAHAN AAYEGA
+      var status = await Permission.microphone.request();
+      
+      if (status == PermissionStatus.granted) {
+        if (await _audioRecorder.hasPermission()) {
+          await _audioRecorder.start(const RecordConfig(encoder: AudioEncoder.opus), path: '');
+          setState(() => _isRecording = true);
+        }
+      } else {
+        print("Microphone Permission Denied");
       }
     }
   }
