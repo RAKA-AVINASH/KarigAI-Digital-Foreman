@@ -44,9 +44,9 @@ TEMP_DIR = "temp_files"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 # 2. API Keys
-GROQ_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
-GOOGLE_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
-HF_API_KEY = os.getenv("your_api_key", "").replace('"', '').strip()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").replace('"', '').strip()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "").replace('"', '').strip()
+HF_API_KEY = os.getenv("HF_API_KEY", "").replace('"', '').strip()
 
 try:
     genai.configure(api_key=GOOGLE_API_KEY)
