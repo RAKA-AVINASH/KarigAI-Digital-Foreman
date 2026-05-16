@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+faster-whisper
+groq
+google-generativeai
+huggingface_hub
+edge-tts
+gTTS
+Pillow
+requests
+torch
