@@ -423,8 +423,6 @@ async def transcribe_audio(
             shutil.copyfileobj(file.file, buffer)
 
         # 1. Transcribe (Handles Colloquial / Code-Mixed Accents using Direct HTTP Request)
-        import requests
-
         print("Uploading audio directly to Groq AI...")
         url = "https://api.groq.com/openai/v1/audio/transcriptions"
         headers = {
